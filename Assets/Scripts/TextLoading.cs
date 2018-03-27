@@ -49,6 +49,8 @@ public class TextLoading : MonoBehaviour
                     case '+':
                         Instantiate(objectsToLoad[1],newPos,transform.rotation);
                         break;
+                    case ' ':
+                        break;
                 }
             }
         }
