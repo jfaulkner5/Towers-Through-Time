@@ -12,7 +12,6 @@ public class TextLoading : MonoBehaviour
     public Vector3 camStartPos;
     public float sideLength;
     Vector3 newPos = Vector3.zero;
-    public Camera cam;
 
     [HideInInspector]
     public int visualTheme;
@@ -81,31 +80,31 @@ public class TextLoading : MonoBehaviour
                         break;
                     //base object
                     case '+':
-                        Instantiate(blankTerrainTile[visualTheme], newPos, transform.rotation);
+                        Instantiate(blankTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
                     //path object
                     case 'M':
-                        Instantiate(MonumentTerrainTile[visualTheme], newPos, transform.rotation);
+                        Instantiate(MonumentTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
                     case 'P':
                         Vector3 playerPos = new Vector3(newPos.x, newPos.y, newPos.z);
-                        Instantiate(playerTerrainTile[visualTheme], playerPos, transform.rotation);
+                        Instantiate(playerTerrainTile[visualTheme], playerPos, Quaternion.identity);
                         break;
                     //path object
                     case 'T':
-                        Instantiate(towerTerainTower[visualTheme], newPos, transform.rotation);
+                        Instantiate(towerTerainTower[visualTheme], newPos, Quaternion.identity);
                         break;
                     //path object
                     case 'X':
-                        Instantiate(enemySpawnTerrainTile[visualTheme], newPos, transform.rotation);
+                        Instantiate(enemySpawnTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
                     //path object
                     case 'F':
-                        Instantiate(freezeObjectTerrainTile[visualTheme], newPos, transform.rotation);
+                        Instantiate(freezeObjectTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
                     //path object
                     case '-':
-                        Instantiate(pathTerrainTile[visualTheme], newPos, transform.rotation);
+                        Instantiate(pathTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
                     //empty space
                     case ' ':
@@ -113,7 +112,5 @@ public class TextLoading : MonoBehaviour
                 }
             }
         }
-        cam.transform.position = camStartPos;
-        cam.transform.eulerAngles = new Vector3(90, 0, 0);
     }
 }
