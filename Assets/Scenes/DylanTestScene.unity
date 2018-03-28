@@ -459,11 +459,11 @@ MonoBehaviour:
   blankTerrainTile:
   - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
   MonumentTerrainTile:
-  - {fileID: 1156093961693682, guid: df576beee5451a14a912857bd4570449, type: 2}
+  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
   playerTerrainTile:
   - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
   towerTerainTower:
-  - {fileID: 1399519970551408, guid: 3a2bd25702a5c60488830ea91b6cf8d1, type: 2}
+  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
   pathTerrainTile:
   - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
   enemySpawnTerrainTile:
