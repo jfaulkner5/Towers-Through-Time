@@ -83,7 +83,7 @@ public class TextLoading : MonoBehaviour
                         Instantiate(MonumentTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
                     case 'P':
-                        Vector3 playerPos = new Vector3(newPos.x, newPos.y + 1, newPos.z);
+                        Vector3 playerPos = new Vector3(newPos.x, newPos.y, newPos.z);
                         Instantiate(playerTerrainTile[visualTheme], playerPos, transform.rotation);
                         break;
                     //path object
