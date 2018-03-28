@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using UnityEngine.AI;
 
 public class TextLoading : MonoBehaviour
 {
@@ -27,6 +28,14 @@ public class TextLoading : MonoBehaviour
     {
         ReadFile();
         LoadLevel();
+        LoadNavMesh();
+    }
+
+    public NavMeshSurface surface;
+
+    void LoadNavMesh()
+    {
+        surface.BuildNavMesh();
     }
 
     void ReadFile()
@@ -101,10 +110,5 @@ public class TextLoading : MonoBehaviour
         }
         cam.transform.position = camStartPos;
         cam.transform.eulerAngles = new Vector3(90, 0, 0);
-    }
-
-    void SetVisuals(int visualStyle)
-    {
-
     }
 }
