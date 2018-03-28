@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SAE.WaveManagerTool;
 
 public class SPawn : MonoBehaviour {
 
@@ -12,7 +13,7 @@ public class SPawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+
 	}
     
     void Method()

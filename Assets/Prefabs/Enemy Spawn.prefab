@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33864758660190944}
   - component: {fileID: 65534422976648184}
   - component: {fileID: 23473239348026110}
+  - component: {fileID: 114198515324517116}
   m_Layer: 8
   m_Name: Enemy Spawn
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,3 +96,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114198515324517116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1494491926193744}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9aab5a18236a82a45a91c2eb356d0b0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnEnabled: 1
+  maxSpawnsLeft: 0

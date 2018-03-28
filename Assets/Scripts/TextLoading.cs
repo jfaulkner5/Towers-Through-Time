@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
+using SAE.WaveManagerTool;
 using UnityEngine.AI;
 
 public class TextLoading : MonoBehaviour
@@ -24,11 +25,15 @@ public class TextLoading : MonoBehaviour
     public GameObject[] enemySpawnTerrainTile;
     public GameObject[] freezeObjectTerrainTile;
 
+    WaveManager waveManager;
+
     private void Start()
     {
+        waveManager = GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>();
         ReadFile();
         LoadLevel();
         LoadNavMesh();
+        waveManager.Initialize();
     }
 
     public NavMeshSurface surface;
