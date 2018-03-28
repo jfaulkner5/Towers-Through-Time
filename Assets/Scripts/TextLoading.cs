@@ -8,11 +8,17 @@ public class TextLoading : MonoBehaviour
     string loadedFile = string.Empty;
 
     public Vector3 camStartPos;
-    public GameObject[] objectsToLoad;
     public float sideLength;
     Vector3 newPos = Vector3.zero;
     public Camera cam;
-    public GameObject player;
+
+    public GameObject blankTerrainTile;
+    public GameObject MonumentTerrainTile;
+    public GameObject playerTerrainTile;
+    public GameObject towerTerainTower;
+    public GameObject pathTerrainTile;
+    public GameObject enemySpawnTerrainTile;
+    public GameObject freezeObjectTerrainTile;
 
     private void Start()
     {
@@ -57,17 +63,30 @@ public class TextLoading : MonoBehaviour
                         newPos = new Vector3(0, 0, newPos.z + sideLength);
                         break;
                     //base object
-                    case '|':
-                        Instantiate(objectsToLoad[0], newPos, transform.rotation);
+                    case 'M':
+                        Instantiate(blankTerrainTile, newPos, transform.rotation);
                         break;
                     //path object
                     case '+':
-                        Instantiate(objectsToLoad[1], newPos, transform.rotation);
+                        Instantiate(MonumentTerrainTile, newPos, transform.rotation);
                         break;
                     case 'P':
                         Vector3 playerPos = new Vector3(newPos.x, newPos.y + 1, newPos.z);
-                        Instantiate(player, playerPos, transform.rotation);
+                        Instantiate(playerTerrainTile, playerPos, transform.rotation);
                         break;
+                    //path object
+                    case 'T':
+                        Instantiate(towerTerainTower, newPos, transform.rotation);
+                        break;
+                    //path object
+                    case 'X':
+                        Instantiate(enemySpawnTerrainTile, newPos, transform.rotation);
+                        break;
+                    //path object
+                    case 'F':
+                        Instantiate(freezeObjectTerrainTile, newPos, transform.rotation);
+                        break;
+
                     //empty space
                     case ' ':
                         break;
