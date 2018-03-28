@@ -12,13 +12,16 @@ public class TextLoading : MonoBehaviour
     Vector3 newPos = Vector3.zero;
     public Camera cam;
 
-    public GameObject blankTerrainTile;
-    public GameObject MonumentTerrainTile;
-    public GameObject playerTerrainTile;
-    public GameObject towerTerainTower;
-    public GameObject pathTerrainTile;
-    public GameObject enemySpawnTerrainTile;
-    public GameObject freezeObjectTerrainTile;
+    [HideInInspector]
+    public int visualTheme;
+
+    public GameObject[] blankTerrainTile;
+    public GameObject[] MonumentTerrainTile;
+    public GameObject[] playerTerrainTile;
+    public GameObject[] towerTerainTower;
+    public GameObject[] pathTerrainTile;
+    public GameObject[] enemySpawnTerrainTile;
+    public GameObject[] freezeObjectTerrainTile;
 
     private void Start()
     {
@@ -43,13 +46,13 @@ public class TextLoading : MonoBehaviour
             switch (loadedFile[0])
             {
                 case '1':
-                    SetVisuals(0);
+                    visualTheme = 0;
                     break;
                 case '2':
-                    SetVisuals(1);
+                    visualTheme = 1;
                     break;
                 case '3':
-                    SetVisuals(2);
+                    visualTheme = 2;
                     break;
             }
 
@@ -64,27 +67,27 @@ public class TextLoading : MonoBehaviour
                         break;
                     //base object
                     case 'M':
-                        Instantiate(blankTerrainTile, newPos, transform.rotation);
+                        Instantiate(blankTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
                     //path object
                     case '+':
-                        Instantiate(MonumentTerrainTile, newPos, transform.rotation);
+                        Instantiate(MonumentTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
                     case 'P':
                         Vector3 playerPos = new Vector3(newPos.x, newPos.y + 1, newPos.z);
-                        Instantiate(playerTerrainTile, playerPos, transform.rotation);
+                        Instantiate(playerTerrainTile[visualTheme], playerPos, transform.rotation);
                         break;
                     //path object
                     case 'T':
-                        Instantiate(towerTerainTower, newPos, transform.rotation);
+                        Instantiate(towerTerainTower[visualTheme], newPos, transform.rotation);
                         break;
                     //path object
                     case 'X':
-                        Instantiate(enemySpawnTerrainTile, newPos, transform.rotation);
+                        Instantiate(enemySpawnTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
                     //path object
                     case 'F':
-                        Instantiate(freezeObjectTerrainTile, newPos, transform.rotation);
+                        Instantiate(freezeObjectTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
 
                     //empty space
