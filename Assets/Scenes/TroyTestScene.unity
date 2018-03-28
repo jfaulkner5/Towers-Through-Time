@@ -313,17 +313,18 @@ MonoBehaviour:
   camStartPos: {x: 0, y: 0, z: 0}
   sideLength: 5
   cam: {fileID: 621662174}
-  blankTerrainTile: {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5,
-    type: 2}
-  MonumentTerrainTile: {fileID: 1156093961693682, guid: df576beee5451a14a912857bd4570449,
-    type: 2}
-  playerTerrainTile: {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5,
-    type: 2}
-  towerTerainTower: {fileID: 1399519970551408, guid: 3a2bd25702a5c60488830ea91b6cf8d1,
-    type: 2}
-  pathTerrainTile: {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363,
-    type: 2}
-  enemySpawnTerrainTile: {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e,
-    type: 2}
-  freezeObjectTerrainTile: {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a,
-    type: 2}
+  visualTheme: 0
+  blankTerrainTile:
+  - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
+  MonumentTerrainTile:
+  - {fileID: 1156093961693682, guid: df576beee5451a14a912857bd4570449, type: 2}
+  playerTerrainTile:
+  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
+  towerTerainTower:
+  - {fileID: 1399519970551408, guid: 3a2bd25702a5c60488830ea91b6cf8d1, type: 2}
+  pathTerrainTile:
+  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
+  enemySpawnTerrainTile:
+  - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
+  freezeObjectTerrainTile:
+  - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}

@@ -66,11 +66,11 @@ public class TextLoading : MonoBehaviour
                         newPos = new Vector3(0, 0, newPos.z + sideLength);
                         break;
                     //base object
-                    case 'M':
+                    case '+':
                         Instantiate(blankTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
                     //path object
-                    case '+':
+                    case 'M':
                         Instantiate(MonumentTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
                     case 'P':
@@ -89,7 +89,10 @@ public class TextLoading : MonoBehaviour
                     case 'F':
                         Instantiate(freezeObjectTerrainTile[visualTheme], newPos, transform.rotation);
                         break;
-
+                    //path object
+                    case '-':
+                        Instantiate(pathTerrainTile[visualTheme], newPos, transform.rotation);
+                        break;
                     //empty space
                     case ' ':
                         break;
