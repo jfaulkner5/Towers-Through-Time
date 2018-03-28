@@ -5,6 +5,12 @@ using UnityEngine;
 public class GameManager : MonoBehaviour {
 
     public int currentLevel;
+    public float totalLevels;
+
+
+    public Dictionary<float, bool> levelsBeat = new Dictionary<float, bool>();
+
+
 
     public static GameManager instance;
 
@@ -19,6 +25,11 @@ public class GameManager : MonoBehaviour {
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+        }
+
+        for (int index = 1; index < totalLevels + 1; index++)
+        {
+            instance.levelsBeat.Add(index, false);
         }
     }
 
