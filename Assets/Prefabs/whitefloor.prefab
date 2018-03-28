@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 33968304192647048}
   - component: {fileID: 65055102003419430}
   - component: {fileID: 23840937074499986}
-  m_Layer: 9
-  m_Name: Cube 1
+  m_Layer: 8
+  m_Name: whitefloor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 31a0fd0ec4e9efb44919793fe3c46236, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
