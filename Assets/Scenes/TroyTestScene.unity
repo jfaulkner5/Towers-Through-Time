@@ -139,7 +139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff58ee71dd817ca4fbbd81ee193f9c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevel: 2
+  currentLevel: 6
 --- !u!4 &165117947
 Transform:
   m_ObjectHideFlags: 0
@@ -228,7 +228,6 @@ GameObject:
   - component: {fileID: 621662175}
   - component: {fileID: 621662174}
   - component: {fileID: 621662173}
-  - component: {fileID: 621662172}
   - component: {fileID: 621662176}
   m_Layer: 0
   m_Name: Main Camera
@@ -237,13 +236,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &621662172
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 621662171}
-  m_Enabled: 1
 --- !u!124 &621662173
 Behaviour:
   m_ObjectHideFlags: 0
@@ -313,17 +305,18 @@ MonoBehaviour:
   camStartPos: {x: 0, y: 0, z: 0}
   sideLength: 5
   cam: {fileID: 621662174}
-  blankTerrainTile: {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5,
-    type: 2}
-  MonumentTerrainTile: {fileID: 1156093961693682, guid: df576beee5451a14a912857bd4570449,
-    type: 2}
-  playerTerrainTile: {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5,
-    type: 2}
-  towerTerainTower: {fileID: 1399519970551408, guid: 3a2bd25702a5c60488830ea91b6cf8d1,
-    type: 2}
-  pathTerrainTile: {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363,
-    type: 2}
-  enemySpawnTerrainTile: {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e,
-    type: 2}
-  freezeObjectTerrainTile: {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a,
-    type: 2}
+  visualTheme: 0
+  blankTerrainTile:
+  - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
+  MonumentTerrainTile:
+  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
+  playerTerrainTile:
+  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
+  towerTerainTower:
+  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
+  pathTerrainTile:
+  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
+  enemySpawnTerrainTile:
+  - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
+  freezeObjectTerrainTile:
+  - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
