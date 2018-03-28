@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<objects serializationModel="Studio.01.09.00">
+<objects serializationModel="Studio.01.10.00">
     <object class="AudioFile" id="{7ab3f4c8-2fcc-4cc6-b248-59f119ff2857}">
         <property name="assetPath">
             <value>Place holder tower power up.wav</value>

@@ -1,3 +1,4 @@
+{7fdf6168-22bc-4f74-85f3-f66f875af1a7} event:/Tower/TowerControl
 {933acd60-0ac2-4e7c-a766-37da6dd5e269} event:/walk
 {59e23aeb-90cb-4dbf-9f87-d3ca801c4f1d} bus:/
 {39858d1b-87d8-405a-b135-bae9faa20bf8} bus:/Reverb
