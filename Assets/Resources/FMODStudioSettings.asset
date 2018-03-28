@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: 
-  SourceProjectPathUnformatted: 
-  SourceBankPathUnformatted: 
+  sourceProjectPath: FMODPROJECT\blockout_audio\blockout_audio.fspro
+  SourceProjectPathUnformatted: FMODPROJECT\blockout_audio\blockout_audio.fspro
+  SourceBankPathUnformatted: FMODPROJECT\blockout_audio\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
