@@ -16,9 +16,12 @@ MonoBehaviour:
   - {fileID: 114604582708020094}
   EditorEvents:
   - {fileID: 114598258996828576}
+  - {fileID: 114307008022711270}
+  - {fileID: 114333771294773040}
+  - {fileID: 114861018980382474}
   MasterBankRef: {fileID: 114604582708020094}
   StringsBankRef: {fileID: 114678418567529374}
-  stringsBankWriteTime: 636578642116462374
+  stringsBankWriteTime: 636578680603326225
   cacheVersion: 2
 --- !u!114 &114063152545309700
 MonoBehaviour:
@@ -72,6 +75,50 @@ MonoBehaviour:
   - Name: Desktop
     Value: 680
   Exists: 1
+--- !u!114 &114307008022711270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Power Down
+  guid: 59d843d12867784086306d3706f949f4
+  Banks:
+  - {fileID: 114604582708020094}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 745
+--- !u!114 &114333771294773040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Fire
+  guid: 68c8c073d16c684e9f2315a88b3d805e
+  Banks:
+  - {fileID: 114604582708020094}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 737
 --- !u!114 &114334547709116906
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,11 +172,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Master
     Bank.bank
-  lastModified: 636578642116442373
+  lastModified: 636578680603306189
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 14912
+    Value: 35488
   Exists: 1
 --- !u!114 &114662563852553992
 MonoBehaviour:
@@ -161,11 +208,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636578642116462374
+  lastModified: 636578680603326225
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 714
+    Value: 866
   Exists: 1
 --- !u!114 &114696518248846008
 MonoBehaviour:
@@ -245,6 +292,28 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+--- !u!114 &114861018980382474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Power Up
+  guid: f4564d054f3a2942b08001a5ae11708c
+  Banks:
+  - {fileID: 114604582708020094}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 745
 --- !u!114 &114900800977063830
 MonoBehaviour:
   m_ObjectHideFlags: 0
