@@ -48,18 +48,20 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        bool test;
+        //WHY DOESNT THIS WORK
+        EventCore.PowerUp += TowerBoot();
+    }
+
 
     //tower related audio
-    public void TowerBoot(bool powerState)
+    public void TowerBoot()
     {
-        if (powerState)
-        {
-            tempstring = towerPowerUp;
-        }
-        else
-        {
+
             tempstring = towerPowerDown;
-        }
+
         towerOneShot = FMODUnity.RuntimeManager.CreateInstance(tempstring);
         towerOneShot.start();
     }

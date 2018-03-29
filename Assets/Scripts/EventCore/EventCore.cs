@@ -23,6 +23,26 @@ public class EventCore : MonoBehaviour
         }
     }
 
+    //Game Over
+    public delegate void GameCore();
+
+    public static event GameCore PyramidAttack, PyramidDamage, PyramidRepair;
+
+
+    //Audio events
+    public delegate void AudioTrigger();
+        
+        //player audio
+    public static event AudioTrigger Walking;
+        //Tower Audio
+    public static event AudioTrigger PowerUp, PowerDown, Shoot;
+
+    //Enemy Spawner stuff
+    public delegate void EnemySpawner();
+
+    public static event EnemySpawner AttackPyramid, Death, AttackSound, DeathSound;
+
+
 
 
 
@@ -51,6 +71,39 @@ public class EventCore : MonoBehaviour
     void Update()
     {
 
+    }
+
+    /// <summary>
+    /// This Section is for the event functions that are based on audio and talk to FMOD
+    /// </summary>
+    /// 
+
+    //player walking audio trigger
+
+    void AudioCall()
+    {
+        if (Walking != null)
+            Walking();
+    }
+
+    //Tower Audio.
+
+    void TowerPower(AudioTrigger audioTrigger)
+    {
+        if(audioTrigger != null)
+        {
+            //[HELP] will this work?
+            audioTrigger();
+        }
+    }
+
+    void Pyramid(AudioTrigger audioTrigger)
+    {
+        if (audioTrigger != null)
+        {
+            //[HELP] will this work?
+            audioTrigger();
+        }
     }
 
 }
