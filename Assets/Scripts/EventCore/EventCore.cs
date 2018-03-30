@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EventCore : MonoBehaviour
 {
@@ -23,24 +24,34 @@ public class EventCore : MonoBehaviour
         }
     }
 
-    //Game Over
-    public delegate void GameCore();
+    ////Game Over
+    //public delegate void GameCore();
 
-    public static event GameCore PyramidAttack, PyramidDamage, PyramidRepair;
+    //public static event GameCore PyramidAttack, PyramidDamage, PyramidRepair;
+
+    public UnityEvent testEvent;
+    public UnityEvent externalEventTest;
 
 
     //Audio events
-    public delegate void AudioTrigger();
-        
-        //player audio
-    public static event AudioTrigger Walking;
-        //Tower Audio
-    public static event AudioTrigger PowerUp, PowerDown, Shoot;
+    #region
+
+    public UnityEvent playerWalk;
+
+    public UnityEvent towerOn, towerOff, towerFire;
+
+    public UnityEvent pyramidHit, pyramidDestroy, pyramidHeal;
+
+    public UnityEvent enemySpawnAudio, enemyDeathAudio, enemyWalkAudio, enemyAttackAudio;
+
+    #endregion
 
     //Enemy Spawner stuff
-    public delegate void EnemySpawner();
+    #region
 
-    public static event EnemySpawner AttackPyramid, Death, AttackSound, DeathSound;
+    public UnityEvent enemySpawn, enemyDeath;
+
+    #endregion
 
 
 
@@ -65,6 +76,13 @@ public class EventCore : MonoBehaviour
     void Start()
     {
 
+        //[NOTE] is this good practise for events to nullcheck
+
+        //if (testEvent == null)
+        //{
+        //    testEvent = new UnityEvent();
+        //}
+
     }
 
     // Update is called once per frame
@@ -73,37 +91,48 @@ public class EventCore : MonoBehaviour
 
     }
 
+
+
     /// <summary>
+    /// [FMOD EVENT TRIGGERS]
     /// This Section is for the event functions that are based on audio and talk to FMOD
     /// </summary>
-    /// 
 
+
+    #region
     //player walking audio trigger
 
-    void AudioCall()
-    {
-        if (Walking != null)
-            Walking();
-    }
+    //void AudioCall()
+    //{
+    //    if (Walking != null)
+    //        Walking();
+    //}
 
     //Tower Audio.
 
-    void TowerPower(AudioTrigger audioTrigger)
-    {
-        if(audioTrigger != null)
-        {
-            //[HELP] will this work?
-            audioTrigger();
-        }
-    }
+    //void TowerPower()
+    //{
+    //    if (audioTrigger != null)
+    //    {
+    //        //[HELP] will this work?
+    //        audioTrigger();
+    //    }
+    //}
 
-    void Pyramid(AudioTrigger audioTrigger)
+    //void Pyramid()
+    //{
+    //    if (audioTrigger != null)
+    //    {
+    //        //[HELP] will this work?
+    //        audioTrigger();
+    //    }
+    //}
+
+    #endregion
+
+    void TestCall()
     {
-        if (audioTrigger != null)
-        {
-            //[HELP] will this work?
-            audioTrigger();
-        }
+        AudioManager.Instance.TestFunc();
     }
 
 }

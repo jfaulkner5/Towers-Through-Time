@@ -2,13 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//[HELP] are other scripts dependant on the events system if EVENT CORE is an instance.
+//It would appear not.
+//using UnityEngine.Events;
+
 public class AudioManager : MonoBehaviour
 {
+    private static AudioManager _audioManager;
+    public static AudioManager Instance
+    {
+        get
+        {
+            if (_audioManager == null)
+            {
+                _audioManager = FindObjectOfType<AudioManager>();
+
+                if (_audioManager == null)
+                {
+                    Debug.LogError("[user defined error thrown] There is no Delegate Event Core");
+                }
+            }
+            return _audioManager;
+        }
+    }
 
     [FMODUnity.EventRef] public string walkAudio;
-
     [FMODUnity.EventRef] public string towerPowerUp, towerPowerDown, towerShoot;
-
 
     public FMOD.Studio.EventInstance walkPlay;
     public FMOD.Studio.EventInstance towerOneShot, towerFire;
@@ -18,41 +37,38 @@ public class AudioManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        //walkPlay = FMODUnity.RuntimeManager.CreateInstance(walkAudio);
-        //walkPlay.start();
+        AddEvents();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Keypad1))
-        {
-            TowerBoot(true);
-        }
-        if (Input.GetKey(KeyCode.Keypad2))
-        {
-            towerOneShot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        }
+        //if (Input.GetKeyDown(KeyCode.Keypad1))
+        //{
 
-        if(Input.GetKeyDown(KeyCode.Keypad3))
-        {
+        //}
+        //if (Input.GetKey(KeyCode.Keypad2))
+        //{
+        //    towerOneShot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        //}
 
-            TowerFire(true);
+        //if (Input.GetKeyDown(KeyCode.Keypad3))
+        //{
 
-        }
-        if (Input.GetKeyDown(KeyCode.Keypad4))
-        {
+        //    TowerFire(true);
 
-            TowerFire(false);
+        //}
+        //if (Input.GetKeyDown(KeyCode.Keypad4))
+        //{
 
-        }
+        //    TowerFire(false);
+
+        //}
     }
 
-    private void OnDisable()
+    private void AddEvents()
     {
-        bool test;
-        //WHY DOESNT THIS WORK
-        EventCore.PowerUp += TowerBoot();
+        //EventCore.Instance.externalEventTest.AddListener(TestFunc);
     }
 
 
@@ -60,7 +76,7 @@ public class AudioManager : MonoBehaviour
     public void TowerBoot()
     {
 
-            tempstring = towerPowerDown;
+        tempstring = towerPowerDown;
 
         towerOneShot = FMODUnity.RuntimeManager.CreateInstance(tempstring);
         towerOneShot.start();
@@ -76,9 +92,14 @@ public class AudioManager : MonoBehaviour
         else
         {
             towerFire.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-
         }
 
     }
+
+    public void TestFunc()
+    {
+        Debug.Log("Event reached func");
+    }
+
 
 }
