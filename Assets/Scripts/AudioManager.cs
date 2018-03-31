@@ -43,36 +43,17 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Keypad1))
-        //{
 
-        //}
-        //if (Input.GetKey(KeyCode.Keypad2))
-        //{
-        //    towerOneShot.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        //}
-
-        //if (Input.GetKeyDown(KeyCode.Keypad3))
-        //{
-
-        //    TowerFire(true);
-
-        //}
-        //if (Input.GetKeyDown(KeyCode.Keypad4))
-        //{
-
-        //    TowerFire(false);
-
-        //}
     }
 
     private void AddEvents()
     {
-        //EventCore.Instance.externalEventTest.AddListener(TestFunc);
+        EventCore.Instance.externalEventTest.AddListener(TestFunc);
     }
 
 
     //tower related audio
+    #region
     public void TowerBoot()
     {
 
@@ -96,10 +77,12 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    #endregion
+
     public void TestFunc()
     {
         Debug.Log("Event reached func");
     }
 
-
+    
 }
