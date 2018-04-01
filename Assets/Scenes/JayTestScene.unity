@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e52cea7e045ed440b1042fade34049d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkAudio: event:/walk
+  walkAudio: event:/Player/walk
   towerPowerUp: event:/Tower/Power Up
   towerPowerDown: event:/Tower/Power Down
   towerShoot: event:/Tower/Fire

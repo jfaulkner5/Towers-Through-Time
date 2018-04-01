@@ -56,4 +56,7 @@ MonoBehaviour:
     Value: 32
   Plugins: []
   MasterBank: Master Bank
-  Banks: []
+  Banks:
+  - Tower Bank
+  - Player Bank
+  - Enemy

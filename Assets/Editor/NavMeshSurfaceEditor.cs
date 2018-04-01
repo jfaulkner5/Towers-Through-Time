@@ -167,7 +167,7 @@ namespace UnityEditor.AI
                 EditorGUI.indentLevel++;
 
                 EditMode.DoEditModeInspectorModeButton(EditMode.SceneViewEditMode.Collider, "Edit Volume",
-                    EditorGUIUtility.IconContent("EditCollider"), GetBounds, this);
+                    EditorGUIUtility.IconContent("EditCollider"), GetBounds(), this);
                 EditorGUILayout.PropertyField(m_Size);
                 EditorGUILayout.PropertyField(m_Center);
 
