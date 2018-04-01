@@ -24,6 +24,14 @@ public class EventCore : MonoBehaviour
         }
     }
 
+
+
+
+    //ADD NEW EVENTS HERE PLEASE
+    #region
+
+    #endregion
+
     ////Game Over
     //public delegate void GameCore();
 
@@ -52,9 +60,7 @@ public class EventCore : MonoBehaviour
     public UnityEvent enemySpawn, enemyDeath;
 
     #endregion
-
-
-
+    
 
 
     private void Awake()
