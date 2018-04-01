@@ -12,6 +12,9 @@ public class NewBehaviourScript : MonoBehaviour
     #region
     public List<GameObject> enemyList;
     public GameObject[] objs; //temp array to grab every enemy
+
+    public GameObject selectedEnemy;
+
     #endregion
 
     void Start()
@@ -48,16 +51,11 @@ public class NewBehaviourScript : MonoBehaviour
         EventCore.Instance.towerFire.Invoke();
     }
 
-    //[HACK] should only be called every time they fire 
-    //[TODO] create seperate manager to pass to towers
+
     void EnemySelect()
     {
-        objs = GameObject.FindGameObjectsWithTag("Enemy");
-
-        foreach (GameObject Enemy in objs)
-        {
-            enemyList.Add(Enemy);
-        }
+        //should return a game object
+        selectedEnemy = GameManager.instance.EnemyToAttack(this.gameObject);
     }
 }
 
