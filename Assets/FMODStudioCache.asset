@@ -13,15 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 114678418567529374}
-  - {fileID: 114604582708020094}
+  - {fileID: 114836415626961794}
   EditorEvents:
   - {fileID: 114598258996828576}
   - {fileID: 114307008022711270}
   - {fileID: 114333771294773040}
   - {fileID: 114861018980382474}
-  MasterBankRef: {fileID: 114604582708020094}
+  MasterBankRef: {fileID: 114836415626961794}
   StringsBankRef: {fileID: 114678418567529374}
-  stringsBankWriteTime: 636578692383439492
+  stringsBankWriteTime: 636580944404860838
   cacheVersion: 2
 --- !u!114 &114063152545309700
 MonoBehaviour:
@@ -89,7 +89,7 @@ MonoBehaviour:
   Path: event:/Tower/Power Down
   guid: 59d843d12867784086306d3706f949f4
   Banks:
-  - {fileID: 114604582708020094}
+  - {fileID: 114836415626961794}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: event:/Tower/Fire
   guid: 68c8c073d16c684e9f2315a88b3d805e
   Banks:
-  - {fileID: 114604582708020094}
+  - {fileID: 114836415626961794}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -151,7 +151,7 @@ MonoBehaviour:
   Path: event:/walk
   guid: 60cd3a93c20a7c4ea76637da6dd5e269
   Banks:
-  - {fileID: 114604582708020094}
+  - {fileID: 114836415626961794}
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -208,7 +208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636578692383439492
+  lastModified: 636580944404860838
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -277,6 +277,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 14592
   Exists: 1
+--- !u!114 &114836415626961794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636580944404850800
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 35488
+  Exists: 1
 --- !u!114 &114840124120225282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -306,7 +325,7 @@ MonoBehaviour:
   Path: event:/Tower/Power Up
   guid: f4564d054f3a2942b08001a5ae11708c
   Banks:
-  - {fileID: 114604582708020094}
+  - {fileID: 114836415626961794}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
