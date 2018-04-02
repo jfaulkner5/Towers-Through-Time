@@ -10,8 +10,6 @@ public class TowerControl : MonoBehaviour
     //Possibly temp data
     // Use this for initialization
     #region
-    public List<GameObject> enemyList;
-    public GameObject[] objs; //temp array to grab every enemy
 
     public GameObject selectedEnemy;
 
@@ -19,7 +17,13 @@ public class TowerControl : MonoBehaviour
     public float timeToRepair;
     float currentRepairTime;
 
+    //Enemy Selector
 
+    private GameObject[] objs; //temp array for obj grabbing
+    public List<GameObject> enemyList;
+
+    public GameObject closestEnemy;
+    public Enemy _enemyScript;
 
     #endregion
 
@@ -60,13 +64,19 @@ public class TowerControl : MonoBehaviour
     {
         //Audio Call
         EventCore.Instance.towerFire.Invoke();
+
+        EnemySelect();
+
+        EventCore.Instance.enemyToKill.Invoke(selectedEnemy);
+
+
     }
 
 
     void EnemySelect()
     {
         //should return a game object
-        selectedEnemy = GameManager.instance.EnemyToAttack(gameObject);
+        selectedEnemy = EnemyToAttack(gameObject);
     }
 
     public void Repair(out bool isRepairing)
@@ -86,6 +96,35 @@ public class TowerControl : MonoBehaviour
             }
             isRepairing = true;
             
+        }
+    }
+
+    public GameObject EnemyToAttack(GameObject towerCalling)
+    {
+        //call function the create list of current enemies
+        EnemyList();
+
+        foreach (GameObject enemy in enemyList)
+        {
+            if (closestEnemy == null)
+            {
+                closestEnemy = this.gameObject;
+            }
+            else if (Vector3.Distance(towerCalling.transform.position, enemy.transform.position) <= Vector3.Distance(closestEnemy.transform.position, towerCalling.transform.position))
+            {
+                closestEnemy = enemy;
+            }
+        }
+        return closestEnemy;
+    }
+
+    void EnemyList()
+    {
+        objs = GameObject.FindGameObjectsWithTag("Enemy");
+
+        foreach (GameObject Enemy in objs)
+        {
+            enemyList.Add(Enemy);
         }
     }
 
