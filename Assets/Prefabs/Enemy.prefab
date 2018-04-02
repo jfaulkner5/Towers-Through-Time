@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 136588817003361744}
   - component: {fileID: 23246912660379220}
   - component: {fileID: 114534727087172338}
+  - component: {fileID: 114761599848776810}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -52,7 +53,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -68,7 +68,6 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -98,6 +97,21 @@ MonoBehaviour:
   target: {fileID: 0}
   agent: {fileID: 0}
   speed: 0
+--- !u!114 &114761599848776810
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1714348390777624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c080c94f9dda819499afa01e7004642f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monument: {fileID: 0}
+  enemyHeight: 1.15
+  enemyDamage: 1
+  distToMonumentToDie: 1
 --- !u!136 &136588817003361744
 CapsuleCollider:
   m_ObjectHideFlags: 1
