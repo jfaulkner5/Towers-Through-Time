@@ -39,7 +39,7 @@ public class EventCore : MonoBehaviour
 
     public UnityEvent testEvent;
     public UnityEvent externalEventTest;
-
+ 
 
     //Audio events
     #region
@@ -60,7 +60,14 @@ public class EventCore : MonoBehaviour
     public UnityEvent enemySpawn, enemyDeath;
 
     #endregion
-    
+
+    //Tower stuff
+    #region
+
+    public UnityEvent<GameObject> enemyToKill;
+
+    #endregion
+
 
 
     private void Awake()
