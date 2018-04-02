@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour {
+public class Enemy : MonoBehaviour
+{
 
     public Transform monument;
 
@@ -18,11 +19,14 @@ public class Enemy : MonoBehaviour {
     {
         monument = Monument.instance.transform;
         monumentPos = new Vector3(monument.transform.position.x, monument.transform.position.y + enemyHeight, monument.transform.position.z);
+
+        EventCore.Instance.enemyToKill.AddListener(DeathOrder);
+
     }
 
     private void Update()
     {
-        distToMonument =  Vector3.Distance(transform.position, monumentPos);
+        distToMonument = Vector3.Distance(transform.position, monumentPos);
         if (distToMonument <= distToMonumentToDie)
         {
             Monument.instance.TakeDamage(enemyDamage);
@@ -35,5 +39,13 @@ public class Enemy : MonoBehaviour {
     {
         //DO ALL DEATH EFFECTS, ETC HERE
         Destroy(gameObject);
+    }
+
+    public void DeathOrder(GameObject selectedEnemy)
+    {
+        if (selectedEnemy = this.gameObject)
+        {
+            Die();
+        }
     }
 }
