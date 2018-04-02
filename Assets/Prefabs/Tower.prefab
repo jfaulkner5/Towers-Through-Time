@@ -86,9 +86,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4099049583909218}
+  - component: {fileID: 114807230928887876}
   m_Layer: 0
   m_Name: Tower
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -320,3 +321,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114807230928887876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1733704060679878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6709aca686dfbc140bf50ea5d96a1111, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyList: []
+  objs: []
+  selectedEnemy: {fileID: 0}
+  timeToRepair: 2

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TowerControl : MonoBehaviour
 {
 
 
@@ -15,11 +15,18 @@ public class NewBehaviourScript : MonoBehaviour
 
     public GameObject selectedEnemy;
 
+    bool isActive = false;
+    public float timeToRepair;
+    float currentRepairTime;
+
+
+
     #endregion
 
     void Start()
     {
         enemyList = new List<GameObject>();
+        isActive = false;
     }
 
     // Update is called once per frame
@@ -33,16 +40,20 @@ public class NewBehaviourScript : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
     }
 
-    void PowerOn()
+    public void PowerOn()
     {
         //Audio Call event
         EventCore.Instance.towerOn.Invoke();
+        print("POWER ON FOR " + gameObject.name);
+        isActive = true;
+
     }
 
-    void PowerOff()
+    public void PowerOff()
     {
         //Audio Call
         EventCore.Instance.towerOff.Invoke();
+        isActive = false;
     }
 
     public void TowerFire()
@@ -55,8 +66,29 @@ public class NewBehaviourScript : MonoBehaviour
     void EnemySelect()
     {
         //should return a game object
-        selectedEnemy = GameManager.instance.EnemyToAttack(this.gameObject);
+        selectedEnemy = GameManager.instance.EnemyToAttack(gameObject);
     }
+
+    public void Repair(out bool isRepairing)
+    {
+        if (isActive)
+        {
+            isRepairing = false;
+            return;
+        }
+        else
+        {
+            print("REPAIRING " + gameObject.name);
+            currentRepairTime += Time.deltaTime;
+            if (currentRepairTime >= timeToRepair)
+            {
+                PowerOn();
+            }
+            isRepairing = true;
+            
+        }
+    }
+
 }
 
 

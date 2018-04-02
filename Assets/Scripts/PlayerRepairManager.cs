@@ -8,22 +8,25 @@ public class PlayerRepairManager : MonoBehaviour {
 [Tooltip("The distance the player must be to start repairing a tower")]
     public float distToRepair;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         Towers = GameObject.FindGameObjectsWithTag("Tower");
-
-        
-
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        bool willRepair;
         foreach (GameObject tower in Towers)
         {
             float distance = Vector3.Distance(transform.position, tower.transform.position);
             if (distance <= distToRepair)
             {
                 //TODO make tower repair happen
+                tower.GetComponent<TowerControl>().Repair(out willRepair);
+                if (willRepair == true)
+                {
+                    break;
+                }
             }
         }
 	}
