@@ -45,7 +45,15 @@ public class TextLoading : MonoBehaviour
 
     void ReadFile()
     {
-        string path = Path.Combine(Application.dataPath, "LevelASCIIMaps\\Level" + GameManager.instance.currentLevel + ".txt");
+        string path;
+        if (Application.isEditor)
+        {
+            path = Path.Combine(Application.streamingAssetsPath, "LevelASCIIMaps/Level" + GameManager.instance.currentLevel + ".txt");
+        }
+        else
+        {
+            path = Path.Combine(Application.streamingAssetsPath, "LevelASCIIMaps/Level" + GameManager.instance.currentLevel + ".txt");
+        }
 
         //Read the text from directly from the file.txt file
         StreamReader reader = new StreamReader(path);
