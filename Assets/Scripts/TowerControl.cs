@@ -24,6 +24,9 @@ public class TowerControl : MonoBehaviour
 
     private GameObject[] objs; //temp array for obj grabbing
     public List<GameObject> enemyList;
+    public ParticleSystem powerOnParticle;
+    public ParticleSystem powerOffParticle;
+
 
     GameObject closestEnemy;
 
@@ -66,6 +69,7 @@ public class TowerControl : MonoBehaviour
     public void PowerOn()
     {
         //Audio Call event
+        powerOnParticle.Play();
         EventCore.Instance.towerOn.Invoke();
         print("POWER ON FOR " + gameObject.name);
         isActive = true;
@@ -75,6 +79,7 @@ public class TowerControl : MonoBehaviour
 
     public void PowerOff()
     {
+        powerOffParticle.Play();
         print("POWER OFF FOR " + gameObject.name);
         //Audio Call
         EventCore.Instance.towerOff.Invoke();
@@ -92,7 +97,7 @@ public class TowerControl : MonoBehaviour
         {
             hasFired = true;
             StartCoroutine(TowerFireDelay(towerFireCooldown));
-            GameObject projectile = Instantiate(projectiles[GameManager.instance.currentLevel],transform);
+            GameObject projectile = Instantiate(projectiles[GameManager.instance.visualTheme],transform);
             projectile.GetComponent<ProjectileMovement>().Initialize(selectedEnemy.transform);
         }
     }

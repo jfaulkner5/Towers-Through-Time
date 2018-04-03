@@ -378,6 +378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLevel: 15
   totalLevels: 20
+  visualTheme: 0
 --- !u!4 &738054582
 Transform:
   m_ObjectHideFlags: 0
