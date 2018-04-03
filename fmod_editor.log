@@ -8,7 +8,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000053386008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000000461AFF88 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -16,8 +16,72 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 11424
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 2560
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005C58F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCC6D6E310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCC6D6E2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCC6D6E3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCC6D6E490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046313BE8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Place holder Player Movement', format=2, channels=1, frequency=48000, lengthbytes=1056, lengthpcm=4127, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.148438.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 3200
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005C58F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCC6D6E310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCC6D6E2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCC6D6E3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCC6D6E490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046317768
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Place holder tower power up', format=2, channels=1, frequency=48000, lengthbytes=6400, lengthpcm=35800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.507813.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 3200
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005C58F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCC6D6E310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCC6D6E2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCC6D6E3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCC6D6E490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046316448
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Place holder tower power down', format=2, channels=1, frequency=48000, lengthbytes=6304, lengthpcm=35800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.750000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 17888
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 3200
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000005C58F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFCC6D6E310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFCC6D6E2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFCC6D6E3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFCC6D6E490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046315128
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Place holder tower shoot', format=2, channels=1, frequency=48000, lengthbytes=4928, lengthpcm=35393, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.312500.
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
@@ -25,10 +89,21 @@
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
 [LOG] Manager::readBank                        : fileversion = 100, compatVersion = 99 (oldest = 44, newest = 100)
+[LOG] SoundI::release                          :  (0000000013FF5658)
+[LOG] SoundI::release                          :     Place holder tower power up (000000004643F008)
+[LOG] SoundI::release                          :  (0000000013FF6D58)
+[LOG] SoundI::release                          :     Place holder tower power down (000000004643FB68)
+[LOG] SoundI::release                          :  (0000000013FF5C18)
+[LOG] SoundI::release                          :     Place holder tower shoot (000000004643F688)
+[LOG] SoundI::release                          :  (0000000013FF64B8)
+[LOG] SoundI::release                          :     Place holder Player Movement (00000000144F06E8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.

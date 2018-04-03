@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 114328571280933428}
   MasterBankRef: {fileID: 114840701039897822}
   StringsBankRef: {fileID: 114678418567529374}
-  stringsBankWriteTime: 636584275948341900
+  stringsBankWriteTime: 636584320347085068
   cacheVersion: 2
 --- !u!114 &114021851751821892
 MonoBehaviour:
@@ -49,7 +49,7 @@ MonoBehaviour:
   - {fileID: 114777815325682202}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
   - {fileID: 114883658020919418}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
@@ -365,7 +365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636584275948321820
+  lastModified: 636584320347285597
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636584275948341900
+  lastModified: 636584320347085068
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -734,11 +734,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
     Bank.bank
-  lastModified: 636584275948341900
+  lastModified: 636584320347471091
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 14112
+    Value: 13984
   Exists: 1
 --- !u!114 &114836415626961794
 MonoBehaviour:
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
     Bank.bank
-  lastModified: 636584275948331842
+  lastModified: 636584320347059988
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -883,11 +883,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
     Bank.bank
-  lastModified: 636584275948351967
+  lastModified: 636584320347661581
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 21216
+    Value: 21088
   Exists: 1
 --- !u!114 &114900800977063830
 MonoBehaviour:
