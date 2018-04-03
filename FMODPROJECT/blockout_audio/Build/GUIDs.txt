@@ -1,16 +1,16 @@
+{e5b01d5d-8b0a-43e4-80a3-89f2384329dc} event:/Enemy/Place holder Enemy death
+{00c0340b-ad4e-4bfa-b138-6658f0eb367a} event:/Event Sounds/Place Holder crappy win sound
+{a0dc6721-d62c-4113-a078-16f52552bbdc} event:/Event Sounds/Place holder freeze time
+{f5548b27-3159-484b-9ec5-ae956dcea529} event:/Event Sounds/Place Holder lose sound
+{d6839078-535c-4351-b015-b210f067474b} event:/Event Sounds/Place4 holder button press
+{df4e74df-854a-4c34-b19d-74ef8dd11562} event:/Player/Place holder Player death
+{933acd60-0ac2-4e7c-a766-37da6dd5e269} event:/Player/walk
 {73c0c868-6cd1-4e68-9f23-15a88b3d805e} event:/Tower/Fire
 {d143d859-6728-4078-8630-6d3706f949f4} event:/Tower/Power Down
 {054d56f4-3a4f-4229-b080-01a5ae11708c} event:/Tower/Power Up
-{e5b01d5d-8b0a-43e4-80a3-89f2384329dc} event:/Enemy/Place holder Enemy death
-{933acd60-0ac2-4e7c-a766-37da6dd5e269} event:/Player/walk
-{df4e74df-854a-4c34-b19d-74ef8dd11562} event:/Player/Place holder Player death
-{00c0340b-ad4e-4bfa-b138-6658f0eb367a} event:/Event Sounds/Place Holder crappy win sound
-{f5548b27-3159-484b-9ec5-ae956dcea529} event:/Event Sounds/Place Holder lose sound
-{a0dc6721-d62c-4113-a078-16f52552bbdc} event:/Event Sounds/Place holder freeze time
-{d6839078-535c-4351-b015-b210f067474b} event:/Event Sounds/Place4 holder button press
 {59e23aeb-90cb-4dbf-9f87-d3ca801c4f1d} bus:/
 {39858d1b-87d8-405a-b135-bae9faa20bf8} bus:/Reverb
-{605fbaad-2991-4e92-8d95-940df6a0b35f} bank:/Master Bank
+{fe544801-ea84-4f3e-baab-880baa09c702} bank:/Enemy
 {a12a3cfb-aecf-4154-a460-c51afeadca88} bank:/Player Bank
 {87462a4a-66f0-4619-bfa2-58c19e3f9e54} bank:/Tower Bank
-{fe544801-ea84-4f3e-baab-880baa09c702} bank:/Enemy
+{605fbaad-2991-4e92-8d95-940df6a0b35f} bank:/Master Bank

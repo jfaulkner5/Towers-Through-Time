@@ -14,5 +14,10 @@ public class PlayerMovement : MonoBehaviour {
         Vector3 moveDir = new Vector3(inputHorizontal, 0, inputVertical);
 
         transform.position += moveDir * Time.deltaTime * speed;
+
+        if(inputHorizontal != 0 || inputVertical != 0)
+        {
+            EventCore.Instance.playerWalk.Invoke();
+        }
     }
 }

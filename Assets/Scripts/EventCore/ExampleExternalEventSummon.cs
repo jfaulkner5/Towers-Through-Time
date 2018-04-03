@@ -16,11 +16,11 @@ public class ExampleExternalEventSummon : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Keypad1))
         {
-            EventCore.Instance.externalEventTest.Invoke();
+            EventCore.Instance.towerFire.Invoke();
         }
         if (Input.GetKey(KeyCode.Keypad2))
         {
-            
+            EventCore.Instance.towerFireStop.Invoke();
         }
         if (Input.GetKeyDown(KeyCode.Keypad3))
         {

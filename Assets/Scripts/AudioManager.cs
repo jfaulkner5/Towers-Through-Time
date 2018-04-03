@@ -51,7 +51,8 @@ public class AudioManager : MonoBehaviour
         //EventCore.Instance.externalEventTest.AddListener(TestFunc);
         EventCore.Instance.towerOn.AddListener(TowerPowerUpAudio);
         EventCore.Instance.towerOff.AddListener(TowerPowerDownAudio);
-        EventCore.Instance.towerFireStop.AddListener(StopFire);
+        EventCore.Instance.towerFire.AddListener(TowerFire);
+        EventCore.Instance.playerWalk.AddListener(PlayerWalk);
     }
 
 
@@ -69,17 +70,18 @@ public class AudioManager : MonoBehaviour
         towerOneShot.start();
     }
 
-    public void TowerFire(bool isFiring)
+    public void TowerFire()
     {
 
-            towerFire = FMODUnity.RuntimeManager.CreateInstance(towerShoot);
-            towerFire.start();
+        towerFire = FMODUnity.RuntimeManager.CreateInstance(towerShoot);
+        towerFire.start();
 
     }
-
-    public void StopFire()
+    
+    public void PlayerWalk()
     {
-        towerFire.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
+        walkPlay = FMODUnity.RuntimeManager.CreateInstance(walkAudio);
+
     }
 
     #endregion
@@ -89,5 +91,5 @@ public class AudioManager : MonoBehaviour
         Debug.Log("Event reached func");
     }
 
-    
+
 }

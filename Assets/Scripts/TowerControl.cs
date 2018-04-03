@@ -88,8 +88,7 @@ public class TowerControl : MonoBehaviour
 
     public void TowerFire()
     {
-        //Audio Call
-        EventCore.Instance.towerFire.Invoke();
+        
 
         EnemySelect();
         if (closestEnemy != null)
@@ -98,6 +97,9 @@ public class TowerControl : MonoBehaviour
             StartCoroutine(TowerFireDelay(towerFireCooldown));
             GameObject projectile = Instantiate(projectiles[GameManager.instance.visualTheme],transform);
             projectile.GetComponent<ProjectileMovement>().Initialize(selectedEnemy.transform);
+
+            //Audio Call
+            EventCore.Instance.towerFire.Invoke();
         }
         EventCore.Instance.towerFireStop.Invoke();
     }
