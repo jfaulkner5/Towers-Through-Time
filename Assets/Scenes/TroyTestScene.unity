@@ -169,6 +169,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  towerFireStop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   pyramidHit:
     m_PersistentCalls:
       m_Calls: []
@@ -530,6 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLevel: 20
   totalLevels: 20
+  visualTheme: 0
 --- !u!4 &1354816466
 Transform:
   m_ObjectHideFlags: 0
