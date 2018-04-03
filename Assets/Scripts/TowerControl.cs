@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class TowerControl : MonoBehaviour
 {
@@ -22,8 +23,11 @@ public class TowerControl : MonoBehaviour
     private GameObject[] objs; //temp array for obj grabbing
     public List<GameObject> enemyList;
 
-    public GameObject closestEnemy;
-    public Enemy _enemyScript;
+    GameObject closestEnemy;
+
+    bool hasFired;
+    public float towerFireCooldown;
+    public float towerRange;
 
     #endregion
 
@@ -36,7 +40,9 @@ public class TowerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (hasFired == true)
+            return;
+        TowerFire();
     }
 
     public IEnumerator WaitTimer(float waitTime)
@@ -62,14 +68,18 @@ public class TowerControl : MonoBehaviour
 
     public void TowerFire()
     {
+        print("fire");
         //Audio Call
         EventCore.Instance.towerFire.Invoke();
 
         EnemySelect();
-
-        EventCore.Instance.enemyToKill.Invoke(selectedEnemy);
-
-
+        if (closestEnemy != null)
+        {
+            EventCore.Instance.enemyToKill.Invoke(selectedEnemy);
+            hasFired = true;
+            WaitTimer(towerFireCooldown);
+            hasFired = false;
+        }
     }
 
 
@@ -106,11 +116,7 @@ public class TowerControl : MonoBehaviour
 
         foreach (GameObject enemy in enemyList)
         {
-            if (closestEnemy == null)
-            {
-                closestEnemy = this.gameObject;
-            }
-            else if (Vector3.Distance(towerCalling.transform.position, enemy.transform.position) <= Vector3.Distance(closestEnemy.transform.position, towerCalling.transform.position))
+            if (Vector3.Distance(towerCalling.transform.position, enemy.transform.position) <= towerRange)
             {
                 closestEnemy = enemy;
             }
@@ -120,6 +126,7 @@ public class TowerControl : MonoBehaviour
 
     void EnemyList()
     {
+        enemyList.Clear();
         objs = GameObject.FindGameObjectsWithTag("Enemy");
 
         foreach (GameObject Enemy in objs)

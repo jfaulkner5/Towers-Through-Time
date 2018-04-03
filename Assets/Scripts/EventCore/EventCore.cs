@@ -64,7 +64,8 @@ public class EventCore : MonoBehaviour
     //Tower stuff
     #region
 
-    public UnityEvent<GameObject> enemyToKill;
+        public class UnityEventGameObject : UnityEvent<GameObject> { }
+    public UnityEventGameObject enemyToKill = new UnityEventGameObject();
 
     #endregion
 
