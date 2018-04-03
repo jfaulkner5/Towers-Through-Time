@@ -48,33 +48,38 @@ public class AudioManager : MonoBehaviour
 
     private void AddEvents()
     {
-        EventCore.Instance.externalEventTest.AddListener(TestFunc);
+        //EventCore.Instance.externalEventTest.AddListener(TestFunc);
+        EventCore.Instance.towerOn.AddListener(TowerPowerUpAudio);
+        EventCore.Instance.towerOff.AddListener(TowerPowerDownAudio);
+        EventCore.Instance.towerFireStop.AddListener(StopFire);
     }
 
 
     //tower related audio
     #region
-    public void TowerBoot()
+    public void TowerPowerUpAudio()
     {
+        towerOneShot = FMODUnity.RuntimeManager.CreateInstance(towerPowerUp);
+        towerOneShot.start();
+    }
 
-        tempstring = towerPowerDown;
-
-        towerOneShot = FMODUnity.RuntimeManager.CreateInstance(tempstring);
+    public void TowerPowerDownAudio()
+    {
+        towerOneShot = FMODUnity.RuntimeManager.CreateInstance(towerPowerDown);
         towerOneShot.start();
     }
 
     public void TowerFire(bool isFiring)
     {
-        if (isFiring)
-        {
+
             towerFire = FMODUnity.RuntimeManager.CreateInstance(towerShoot);
             towerFire.start();
-        }
-        else
-        {
-            towerFire.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
-        }
 
+    }
+
+    public void StopFire()
+    {
+        towerFire.stop(FMOD.Studio.STOP_MODE.ALLOWFADEOUT);
     }
 
     #endregion
