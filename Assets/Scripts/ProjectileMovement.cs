@@ -13,6 +13,7 @@ public class ProjectileMovement : MonoBehaviour {
     {
         target = _target;
     }
+
     private void Update()
     {
         if (target == null)
