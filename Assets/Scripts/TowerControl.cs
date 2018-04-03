@@ -83,7 +83,6 @@ public class TowerControl : MonoBehaviour
 
     public void TowerFire()
     {
-        print("fire");
         //Audio Call
         EventCore.Instance.towerFire.Invoke();
 
@@ -95,6 +94,7 @@ public class TowerControl : MonoBehaviour
             GameObject projectile = Instantiate(projectiles[GameManager.instance.currentLevel],transform);
             projectile.GetComponent<ProjectileMovement>().Initialize(selectedEnemy.transform);
         }
+        EventCore.Instance.towerFireStop.Invoke();
     }
 
 
