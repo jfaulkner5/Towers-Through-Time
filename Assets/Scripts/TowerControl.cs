@@ -16,6 +16,7 @@ public class TowerControl : MonoBehaviour
 
     bool isActive = false;
     public float timeToRepair;
+    public float timeToBreak;
     float currentRepairTime;
 
     //Enemy Selector
@@ -29,6 +30,8 @@ public class TowerControl : MonoBehaviour
     public float towerFireCooldown;
     public float towerRange;
 
+    public GameObject[] projectiles;
+
     #endregion
 
     void Start()
@@ -40,14 +43,23 @@ public class TowerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isActive != true)
+            return;
         if (hasFired == true)
             return;
         TowerFire();
     }
 
-    public IEnumerator WaitTimer(float waitTime)
+    public IEnumerator BreakingTimer(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
+        PowerOff();
+    }
+
+    public IEnumerator TowerFireDelay(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        hasFired = false;
     }
 
     public void PowerOn()
@@ -56,11 +68,13 @@ public class TowerControl : MonoBehaviour
         EventCore.Instance.towerOn.Invoke();
         print("POWER ON FOR " + gameObject.name);
         isActive = true;
-
+        currentRepairTime = 0;
+        StartCoroutine(BreakingTimer(timeToBreak));
     }
 
     public void PowerOff()
     {
+        print("POWER OFF FOR " + gameObject.name);
         //Audio Call
         EventCore.Instance.towerOff.Invoke();
         isActive = false;
@@ -69,16 +83,16 @@ public class TowerControl : MonoBehaviour
     public void TowerFire()
     {
         print("fire");
+
         //Audio Call
         EventCore.Instance.towerFire.Invoke();
 
         EnemySelect();
         if (closestEnemy != null)
         {
-            EventCore.Instance.enemyToKill.Invoke(selectedEnemy);
+            selectedEnemy.GetComponent<Enemy>().Die();
             hasFired = true;
-            WaitTimer(towerFireCooldown);
-            hasFired = false;
+            StartCoroutine(TowerFireDelay(towerFireCooldown));
         }
     }
 

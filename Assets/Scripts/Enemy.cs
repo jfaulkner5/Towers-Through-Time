@@ -19,9 +19,6 @@ public class Enemy : MonoBehaviour
     {
         monument = Monument.instance.transform;
         monumentPos = new Vector3(monument.transform.position.x, monument.transform.position.y + enemyHeight, monument.transform.position.z);
-
-        EventCore.Instance.enemyToKill.AddListener(DeathOrder);
-
     }
 
     private void Update()
@@ -35,17 +32,9 @@ public class Enemy : MonoBehaviour
 
     }
 
-    void Die()
+    public void Die()
     {
         //DO ALL DEATH EFFECTS, ETC HERE
         Destroy(gameObject);
-    }
-
-    public void DeathOrder(GameObject selectedEnemy)
-    {
-        if (selectedEnemy = this.gameObject)
-        {
-            Die();
-        }
     }
 }
