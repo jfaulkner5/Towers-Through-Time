@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     public int currentLevel;
     public float totalLevels;
+    public int visualTheme;
+
 
     public Dictionary<float, bool> levelsBeat = new Dictionary<float, bool>();
 

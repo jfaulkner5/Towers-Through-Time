@@ -46,7 +46,7 @@ public class EventCore : MonoBehaviour
 
     public UnityEvent playerWalk;
 
-    public UnityEvent towerOn, towerOff, towerFire;
+    public UnityEvent towerOn, towerOff, towerFire, towerFireStop;
 
     public UnityEvent pyramidHit, pyramidDestroy, pyramidHeal;
 

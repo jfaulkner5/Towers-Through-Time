@@ -33,6 +33,7 @@ public class TextLoading : MonoBehaviour
         LoadLevel();
         LoadNavMesh();
         waveManager.Initialize();
+        GameManager.instance.visualTheme = visualTheme;
     }
 
     public NavMeshSurface surface;
