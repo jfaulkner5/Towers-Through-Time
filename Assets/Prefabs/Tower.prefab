@@ -342,7 +342,7 @@ MonoBehaviour:
   timeToRepair: 2
   timeToBreak: 5
   enemyList: []
-  towerFireCooldown: 0.5
+  towerFireCooldown: 2
   towerRange: 15
   projectiles:
   - {fileID: 1000521992188884, guid: a2a4797446bf1ca478f17ff24b9f1337, type: 2}
