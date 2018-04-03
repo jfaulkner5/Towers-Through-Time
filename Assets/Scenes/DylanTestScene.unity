@@ -182,6 +182,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  towerFireStop:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   pyramidHit:
     m_PersistentCalls:
       m_Calls: []
@@ -358,6 +363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738054582}
   - component: {fileID: 738054581}
+  - component: {fileID: 738054583}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -392,6 +398,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &738054583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 738054580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e52cea7e045ed440b1042fade34049d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkAudio: event:/Player/walk
+  towerPowerUp: event:/Tower/Power Up
+  towerPowerDown: event:/Tower/Power Down
+  towerShoot: event:/Tower/Fire
 --- !u!1 &766802310
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,8 +522,8 @@ GameObject:
   - component: {fileID: 2118357472}
   - component: {fileID: 2118357471}
   - component: {fileID: 2118357470}
-  - component: {fileID: 2118357469}
   - component: {fileID: 2118357473}
+  - component: {fileID: 2118357469}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -510,13 +531,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!81 &2118357469
-AudioListener:
+--- !u!114 &2118357469
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2118357468}
   m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: 0
 --- !u!124 &2118357470
 Behaviour:
   m_ObjectHideFlags: 0
