@@ -26,7 +26,8 @@ public class ProjectileMovement : MonoBehaviour {
         if (other.gameObject.GetComponent<Enemy>() != null)
         {
             other.gameObject.GetComponent<Enemy>().Die();
-            Destroy(gameObject,3f);
+            
+            Destroy(gameObject);
         }
     }
 }
