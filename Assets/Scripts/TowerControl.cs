@@ -12,6 +12,7 @@ public class TowerControl : MonoBehaviour
     // Use this for initialization
     #region
 
+    [HideInInspector]
     public GameObject selectedEnemy;
 
     bool isActive = false;
@@ -83,16 +84,16 @@ public class TowerControl : MonoBehaviour
     public void TowerFire()
     {
         print("fire");
-
         //Audio Call
         EventCore.Instance.towerFire.Invoke();
 
         EnemySelect();
         if (closestEnemy != null)
         {
-            selectedEnemy.GetComponent<Enemy>().Die();
             hasFired = true;
             StartCoroutine(TowerFireDelay(towerFireCooldown));
+            GameObject projectile = Instantiate(projectiles[GameManager.instance.currentLevel],transform);
+            projectile.GetComponent<ProjectileMovement>().Initialize(selectedEnemy.transform);
         }
     }
 

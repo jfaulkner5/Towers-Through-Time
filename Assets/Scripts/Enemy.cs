@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-
+    [HideInInspector]
     public Transform monument;
 
     public float enemyHeight;

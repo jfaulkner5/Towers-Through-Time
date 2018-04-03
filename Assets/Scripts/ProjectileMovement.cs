@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class ProjectileMovement : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    [HideInInspector]
+    public Transform target;
+    public float speed;
+
+
+    public void Initialize(Transform _target)
+    {
+        target = _target;
+    }
+    private void Update()
+    {
+        if (target == null)
+            return;
+        transform.position = Vector3.MoveTowards(transform.position, target.position, speed);
+        transform.LookAt(target);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.GetComponent<Enemy>() != null)
+        {
+            other.gameObject.GetComponent<Enemy>().Die();
+            Destroy(gameObject);
+        }
+    }
 }
