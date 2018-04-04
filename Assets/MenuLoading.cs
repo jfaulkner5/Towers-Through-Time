@@ -23,4 +23,14 @@ public class MenuLoading : MonoBehaviour {
         }
     }
 
+    public void LoadMenu(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
 }
