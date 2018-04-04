@@ -1,20 +1,55 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using SAE.WaveManagerTool;
+using UnityEngine.AI;
 
 public class FreezeTime : MonoBehaviour {
 
+    public float timeBetweenFreezes;
+    public float freezeTime;
+    float enemySpeed;
+    bool canFreezeTime;
+    float freezeTimeCooldown;
+
+
+    private void Update()
+    {
+        if (!canFreezeTime)
+        {
+            freezeTimeCooldown += Time.deltaTime;
+            if (freezeTimeCooldown >= timeBetweenFreezes)
+            {
+                canFreezeTime = true;
+                freezeTimeCooldown = 0;
+            }
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
-        StartCoroutine(Freeze());
+        if (other.CompareTag("Player") && canFreezeTime)
+            StartCoroutine(Freeze());
     }
 
     IEnumerator Freeze()
     {
-        Time.timeScale = 0.05f;
-        yield return new WaitForSecondsRealtime(5);
-        Time.timeScale = 1f;
-
+        GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>().timer -= freezeTime;
+        GameObject[] thing = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in thing)
+        {
+            if (enemy != null)
+            {
+                enemySpeed = enemy.GetComponent<NavMeshAgent>().speed;
+                enemy.GetComponent<NavMeshAgent>().speed = 0;
+            }
+        }
+        yield return new WaitForSeconds(freezeTime);
+        foreach (GameObject enemy in thing)
+        {
+            if (enemy != null)
+                enemy.GetComponent<NavMeshAgent>().speed = enemySpeed;
+        }
     }
 
 }
