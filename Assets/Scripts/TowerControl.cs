@@ -31,6 +31,7 @@ public class TowerControl : MonoBehaviour
 
 
     GameObject closestEnemy;
+    public bool isClosestEnemy;
 
     bool hasFired;
     public float towerFireCooldown;
@@ -53,6 +54,7 @@ public class TowerControl : MonoBehaviour
         freezeTime = GameObject.FindGameObjectWithTag("Freeze").GetComponent<FreezeTime>().freezeTime;
         isPaused = false;
         timeToBreakCurrent = timeToBreak;
+
     }
 
     void PauseTimer(EventCore.FreezeData data)
@@ -132,25 +134,25 @@ public class TowerControl : MonoBehaviour
 
     public void TowerFire()
     {
-        EnemySelect();
-        if (closestEnemy != null)
+
+        EnemyDistanceCheck();
+        if (isClosestEnemy)
         {
-            hasFired = true;
-            StartCoroutine(TowerFireDelay(towerFireCooldown));
-            GameObject projectile = Instantiate(projectiles[GameManager.instance.visualTheme],transform);
-            projectile.GetComponent<ProjectileMovement>().Initialize(selectedEnemy.transform);
+            if (selectedEnemy != null)
+            {
+                hasFired = true;
+                StartCoroutine(TowerFireDelay(towerFireCooldown));
+                GameObject projectile = Instantiate(projectiles[GameManager.instance.visualTheme], transform);
+                projectile.GetComponent<ProjectileMovement>().Initialize(selectedEnemy.transform);
 
-            //Audio Call
-            EventCore.Instance.towerFire.Invoke();
+                //Audio Call
+                EventCore.Instance.towerFire.Invoke();
+            }
         }
-        EventCore.Instance.towerFireStop.Invoke();
-    }
-
-
-    void EnemySelect()
-    {
-        //should return a game object
-        selectedEnemy = EnemyToAttack(gameObject);
+        else
+        {
+            EnemySelect();
+        }
     }
 
     public void Repair(out bool isRepairing)
@@ -169,35 +171,77 @@ public class TowerControl : MonoBehaviour
             {
                 PowerOn();
                 isRepairing = false;
-            }          
-        }
-    }
-
-    public GameObject EnemyToAttack(GameObject towerCalling)
-    {
-        //call function the create list of current enemies
-        EnemyList();
-
-        foreach (GameObject enemy in enemyList)
-        {
-            if (Vector3.Distance(towerCalling.transform.position, enemy.transform.position) <= towerRange)
-            {
-                closestEnemy = enemy;
             }
         }
-        return closestEnemy;
     }
 
-    void EnemyList()
+    private void EnemySelect()
     {
-        enemyList.Clear();
-        objs = GameObject.FindGameObjectsWithTag("Enemy");
+        var enemyTag = GameObject.FindGameObjectsWithTag("Enemy");
 
-        foreach (GameObject Enemy in objs)
+        foreach (GameObject e in enemyTag)
         {
-            enemyList.Add(Enemy);
+            if (closestEnemy == null && Vector3.Distance(this.transform.position, e.transform.position) <= towerRange)
+            { //if the closest enemy hasn't been selected yet and this object is in tower range
+
+                selectedEnemy = this.gameObject;
+                continue;
+            }
+
+            if (Vector3.Distance(this.transform.position, e.transform.position) <= towerRange && Vector3.Distance(this.transform.position, e.transform.position) < Vector3.Distance(this.transform.position, closestEnemy.transform.position))
+            { //if in range and closer than "closest"
+                closestEnemy = e;
+            }
         }
+
+        selectedEnemy = closestEnemy;
+        isClosestEnemy = true;
     }
+
+    private void EnemyDistanceCheck()
+    {
+        if (Vector3.Distance(this.transform.position, selectedEnemy.transform.position) <= towerRange)
+        {
+            isClosestEnemy = true;
+        }
+        else
+        {
+            isClosestEnemy = false;
+        }
+
+    }
+
+
+    //void EnemySelect()
+    //{
+    //    //should return a game object
+    //    selectedEnemy = EnemyToAttack(gameObject);
+    //}
+
+    //public GameObject EnemyToAttack(GameObject towerCalling)
+    //{
+    //    //call function the create list of current enemies
+
+    //    foreach (GameObject enemy in enemyList)
+    //    {
+    //        if (Vector3.Distance(towerCalling.transform.position, enemy.transform.position) <= towerRange)
+    //        {
+    //            closestEnemy = enemy;
+    //        }
+    //    }
+    //    return closestEnemy;
+    //}
+
+    //void EnemyList()
+    //{
+    //    enemyList.Clear();
+    //    objs = GameObject.FindGameObjectsWithTag("Enemy");
+
+    //    foreach (GameObject Enemy in objs)
+    //    {
+    //        enemyList.Add(Enemy);
+    //    }
+    //}
 
 }
 
