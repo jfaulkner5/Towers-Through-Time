@@ -18,7 +18,9 @@ public class TowerControl : MonoBehaviour
     bool isActive = false;
     public float timeToRepair;
     public float timeToBreak;
+    float timeToBreakCurrent;
     float currentRepairTime;
+    float freezeTime;
 
     //Enemy Selector
 
@@ -33,6 +35,11 @@ public class TowerControl : MonoBehaviour
     bool hasFired;
     public float towerFireCooldown;
     public float towerRange;
+    bool isPaused;
+
+    float towerBreakTimer;
+    float towerBreakCurrent;
+    float currentFreezeTime;
 
     public GameObject[] projectiles;
 
@@ -40,13 +47,26 @@ public class TowerControl : MonoBehaviour
 
     void Start()
     {
+        EventCore.Instance.eventFreeze.AddListener(PauseTimer);
         enemyList = new List<GameObject>();
         isActive = false;
+        freezeTime = GameObject.FindGameObjectWithTag("Freeze").GetComponent<FreezeTime>().freezeTime;
+        isPaused = false;
+        timeToBreakCurrent = timeToBreak;
+    }
+
+    void PauseTimer(EventCore.FreezeData data)
+    {
+        if (isActive)
+            timeToBreakCurrent += freezeTime;
     }
 
     // Update is called once per frame
     void Update()
     {
+        BreakingTimer();
+
+
         if (isActive != true)
             return;
         if (hasFired == true)
@@ -54,10 +74,34 @@ public class TowerControl : MonoBehaviour
         TowerFire();
     }
 
+    public IEnumerator PauseTimer()
+    {
+        isPaused = true;
+        yield return new WaitForSeconds(freezeTime);
+        isPaused = false;
+    }
+
     public IEnumerator BreakingTimer(float waitTime)
     {
-        yield return new WaitForSeconds(waitTime);
-        PowerOff();
+        while (!isPaused)
+        {
+            yield return new WaitForSeconds(waitTime);
+            PowerOff();
+        }
+    }
+
+    void BreakingTimer()
+    {
+        if (towerBreakCurrent != 0)
+        {
+            towerBreakCurrent += Time.deltaTime;
+            if (towerBreakCurrent >= timeToBreakCurrent)
+            {
+                PowerOff();
+                towerBreakCurrent = 0;
+                timeToBreakCurrent = timeToBreak;
+            }
+        }
     }
 
     public IEnumerator TowerFireDelay(float waitTime)
@@ -74,7 +118,7 @@ public class TowerControl : MonoBehaviour
         print("POWER ON FOR " + gameObject.name);
         isActive = true;
         currentRepairTime = 0;
-        StartCoroutine(BreakingTimer(timeToBreak));
+        towerBreakCurrent += Time.deltaTime;
     }
 
     public void PowerOff()

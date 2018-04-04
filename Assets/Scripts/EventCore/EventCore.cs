@@ -66,6 +66,9 @@ public class EventCore : MonoBehaviour
 
         public class UnityEventGameObject : UnityEvent<GameObject> { }
     public UnityEventGameObject enemyToKill = new UnityEventGameObject();
+    public class FreezeData { }
+    public class UnityEventFreeze : UnityEvent<FreezeData> { }
+    public UnityEventFreeze eventFreeze = new UnityEventFreeze();
 
     #endregion
 

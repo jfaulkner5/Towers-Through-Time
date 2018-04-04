@@ -34,6 +34,8 @@ public class FreezeTime : MonoBehaviour {
 
     IEnumerator Freeze()
     {
+        EventCore.FreezeData data = new EventCore.FreezeData();
+        EventCore.Instance.eventFreeze.Invoke(data);
         GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>().timer -= freezeTime;
         GameObject[] thing = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in thing)
