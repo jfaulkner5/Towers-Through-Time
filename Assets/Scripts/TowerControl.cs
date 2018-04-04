@@ -10,7 +10,7 @@ public class TowerControl : MonoBehaviour
 
     //Possibly temp data
     // Use this for initialization
-    #region
+    #region variables
 
     [HideInInspector]
     public GameObject selectedEnemy;
@@ -88,8 +88,6 @@ public class TowerControl : MonoBehaviour
 
     public void TowerFire()
     {
-        
-
         EnemySelect();
         if (closestEnemy != null)
         {
@@ -122,12 +120,12 @@ public class TowerControl : MonoBehaviour
         {
             print("REPAIRING " + gameObject.name);
             currentRepairTime += Time.deltaTime;
+            isRepairing = true;
             if (currentRepairTime >= timeToRepair)
             {
                 PowerOn();
-            }
-            isRepairing = true;
-            
+                isRepairing = false;
+            }          
         }
     }
 

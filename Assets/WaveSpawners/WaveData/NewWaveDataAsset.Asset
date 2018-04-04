@@ -13,8 +13,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemPrefab:
   - {fileID: 1714348390777624, guid: 5614d76858e2e2d48a85c28e88cee5f9, type: 2}
-  - {fileID: 1714348390777624, guid: 5614d76858e2e2d48a85c28e88cee5f9, type: 2}
-  spawnChance: 6400000000000000
+  spawnChance: 0a000000
   waitBeforeSpawn:
   - 0.12
-  - 1
