@@ -402,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedEnemy: {fileID: 0}
   timeToRepair: 2
-  timeToBreak: 5
+  timeToBreak: 10
   enemyList: []
   powerOnParticle: {fileID: 198580009711980782}
   powerOffParticle: {fileID: 198136364222059068}
