@@ -6,8 +6,6 @@ using System;
 public class TowerControl : MonoBehaviour
 {
 
-
-
     //Possibly temp data
     // Use this for initialization
     #region variables
@@ -15,7 +13,7 @@ public class TowerControl : MonoBehaviour
     [HideInInspector]
     public GameObject selectedEnemy;
 
-    bool isActive = false;
+
     public float timeToRepair;
     public float timeToBreak;
     float timeToBreakCurrent;
@@ -36,7 +34,7 @@ public class TowerControl : MonoBehaviour
     public float towerFireCooldown;
     public float towerRange;
     bool isPaused;
-
+    bool isActive = false;
     float towerBreakTimer;
     float towerBreakCurrent;
     float currentFreezeTime;
@@ -47,6 +45,7 @@ public class TowerControl : MonoBehaviour
 
     void Start()
     {
+        EventCore.Instance.enemySpawned.AddListener(OnEnemySpawned);
         EventCore.Instance.eventFreeze.AddListener(PauseTimer);
         enemyList = new List<GameObject>();
         isActive = false;
@@ -54,6 +53,12 @@ public class TowerControl : MonoBehaviour
         isPaused = false;
         timeToBreakCurrent = timeToBreak;
     }
+
+    void OnEnemySpawned(EventCore.EnemySpawnedData data)
+    {
+        enemyList.Add(data.enemySpawned);
+    }
+
 
     void PauseTimer(EventCore.FreezeData data)
     {
@@ -65,29 +70,11 @@ public class TowerControl : MonoBehaviour
     void Update()
     {
         BreakingTimer();
-
-
         if (isActive != true)
             return;
         if (hasFired == true)
             return;
         TowerFire();
-    }
-
-    public IEnumerator PauseTimer()
-    {
-        isPaused = true;
-        yield return new WaitForSeconds(freezeTime);
-        isPaused = false;
-    }
-
-    public IEnumerator BreakingTimer(float waitTime)
-    {
-        while (!isPaused)
-        {
-            yield return new WaitForSeconds(waitTime);
-            PowerOff();
-        }
     }
 
     void BreakingTimer()
@@ -175,30 +162,18 @@ public class TowerControl : MonoBehaviour
 
     public GameObject EnemyToAttack(GameObject towerCalling)
     {
-        //call function the create list of current enemies
-        EnemyList();
-
-        foreach (GameObject enemy in enemyList)
+        for (int i = 0; i < enemyList.Count; i++)
         {
-            if (Vector3.Distance(towerCalling.transform.position, enemy.transform.position) <= towerRange)
+            if (enemyList[i] == null)
             {
-                closestEnemy = enemy;
+                enemyList.Remove(enemyList[i]);
+                continue;
+            }
+            if (Vector3.Distance(towerCalling.transform.position, enemyList[i].transform.position) <= towerRange)
+            {
+                closestEnemy = enemyList[i];
             }
         }
         return closestEnemy;
     }
-
-    void EnemyList()
-    {
-        enemyList.Clear();
-        objs = GameObject.FindGameObjectsWithTag("Enemy");
-
-        foreach (GameObject Enemy in objs)
-        {
-            enemyList.Add(Enemy);
-        }
-    }
-
 }
-
-

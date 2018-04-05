@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
 
     public Dictionary<float, bool> levelsBeat = new Dictionary<float, bool>();
 
+
     public static GameManager instance;
 
     private void Awake()
@@ -33,4 +34,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        EventCore.Instance.levelWon.AddListener(GameWon);
+    }
+
+    void GameWon(EventCore.WinData data)
+    {
+        print("YOU WON");
+    }
 }

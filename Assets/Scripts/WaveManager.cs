@@ -265,9 +265,6 @@ namespace SAE.WaveManagerTool
                                 SpawnObject(spawnLocation.position, w);
                                 //TODO send event, object has spawned
                                 spawnChances[w]--;
-                                if (OnSpawn != null)
-                                    OnSpawn();
-
                                 return;
                             }
                         }
@@ -293,8 +290,6 @@ namespace SAE.WaveManagerTool
                         {
                             SpawnObject(spawnLocation.position, objectIndex);
                             //TODO send event, object has spawned
-                            if (OnSpawn != null)
-                                OnSpawn();
                             //Reset totalRatio
                             totalRatio = 0;
                             return;
@@ -358,6 +353,12 @@ namespace SAE.WaveManagerTool
 
                 GameObject newObject = Instantiate(_gameObject, spawnLocation, _gameObject.transform.rotation) as GameObject;
 
+
+                var data = new EventCore.EnemySpawnedData();
+                data.enemySpawned = newObject;
+                if (spawnChances[0] == 1)
+                    data.isLastEnemy = true;
+                EventCore.Instance.enemySpawned.Invoke(data);
 
                 //Output to debug
                 Debug.Log("Spawning " + _gameObject.name.ToString());

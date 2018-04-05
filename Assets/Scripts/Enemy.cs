@@ -29,12 +29,18 @@ public class Enemy : MonoBehaviour
             Monument.instance.TakeDamage(enemyDamage);
             Die();
         }
-
     }
 
     public void Die()
     {
+        var data = new EventCore.EnemyDiedData();
+        data.deadEnemy = gameObject;
+        EventCore.Instance.enemyDied.Invoke(data);
+
         //DO ALL DEATH EFFECTS, ETC HERE
         Destroy(gameObject);
     }
+
+
+    
 }

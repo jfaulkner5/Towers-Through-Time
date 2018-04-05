@@ -29,7 +29,28 @@ public class EventCore : MonoBehaviour
 
     //ADD NEW EVENTS HERE PLEASE
     #region
+    //data and event for when an enemy is spawned
+    public class EnemySpawnedData
+    {
+        public bool isLastEnemy;
+        public GameObject enemySpawned;
+    }
+    public class UnityEventEnemySpawned : UnityEvent<EnemySpawnedData> { }
+    public UnityEventEnemySpawned enemySpawned = new UnityEventEnemySpawned();
 
+    public class WinData
+    {
+    }
+    public class UnityEventLevelWon : UnityEvent<WinData> { }
+    public UnityEventLevelWon levelWon = new UnityEventLevelWon();
+
+
+    public class EnemyDiedData
+    {
+        public GameObject deadEnemy;
+    }
+    public class UnityEventEnemyDied : UnityEvent<EnemyDiedData> { }
+    public UnityEventEnemyDied enemyDied = new UnityEventEnemyDied();
     #endregion
 
     ////Game Over
