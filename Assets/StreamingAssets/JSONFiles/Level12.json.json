@@ -1,0 +1,1 @@
+{"useMaxPointSpawns":false,"maxSpawnerSpawns":10,"useMaxSpawns":false,"spawnPoints":[{"instanceID":11372}],"spawnObject":{"instanceID":10462},"objectPrefabs":[],"spawnChances":[],"spawnWaitTimes":[],"timer":0.0,"waveTimer":0.0,"spawnCountdown":1.0,"totalSpawnCountdown":0.0,"useWaveSpawning":true,"resetWaveValuesAfterTime":false,"waveResetTime":30.0}

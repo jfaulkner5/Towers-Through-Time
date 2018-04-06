@@ -45,6 +45,13 @@ public class EventCore : MonoBehaviour
     public UnityEventLevelWon levelWon = new UnityEventLevelWon();
 
 
+    public class LoseData
+    {
+    }
+    public class UnityEventLevelLost : UnityEvent<LoseData> { }
+    public UnityEventLevelLost levelLost = new UnityEventLevelLost();
+
+
     public class EnemyDiedData
     {
         public GameObject deadEnemy;
