@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Monument : MonoBehaviour {
-
+    public ParticleSystem monumentDamage_PS;
     public int monumentHealth;
     public static Monument instance;
 
@@ -22,6 +22,7 @@ public class Monument : MonoBehaviour {
 
     public void TakeDamage(int damage)
     {
+        monumentDamage_PS.Play();
         monumentHealth -= damage;
         if(monumentHealth <= 0)
         {

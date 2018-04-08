@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
 
     public float enemyHeight;
 
+    public GameObject death_PS;
     public int enemyDamage;
     Vector3 monumentPos;
     float distToMonument;
@@ -38,6 +39,7 @@ public class Enemy : MonoBehaviour
         EventCore.Instance.enemyDied.Invoke(data);
 
         //DO ALL DEATH EFFECTS, ETC HERE
+        GameObject death = Instantiate(death_PS, transform.position, transform.rotation) as GameObject;
         Destroy(gameObject);
     }
 

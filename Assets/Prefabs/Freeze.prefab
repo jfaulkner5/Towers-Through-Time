@@ -1002,7 +1002,7 @@ ParticleSystem:
           m_PreInfinity: 2
           m_PostInfinity: 2
           m_RotationOrder: 0
-      cycleCount: 10
+      cycleCount: 1
       repeatInterval: 10
   SizeModule:
     enabled: 0

@@ -112,6 +112,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   monument: {fileID: 0}
   enemyHeight: 1.15
+  death_PS: {fileID: 1563729990459434, guid: 0082069dc0ceb0f49874cd6b1bf134eb, type: 2}
   enemyDamage: 1
   distToMonumentToDie: 1
 --- !u!136 &136588817003361744
