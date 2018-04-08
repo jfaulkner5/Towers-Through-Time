@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WinStateCheck : MonoBehaviour {
+public class WinStateCheck : MonoBehaviour
+{
 
     bool checkForLastEnemy;
     List<GameObject> enemyList = new List<GameObject>();
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         EventCore.Instance.enemySpawned.AddListener(OnEnemySpawned);
         EventCore.Instance.enemyDied.AddListener(OnEnemyDied);
     }
-	
+
     //TODO  move the event functionality to a different, single GO
     void OnEnemyDied(EventCore.EnemyDiedData data)
     {
