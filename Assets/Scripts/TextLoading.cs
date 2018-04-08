@@ -124,6 +124,9 @@ public class TextLoading : MonoBehaviour
                         break;
                 }
             }
+
+            //[todo] background loading stuff 
+
         }
     }
 }
