@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -495,6 +494,9 @@ MonoBehaviour:
   towerPowerUp: event:/Tower/Power Up
   towerPowerDown: event:/Tower/Power Down
   towerShoot: event:/Tower/Fire
+  winRef: 
+  lossRef: 
+  buttonRef: 
 --- !u!114 &738054584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -586,7 +588,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 967904320}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.45689392, y: 0.037914276, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 1608725261}
@@ -699,7 +701,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1557721593}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.5443039, y: 3.0462132, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 572878033}
@@ -931,7 +933,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1612200464}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.63430786, y: -1.1137924, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children:
   - {fileID: 1211068483}
@@ -1158,7 +1160,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -1218,6 +1219,9 @@ MonoBehaviour:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
+  prehistoricBackground: []
+  futuristicBackground: []
+  apocalypticBackground: []
   surface: {fileID: 766802311}
 --- !u!1 &2131767911
 GameObject:
@@ -1300,9 +1304,9 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2131767911}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 822.5, y: 634.5, z: 0}
+  m_LocalScale: {x: 2.05625, y: 2.05625, z: 2.05625}
   m_Children:
   - {fileID: 967904321}
   m_Father: {fileID: 738054582}
