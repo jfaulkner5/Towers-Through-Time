@@ -139,6 +139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 040db64b5059a9f4397c0f58491dfcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelLost:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   testEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -440,7 +445,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnEnabled: 1
-  maxSpawnsLeft: 0
+  maxSpawnsLeft: 30
 --- !u!1 &1286649868
 GameObject:
   m_ObjectHideFlags: 0
