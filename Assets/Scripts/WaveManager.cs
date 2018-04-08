@@ -283,9 +283,6 @@ namespace SAE.WaveManagerTool
                                 SpawnObject(spawnLocation.position, w);
                                 //TODO send event, object has spawned
 
-                                //Event added
-                                EventCore.Instance.enemySpawned.Invoke(spawnData);
-
                                 spawnChances[w]--;
                                 return;
                             }
@@ -325,9 +322,6 @@ namespace SAE.WaveManagerTool
 
                             SpawnObject(spawnLocation.position, objectIndex);
                             //TODO send event, object has spawned
-
-                            //Event added
-                            EventCore.Instance.enemySpawned.Invoke(spawnData);
 
                             //Reset totalRatio
                             totalRatio = 0;
