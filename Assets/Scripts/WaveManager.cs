@@ -97,6 +97,9 @@ namespace SAE.WaveManagerTool
         //Reference to the SpawnpointController script
         private SpawnPointController spawnController;
 
+        //Custom settings added to fix shit in the Event trigger
+        EventCore.EnemySpawnedData spawnData;
+
         #endregion
 
         /// <summary>
@@ -104,7 +107,7 @@ namespace SAE.WaveManagerTool
         /// </summary>
         public void GetSpawnPoints()
         {
-            
+
             //Fill the spawn points array with all possible spawn points
             List<Transform> sP = new List<Transform>();
 
@@ -137,7 +140,7 @@ namespace SAE.WaveManagerTool
 
             spawnChecks = GetComponentsInChildren<SpawnPointController>();
 
-            
+
 
             if (spawnChecks.Length != spawnPoints.Length)
             {
@@ -149,7 +152,7 @@ namespace SAE.WaveManagerTool
                 Debug.LogError("Please remove any child gameobjects from the WaveManager that are not SpawnPoints.");
             }
         }
-        
+
         void Awake()
         {
             ResetItemLists();
@@ -262,8 +265,25 @@ namespace SAE.WaveManagerTool
                         {
                             if (spawnChances[w] > 0)
                             {
+                                // if statement to allow event trigger to function better
+                                #region
+                                if (spawnChances.Count == 1)
+                                {
+                                    spawnData.isLastEnemy = true;
+                                }
+                                else
+                                {
+                                    spawnData.isLastEnemy = false;
+                                }
+                                spawnData.enemySpawned = objectPrefabs[w] as GameObject;
+                                #endregion
+
                                 SpawnObject(spawnLocation.position, w);
                                 //TODO send event, object has spawned
+
+                                //Event added
+                                EventCore.Instance.enemySpawned.Invoke(spawnData);
+
                                 spawnChances[w]--;
                                 return;
                             }
@@ -288,8 +308,25 @@ namespace SAE.WaveManagerTool
                         //If we get the correct ratio, spawn the item
                         if (objectIndex != -1)
                         {
+                            // if statement to allow event trigger to function better
+                            #region
+                            if (spawnChances.Count == 1)
+                            {
+                                spawnData.isLastEnemy = true;
+                            }
+                            else
+                            {
+                                spawnData.isLastEnemy = false;
+                            }
+                            spawnData.enemySpawned = objectPrefabs[w] as GameObject;
+                            #endregion
+
                             SpawnObject(spawnLocation.position, objectIndex);
                             //TODO send event, object has spawned
+
+                            //Event added
+                            EventCore.Instance.enemySpawned.Invoke(spawnData);
+
                             //Reset totalRatio
                             totalRatio = 0;
                             return;

@@ -35,12 +35,14 @@ public class EventCore : MonoBehaviour
         public bool isLastEnemy;
         public GameObject enemySpawned;
     }
+
     public class UnityEventEnemySpawned : UnityEvent<EnemySpawnedData> { }
     public UnityEventEnemySpawned enemySpawned = new UnityEventEnemySpawned();
 
     public class WinData
     {
     }
+
     public class UnityEventLevelWon : UnityEvent<WinData> { }
     public UnityEventLevelWon levelWon = new UnityEventLevelWon();
 
@@ -60,7 +62,7 @@ public class EventCore : MonoBehaviour
 
     public UnityEvent testEvent;
     public UnityEvent externalEventTest;
- 
+
 
     //Audio events
     #region
@@ -85,7 +87,7 @@ public class EventCore : MonoBehaviour
     //Tower stuff
     #region
 
-        public class UnityEventGameObject : UnityEvent<GameObject> { }
+    public class UnityEventGameObject : UnityEvent<GameObject> { }
     public UnityEventGameObject enemyToKill = new UnityEventGameObject();
     public class FreezeData { }
     public class UnityEventFreeze : UnityEvent<FreezeData> { }
