@@ -13,6 +13,8 @@ public class WinStateCheck : MonoBehaviour
     {
         EventCore.Instance.enemySpawned.AddListener(OnEnemySpawned);
         EventCore.Instance.enemyDied.AddListener(OnEnemyDied);
+
+        EventCore.Instance.levelLost.AddListener(OnLossInvoke);
     }
 
     //TODO  move the event functionality to a different, single GO
@@ -36,5 +38,11 @@ public class WinStateCheck : MonoBehaviour
         {
             checkForLastEnemy = true;
         }
+    }
+
+    void OnLossInvoke()
+    {
+        // Lose function 
+
     }
 }

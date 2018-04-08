@@ -23,7 +23,12 @@ public class Monument : MonoBehaviour {
     public void TakeDamage(int damage)
     {
         monumentHealth -= damage;
+        if(monumentHealth <= 0)
+        {
+            EventCore.Instance.levelLost.Invoke();
+        }
     }
+
 
 
 }
