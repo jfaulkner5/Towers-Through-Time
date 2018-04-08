@@ -98,7 +98,9 @@ namespace SAE.WaveManagerTool
         private SpawnPointController spawnController;
 
         //Custom settings added to fix shit in the Event trigger
-        EventCore.EnemySpawnedData spawnData;
+
+        public EventCore.EnemySpawnedData spawnData;
+        
 
         #endregion
 
@@ -266,17 +268,17 @@ namespace SAE.WaveManagerTool
                             if (spawnChances[w] > 0)
                             {
                                 // if statement to allow event trigger to function better
-                                #region
-                                if (spawnChances.Count == 1)
-                                {
-                                    spawnData.isLastEnemy = true;
-                                }
-                                else
-                                {
-                                    spawnData.isLastEnemy = false;
-                                }
-                                spawnData.enemySpawned = objectPrefabs[w] as GameObject;
-                                #endregion
+                                //#region
+                                //if (spawnChances.Count == 1)
+                                //{
+                                //    spawnData.isLastEnemy = true;
+                                //}
+                                //else
+                                //{
+                                //    spawnData.isLastEnemy = false;
+                                //}
+                                //spawnData.enemySpawned = objectPrefabs[w] as GameObject;
+                                //#endregion
 
                                 SpawnObject(spawnLocation.position, w);
                                 //TODO send event, object has spawned
