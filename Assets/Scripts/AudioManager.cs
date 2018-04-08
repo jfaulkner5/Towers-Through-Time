@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -58,7 +59,12 @@ public class AudioManager : MonoBehaviour
         EventCore.Instance.towerOff.AddListener(TowerPowerDownAudio);
         EventCore.Instance.towerFire.AddListener(TowerFire);
         EventCore.Instance.playerWalk.AddListener(PlayerWalk);
+        EventCore.Instance.levelWon.AddListener(OnGameWin);
+        EventCore.Instance.levelLost.AddListener(OnGameLoss);
+
     }
+
+
 
 
     //tower related audio
@@ -90,10 +96,14 @@ public class AudioManager : MonoBehaviour
     }
     #endregion
 
-    public void OnGameWin()
+    public void OnGameWin(EventCore.WinData arg0)
     {
         winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
+
+        throw new NotImplementedException();
     }
+
+
 
     public void OnGameLoss()
     {

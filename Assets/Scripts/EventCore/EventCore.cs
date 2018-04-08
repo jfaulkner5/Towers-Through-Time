@@ -172,9 +172,6 @@ public class EventCore : MonoBehaviour
 
     #endregion
 
-    void TestCall()
-    {
-        AudioManager.Instance.TestFunc();
-    }
+
 
 }
