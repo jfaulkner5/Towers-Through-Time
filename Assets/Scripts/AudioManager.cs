@@ -28,9 +28,14 @@ public class AudioManager : MonoBehaviour
 
     [FMODUnity.EventRef] public string walkAudio;
     [FMODUnity.EventRef] public string towerPowerUp, towerPowerDown, towerShoot;
+    [FMODUnity.EventRef] public string winRef, lossRef;
+    [FMODUnity.EventRef] public string buttonRef;
 
     public FMOD.Studio.EventInstance walkPlay;
     public FMOD.Studio.EventInstance towerOneShot, towerFire;
+
+    public FMOD.Studio.EventInstance winSound, lossSound;
+    public FMOD.Studio.EventInstance buttonPress;
 
     private string tempstring;
 
@@ -77,19 +82,26 @@ public class AudioManager : MonoBehaviour
         towerFire.start();
 
     }
-    
+
     public void PlayerWalk()
     {
         walkPlay = FMODUnity.RuntimeManager.CreateInstance(walkAudio);
 
     }
-
     #endregion
 
-    public void TestFunc()
+    public void OnGameWin()
     {
-        Debug.Log("Event reached func");
+        winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
     }
 
+    public void OnGameLoss()
+    {
+        lossSound = FMODUnity.RuntimeManager.CreateInstance(lossRef);
+    }
 
+    public void OnButtonClick()
+    {
+    buttonPress = FMODUnity.RuntimeManager.CreateInstance(buttonRef);
+    }
 }
