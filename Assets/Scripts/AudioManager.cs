@@ -10,22 +10,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     private static AudioManager _audioManager;
-    public static AudioManager Instance
-    {
-        get
-        {
-            if (_audioManager == null)
-            {
-                _audioManager = FindObjectOfType<AudioManager>();
+    public static AudioManager Instance;
 
-                if (_audioManager == null)
-                {
-                    Debug.LogError("[user defined error thrown] There is no Delegate Event Core");
-                }
-            }
-            return _audioManager;
-        }
-    }
 
     [FMODUnity.EventRef] public string walkAudio;
     [FMODUnity.EventRef] public string towerPowerUp, towerPowerDown, towerShoot;
@@ -39,6 +25,19 @@ public class AudioManager : MonoBehaviour
     public FMOD.Studio.EventInstance buttonPress;
 
     private string tempstring;
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Use this for initialization
     void Start()
@@ -112,6 +111,6 @@ public class AudioManager : MonoBehaviour
 
     public void OnButtonClick()
     {
-    buttonPress = FMODUnity.RuntimeManager.CreateInstance(buttonRef);
+        buttonPress = FMODUnity.RuntimeManager.CreateInstance(buttonRef);
     }
 }
