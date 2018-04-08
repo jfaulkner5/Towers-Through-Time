@@ -50,7 +50,8 @@ public class TowerControl : MonoBehaviour
         enemyList = new List<GameObject>();
         isActive = false;
         //[fix] this is currently throwing an error
-        freezeTime = GameObject.FindGameObjectWithTag("Freeze").GetComponent<FreezeTime>().freezeTime;
+        if (GameObject.FindGameObjectWithTag("Freeze") != null)
+            freezeTime = GameObject.FindGameObjectWithTag("Freeze").GetComponent<FreezeTime>().freezeTime;
         isPaused = false;
         timeToBreakCurrent = timeToBreak;
     }

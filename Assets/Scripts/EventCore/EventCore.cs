@@ -11,20 +11,14 @@ public class EventCore : MonoBehaviour
     {
         get
         {
+            _eventCore = FindObjectOfType<EventCore>();
             if (_eventCore == null)
             {
-                _eventCore = FindObjectOfType<EventCore>();
-
-                if (_eventCore == null)
-                {
-                    //Debug.LogError("[user defined error thrown] There is no Delegate Event Core ");
-                }
+                Debug.LogError("[user defined error thrown] There is no Delegate Event Core ");
             }
             return _eventCore;
         }
     }
-
-
 
 
     //ADD NEW EVENTS HERE PLEASE

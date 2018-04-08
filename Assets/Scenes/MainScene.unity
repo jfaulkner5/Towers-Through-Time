@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -168,7 +167,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8448887
 GameObject:
@@ -233,7 +232,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &152493020
 GameObject:
@@ -332,79 +331,20 @@ Transform:
   m_Children:
   - {fileID: 152493021}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1310170245
+--- !u!1 &1216156066
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 1310170248}
-  - component: {fileID: 1310170246}
-  - component: {fileID: 1310170247}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1310170246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1310170245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e52cea7e045ed440b1042fade34049d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkAudio: event:/Player/walk
-  towerPowerUp: event:/Tower/Power Up
-  towerPowerDown: event:/Tower/Power Down
-  towerShoot: event:/Tower/Fire
---- !u!114 &1310170247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1310170245}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff58ee71dd817ca4fbbd81ee193f9c5e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentLevel: 0
-  totalLevels: 80
-  visualTheme: 1
---- !u!4 &1310170248
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1310170245}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1910535840
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1910535844}
-  - component: {fileID: 1910535843}
-  - component: {fileID: 1910535842}
-  - component: {fileID: 1910535841}
-  - component: {fileID: 1910535845}
+  - component: {fileID: 1216156071}
+  - component: {fileID: 1216156070}
+  - component: {fileID: 1216156069}
+  - component: {fileID: 1216156068}
+  - component: {fileID: 1216156067}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -412,12 +352,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1910535841
+--- !u!114 &1216156067
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1910535840}
+  m_GameObject: {fileID: 1216156066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ad8eb25e7b26f4b92014f20c27bffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1216156068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1216156066}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c25f37312f197504d9040a45cd96a9a1, type: 3}
@@ -428,32 +379,49 @@ MonoBehaviour:
   visualTheme: 0
   blankTerrainTile:
   - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
+  - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
+  - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
   MonumentTerrainTile:
+  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
+  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
   - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
   playerTerrainTile:
   - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
+  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
+  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
   towerTerainTower:
+  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
+  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
   - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
   pathTerrainTile:
   - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
+  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
+  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
   enemySpawnTerrainTile:
+  - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
+  - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
   - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
   freezeObjectTerrainTile:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
-  surface: {fileID: 7180864}
---- !u!124 &1910535842
+  - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
+  - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
+  prehistoricBackground: []
+  futuristicBackground: []
+  apocalypticBackground: []
+  surface: {fileID: 0}
+--- !u!124 &1216156069
 Behaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1910535840}
+  m_GameObject: {fileID: 1216156066}
   m_Enabled: 1
---- !u!20 &1910535843
+--- !u!20 &1216156070
 Camera:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1910535840}
+  m_GameObject: {fileID: 1216156066}
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
@@ -479,158 +447,20 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!4 &1910535844
+--- !u!4 &1216156071
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1910535840}
-  m_LocalRotation: {x: 0.3653868, y: -0.23945405, z: 0.09784615, w: 0.89419264}
-  m_LocalPosition: {x: 80.99, y: 40, z: -5.5}
+  m_GameObject: {fileID: 1216156066}
+  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
+  m_LocalPosition: {x: 50, y: 35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 44.452003, y: -29.983002, z: 0}
---- !u!114 &1910535845
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1910535840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: 0
---- !u!1 &2089786449
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2089786451}
-  - component: {fileID: 2089786450}
-  m_Layer: 0
-  m_Name: EventCore
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &2089786450
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2089786449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 040db64b5059a9f4397c0f58491dfcfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  levelLost:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  testEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  externalEventTest:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  playerWalk:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  towerOn:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  towerOff:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  towerFire:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  towerFireStop:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  pyramidHit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  pyramidDestroy:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  pyramidHeal:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  enemySpawnAudio:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  enemyDeathAudio:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  enemyWalkAudio:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  enemyAttackAudio:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  enemySpawn:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  enemyDeath:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!4 &2089786451
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2089786449}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
