@@ -44,6 +44,7 @@ public class TextLoading : MonoBehaviour
 
     void LoadNavMesh()
     {
+        surface = FindObjectOfType<NavMeshSurface>();
         surface.BuildNavMesh();
     }
 
