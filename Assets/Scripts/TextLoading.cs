@@ -23,6 +23,10 @@ public class TextLoading : MonoBehaviour
     public GameObject[] pathTerrainTile;
     public GameObject[] enemySpawnTerrainTile;
     public GameObject[] freezeObjectTerrainTile;
+    public GameObject[] prehistoricBackground;
+    public GameObject[] futuristicBackground;
+    public GameObject[] apocalypticBackground;
+
 
     WaveManager waveManager;
 

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -343,6 +343,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1310170248}
   - component: {fileID: 1310170246}
+  - component: {fileID: 1310170247}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -365,6 +366,20 @@ MonoBehaviour:
   towerPowerUp: event:/Tower/Power Up
   towerPowerDown: event:/Tower/Power Down
   towerShoot: event:/Tower/Fire
+--- !u!114 &1310170247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1310170245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff58ee71dd817ca4fbbd81ee193f9c5e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentLevel: 0
+  totalLevels: 80
+  visualTheme: 1
 --- !u!4 &1310170248
 Transform:
   m_ObjectHideFlags: 0
