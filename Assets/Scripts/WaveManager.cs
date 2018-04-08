@@ -318,7 +318,7 @@ namespace SAE.WaveManagerTool
                             {
                                 spawnData.isLastEnemy = false;
                             }
-                            spawnData.enemySpawned = objectPrefabs[w] as GameObject;
+                            spawnData.enemySpawned = objectPrefabs[objectIndex] as GameObject;
                             #endregion
 
                             SpawnObject(spawnLocation.position, objectIndex);
