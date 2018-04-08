@@ -17,7 +17,7 @@ public class EventCore : MonoBehaviour
 
                 if (_eventCore == null)
                 {
-                    Debug.LogError("[user defined error thrown] There is no Delegate Event Core ");
+                    //Debug.LogError("[user defined error thrown] There is no Delegate Event Core ");
                 }
             }
             return _eventCore;
@@ -41,11 +41,11 @@ public class EventCore : MonoBehaviour
 
     public class WinData
     {
+        public int currentLevel;
     }
 
     public class UnityEventLevelWon : UnityEvent<WinData> { }
     public UnityEventLevelWon levelWon = new UnityEventLevelWon();
-
 
     public UnityEvent levelLost;
 
