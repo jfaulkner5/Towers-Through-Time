@@ -17,12 +17,16 @@ public class AudioManager : MonoBehaviour
     [FMODUnity.EventRef] public string towerPowerUp, towerPowerDown, towerShoot;
     [FMODUnity.EventRef] public string winRef, lossRef;
     [FMODUnity.EventRef] public string buttonRef;
+    [FMODUnity.EventRef] public string backgroundMusic;
+
 
     public FMOD.Studio.EventInstance walkPlay;
     public FMOD.Studio.EventInstance towerOneShot, towerFire;
 
     public FMOD.Studio.EventInstance winSound, lossSound;
     public FMOD.Studio.EventInstance buttonPress;
+
+    public FMOD.Studio.EventInstance bgm;
 
     private string tempstring;
 
@@ -43,6 +47,13 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
         AddEvents();
+
+        //[FIX] placeholder bgm
+        bgm = FMODUnity.RuntimeManager.CreateInstance(backgroundMusic);
+        bgm.setVolume(0.2f);
+        bgm.start();
+
+
     }
 
     // Update is called once per frame
@@ -98,8 +109,8 @@ public class AudioManager : MonoBehaviour
     public void OnGameWin(EventCore.WinData arg0)
     {
         winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
+        winSound.start();
 
-        throw new NotImplementedException();
     }
 
 
@@ -107,10 +118,12 @@ public class AudioManager : MonoBehaviour
     public void OnGameLoss()
     {
         lossSound = FMODUnity.RuntimeManager.CreateInstance(lossRef);
+        lossSound.start();
     }
 
     public void OnButtonClick()
     {
         buttonPress = FMODUnity.RuntimeManager.CreateInstance(buttonRef);
+        buttonPress.start();
     }
 }
