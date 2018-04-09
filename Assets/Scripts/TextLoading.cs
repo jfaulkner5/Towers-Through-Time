@@ -23,11 +23,11 @@ public class TextLoading : MonoBehaviour
     public GameObject[] pathTerrainTile;
     public GameObject[] enemySpawnTerrainTile;
     public GameObject[] freezeObjectTerrainTile;
+    public GameObject[] clutterGenObjects;
+
     public GameObject[] prehistoricBackground;
     public GameObject[] futuristicBackground;
     public GameObject[] apocalypticBackground;
-
-
 
     private void Start()
     {
@@ -86,15 +86,12 @@ public class TextLoading : MonoBehaviour
                 newPos += new Vector3(sideLength, 0, 0);
                 switch (loadedFile[index])
                 {
-                    //new line of objects
                     case '\n':
                         newPos = new Vector3(0, 0, newPos.z + sideLength);
                         break;
-                    //base object
                     case '+':
                         Instantiate(blankTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
-                    //path object
                     case 'M':
                         Instantiate(MonumentTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
@@ -102,25 +99,24 @@ public class TextLoading : MonoBehaviour
                         Vector3 playerPos = new Vector3(newPos.x, newPos.y, newPos.z);
                         Instantiate(playerTerrainTile[visualTheme], playerPos, Quaternion.identity);
                         break;
-                    //path object
                     case 'T':
                         Instantiate(towerTerainTower[visualTheme], newPos, Quaternion.identity);
                         break;
-                    //path object
                     case 'X':
                         Instantiate(enemySpawnTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
-                    //path object
                     case 'F':
                         Instantiate(freezeObjectTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
-                    //path object
                     case '-':
                         Instantiate(pathTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
-                    //empty space
+                    case 'S':
+                        Instantiate(clutterGenObjects[Random.Range(0,clutterGenObjects.Length)], newPos, Quaternion.identity);
+                        break;
                     case ' ':
                         break;
+
                 }
             }
 

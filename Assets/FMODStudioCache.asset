@@ -30,7 +30,7 @@ MonoBehaviour:
   - {fileID: 114662479881153154}
   MasterBankRef: {fileID: 114733404341478920}
   StringsBankRef: {fileID: 114467502625129698}
-  stringsBankWriteTime: 636584277590703267
+  stringsBankWriteTime: 636584518444375493
   cacheVersion: 2
 --- !u!114 &114028449175569250
 MonoBehaviour:
@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
     Bank.bank
-  lastModified: 636584324562435080
+  lastModified: 636584518444380508
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636584277590682569
+  lastModified: 636584518444350431
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636584277590703267
+  lastModified: 636584518444375493
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -389,7 +389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
     Bank.bank
-  lastModified: 636584277590692918
+  lastModified: 636584518444365467
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -489,7 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
     Bank.bank
-  lastModified: 636584324562449752
+  lastModified: 636584518444390541
   LoadResult: 0
   FileSizes:
   - Name: 

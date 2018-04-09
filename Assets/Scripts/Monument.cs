@@ -26,7 +26,7 @@ public class Monument : MonoBehaviour {
         monumentHealth -= damage;
         if(monumentHealth <= 0)
         {
-            print("monument <= 0 health");
+            print("YOU LOSE");
             EventCore.Instance.levelLost.Invoke();
         }
     }

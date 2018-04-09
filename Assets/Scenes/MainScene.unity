@@ -265,7 +265,6 @@ MonoBehaviour:
   spawnCooldown: 1
   enemyPrefab: {fileID: 1714348390777624, guid: 5614d76858e2e2d48a85c28e88cee5f9,
     type: 2}
-  spawnPoints: []
 --- !u!4 &338386526
 Transform:
   m_ObjectHideFlags: 0
@@ -337,9 +336,9 @@ MonoBehaviour:
   - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
   - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
   towerTerainTower:
-  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
-  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
-  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
+  - {fileID: 1032169373998664, guid: 5e6e474cd2ce3f540b97171d190d904a, type: 2}
+  - {fileID: 1071569835364342, guid: 4062dfb8e09c60a42b81a7f1a9ac7081, type: 2}
+  - {fileID: 1455300155226904, guid: 0495d960f9c811f44a0e5c55aee1d4c1, type: 2}
   pathTerrainTile:
   - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
   - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
@@ -352,6 +351,8 @@ MonoBehaviour:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
+  clutterGenObjects:
+  - {fileID: 1070830047011288, guid: 741d38e4a1a055f489c2f488c8891b6e, type: 2}
   prehistoricBackground: []
   futuristicBackground: []
   apocalypticBackground: []

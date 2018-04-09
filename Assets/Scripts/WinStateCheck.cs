@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinStateCheck : MonoBehaviour
 {
@@ -43,6 +44,8 @@ public class WinStateCheck : MonoBehaviour
     void OnLossInvoke()
     {
         // Lose function 
+        print("LOSE");
+        SceneManager.LoadScene("Menu");
 
     }
 }
