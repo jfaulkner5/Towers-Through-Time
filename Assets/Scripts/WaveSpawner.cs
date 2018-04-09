@@ -35,7 +35,8 @@ public class WaveSpawner : MonoBehaviour {
 
     public void Initialize()
     {
-        freezeTime = FindObjectOfType<FreezeTime>().freezeTime;
+        if (FindObjectOfType<FreezeTime>() != null)
+            freezeTime = FindObjectOfType<FreezeTime>().freezeTime;
         spawnPoints = GameObject.FindGameObjectsWithTag("Spawner");
     }
 
