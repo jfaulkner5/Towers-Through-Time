@@ -6,6 +6,7 @@ using UnityEngine.AI;
 
 public class FreezeTime : MonoBehaviour {
 
+    public ParticleSystem freezeTime_PS;
     public float timeBetweenFreezes;
     public float freezeTime;
     float enemySpeed;
@@ -29,14 +30,16 @@ public class FreezeTime : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player") && canFreezeTime)
+        {
+            freezeTime_PS.Play();
             StartCoroutine(Freeze());
+        }
     }
 
     IEnumerator Freeze()
     {
         EventCore.FreezeData data = new EventCore.FreezeData();
         EventCore.Instance.eventFreeze.Invoke(data);
-        GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>().timer -= freezeTime;
         GameObject[] thing = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in thing)
         {

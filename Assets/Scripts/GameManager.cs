@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class GameManager : MonoBehaviour
 
 
     public static GameManager instance;
+
+    EventCore.WinData winData = new EventCore.WinData();
 
     private void Awake()
     {
@@ -37,10 +40,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         EventCore.Instance.levelWon.AddListener(GameWon);
+  
     }
 
-    void GameWon(EventCore.WinData data)
+    void GameWon(EventCore.WinData winData)
     {
-        print("YOU WON");
+        SceneManager.LoadScene("Menu");
     }
 }

@@ -8,6 +8,7 @@
 {73c0c868-6cd1-4e68-9f23-15a88b3d805e} event:/Tower/Fire
 {d143d859-6728-4078-8630-6d3706f949f4} event:/Tower/Power Down
 {054d56f4-3a4f-4229-b080-01a5ae11708c} event:/Tower/Power Up
+{f4e9d95d-890e-42f5-8db9-5d7fe1c962b6} event:/placeholder background
 {59e23aeb-90cb-4dbf-9f87-d3ca801c4f1d} bus:/
 {39858d1b-87d8-405a-b135-bae9faa20bf8} bus:/Reverb
 {fe544801-ea84-4f3e-baab-880baa09c702} bank:/Enemy

@@ -71,6 +71,7 @@ GameObject:
   - component: {fileID: 4621417849840354}
   - component: {fileID: 33549272865510792}
   - component: {fileID: 23037654353843998}
+  - component: {fileID: 65662190206072428}
   m_Layer: 0
   m_Name: PlaceholderTowerBase
   m_TagString: Untagged
@@ -176,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1733704060679878}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.75215, y: 8.726465, z: 67.25681}
+  m_LocalPosition: {x: 509.8027, y: 361.8236, z: 248.79625}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 4062399190180602}
@@ -221,7 +222,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1822863532469400}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 21.12, z: 0}
+  m_LocalPosition: {x: 0.21, y: 21.12, z: -1.02}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4124230734673716}
@@ -389,6 +390,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65662190206072428
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1319858937596992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 13, y: 21, z: 13}
+  m_Center: {x: 1.5, y: 10.5, z: -0.5}
 --- !u!114 &114807230928887876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -401,13 +414,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedEnemy: {fileID: 0}
-  timeToRepair: 2
-  timeToBreak: 10
+  timeToRepair: 3
+  timeToBreak: 8
   enemyList: []
   powerOnParticle: {fileID: 198580009711980782}
   powerOffParticle: {fileID: 198136364222059068}
   towerFireCooldown: 1.5
-  towerRange: 15
+  towerRange: 12
   projectiles:
   - {fileID: 1000521992188884, guid: a2a4797446bf1ca478f17ff24b9f1337, type: 2}
   - {fileID: 1000521992188884, guid: a2a4797446bf1ca478f17ff24b9f1337, type: 2}
@@ -550,7 +563,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1409815536
+  randomSeed: 1082310524
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -3912,7 +3925,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -503424970
+  randomSeed: -1339030060
   InitialModule:
     serializedVersion: 3
     enabled: 1

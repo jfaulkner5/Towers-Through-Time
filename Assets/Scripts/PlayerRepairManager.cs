@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerRepairManager : MonoBehaviour {
     GameObject[] Towers;
 
-[Tooltip("The distance the player must be to start repairing a tower")]
+    [Tooltip("The distance the player must be to start repairing a tower")]
     public float distToRepair;
 
     // Use this for initialization

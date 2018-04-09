@@ -5,26 +5,7 @@ using UnityEngine.Events;
 
 public class EventCore : MonoBehaviour
 {
-    //Singleton of the Main event core
-    private static EventCore _eventCore;
-    public static EventCore Instance
-    {
-        get
-        {
-            if (_eventCore == null)
-            {
-                _eventCore = FindObjectOfType<EventCore>();
-
-                if (_eventCore == null)
-                {
-                    Debug.LogError("[user defined error thrown] There is no Delegate Event Core ");
-                }
-            }
-            return _eventCore;
-        }
-    }
-
-
+    public static EventCore Instance;
 
 
     //ADD NEW EVENTS HERE PLEASE
@@ -35,15 +16,19 @@ public class EventCore : MonoBehaviour
         public bool isLastEnemy;
         public GameObject enemySpawned;
     }
+
     public class UnityEventEnemySpawned : UnityEvent<EnemySpawnedData> { }
     public UnityEventEnemySpawned enemySpawned = new UnityEventEnemySpawned();
 
     public class WinData
     {
+        public int currentLevel;
     }
+
     public class UnityEventLevelWon : UnityEvent<WinData> { }
     public UnityEventLevelWon levelWon = new UnityEventLevelWon();
 
+    public UnityEvent levelLost;
 
     public class LoseData
     {
@@ -67,7 +52,7 @@ public class EventCore : MonoBehaviour
 
     public UnityEvent testEvent;
     public UnityEvent externalEventTest;
- 
+
 
     //Audio events
     #region
@@ -92,7 +77,7 @@ public class EventCore : MonoBehaviour
     //Tower stuff
     #region
 
-        public class UnityEventGameObject : UnityEvent<GameObject> { }
+    public class UnityEventGameObject : UnityEvent<GameObject> { }
     public UnityEventGameObject enemyToKill = new UnityEventGameObject();
     public class FreezeData { }
     public class UnityEventFreeze : UnityEvent<FreezeData> { }
@@ -104,21 +89,22 @@ public class EventCore : MonoBehaviour
 
     private void Awake()
     {
-        //double checking for duplicate singletons of this object
-        if (_eventCore == null)
+        if (Instance != null)
         {
-            _eventCore = this;
+            DestroyImmediate(this);
+            Debug.LogError("MULTIPLE GAMEMANAGERS IN SCENE");
         }
         else
         {
-            DestroyImmediate(gameObject);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 
 
 
-    // Use this for initialization
-    void Start()
+        // Use this for initialization
+        void Start()
     {
 
         //[NOTE] is this good practise for events to nullcheck
@@ -175,9 +161,6 @@ public class EventCore : MonoBehaviour
 
     #endregion
 
-    void TestCall()
-    {
-        AudioManager.Instance.TestFunc();
-    }
+
 
 }

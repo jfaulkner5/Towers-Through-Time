@@ -23,6 +23,22 @@ public class MenuLoading : MonoBehaviour {
         }
     }
 
+    //used this to pass the level back to the loader and to "restart" the level
+    public void LoadLevel(int levelReload)
+    { 
+        levelInput = levelReload;
+        LoadLevel();
+
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
+        {
+            LoadLevel();
+        }
+    }
+
     public void LoadMenu(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
@@ -30,7 +46,12 @@ public class MenuLoading : MonoBehaviour {
 
     public void Quit()
     {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
         Application.Quit();
+#endif
+
     }
 
 }

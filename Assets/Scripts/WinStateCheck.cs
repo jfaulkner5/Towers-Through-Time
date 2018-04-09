@@ -1,18 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class WinStateCheck : MonoBehaviour {
+public class WinStateCheck : MonoBehaviour
+{
 
     bool checkForLastEnemy;
     List<GameObject> enemyList = new List<GameObject>();
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         EventCore.Instance.enemySpawned.AddListener(OnEnemySpawned);
         EventCore.Instance.enemyDied.AddListener(OnEnemyDied);
+
+        EventCore.Instance.levelLost.AddListener(OnLossInvoke);
     }
-	
+
     //TODO  move the event functionality to a different, single GO
     void OnEnemyDied(EventCore.EnemyDiedData data)
     {
@@ -34,5 +39,13 @@ public class WinStateCheck : MonoBehaviour {
         {
             checkForLastEnemy = true;
         }
+    }
+
+    void OnLossInvoke()
+    {
+        // Lose function 
+        print("LOSE");
+        SceneManager.LoadScene("Menu");
+
     }
 }

@@ -12,89 +12,28 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 114678418567529374}
-  - {fileID: 114166845801508312}
-  - {fileID: 114500714959151690}
-  - {fileID: 114946671617279754}
-  - {fileID: 114310314851755330}
+  - {fileID: 114467502625129698}
+  - {fileID: 114783011740165654}
+  - {fileID: 114852866455538394}
+  - {fileID: 114877360724427206}
+  - {fileID: 114687982115915288}
   EditorEvents:
-  - {fileID: 114307008022711270}
-  - {fileID: 114333771294773040}
-  - {fileID: 114861018980382474}
-  - {fileID: 114231053001980428}
-  - {fileID: 114044416738835358}
-  - {fileID: 114247599524375890}
-  - {fileID: 114592940000155182}
-  - {fileID: 114021851751821892}
-  - {fileID: 114205701262044852}
-  - {fileID: 114328571280933428}
-  MasterBankRef: {fileID: 114166845801508312}
-  StringsBankRef: {fileID: 114678418567529374}
-  stringsBankWriteTime: 636582766672300797
+  - {fileID: 114970550126756488}
+  - {fileID: 114974700525021678}
+  - {fileID: 114609696539457170}
+  - {fileID: 114105657988829468}
+  - {fileID: 114361304260624090}
+  - {fileID: 114312123394510928}
+  - {fileID: 114045897232307716}
+  - {fileID: 114662479881153154}
+  - {fileID: 114224732123382006}
+  - {fileID: 114810359710662540}
+  - {fileID: 114732464449507426}
+  MasterBankRef: {fileID: 114783011740165654}
+  StringsBankRef: {fileID: 114467502625129698}
+  stringsBankWriteTime: 636588827502951389
   cacheVersion: 2
---- !u!114 &114021851751821892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Player/walk
-  guid: 60cd3a93c20a7c4ea76637da6dd5e269
-  Banks:
-  - {fileID: 114946671617279754}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 334
---- !u!114 &114044416738835358
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Event Sounds/Place Holder freeze time
-  guid: 2167dca02cd61341a07816f52552bbdc
-  Banks:
-  - {fileID: 114166845801508312}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1855
---- !u!114 &114053121750977578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636582766672270715
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 12800
-  Exists: 1
---- !u!114 &114063152545309700
+--- !u!114 &114028449175569250
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -107,51 +46,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
     Bank.bank
-  lastModified: 636578341313167270
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 14592
-  Exists: 1
---- !u!114 &114079756440355482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\tfinnegan\Desktop\Towers through time\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636584252417117734
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21088
-  Exists: 1
---- !u!114 &114166845801508312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636582766672290771
+  lastModified: 636584320347059988
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 81824
-  Exists: 1
---- !u!114 &114181215894402086
+  Exists: 0
+--- !u!114 &114045897232307716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -159,17 +60,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\tfinnegan\Desktop\Towers through time\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636584240860506852
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 12800
-  Exists: 1
---- !u!114 &114205701262044852
+  Path: event:/Tower/Power Up
+  guid: f4564d054f3a2942b08001a5ae11708c
+  Banks:
+  - {fileID: 114852866455538394}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 745
+--- !u!114 &114065621215814664
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -183,7 +88,7 @@ MonoBehaviour:
   Path: event:/Player/Place holder Player death
   guid: df744edf4a85344cb19d74ef8dd11562
   Banks:
-  - {fileID: 114946671617279754}
+  - {fileID: 114358166062583970}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -191,393 +96,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1110
---- !u!114 &114206551213940288
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\tfinnegan\Desktop\Towers Through Time\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636583631132458564
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 1
---- !u!114 &114208997144074008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: isWalking
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &114231053001980428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Event Sounds/Place Holder crappy win sound
-  guid: 0b34c0004eadfa4bb1386658f0eb367a
-  Banks:
-  - {fileID: 114166845801508312}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1225
---- !u!114 &114247599524375890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Event Sounds/Place Holder lose sound
-  guid: 278b54f559314b489ec5ae956dcea529
-  Banks:
-  - {fileID: 114166845801508312}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4535
---- !u!114 &114287675613444666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636582766672320850
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21216
-  Exists: 1
---- !u!114 &114289503280351342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636578361850832920
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 680
-  Exists: 1
---- !u!114 &114307008022711270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Tower/Power Down
-  guid: 59d843d12867784086306d3706f949f4
-  Banks:
-  - {fileID: 114500714959151690}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 745
---- !u!114 &114310314851755330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636582766672270715
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 12800
-  Exists: 1
---- !u!114 &114324873420558222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636581950739084113
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 1
---- !u!114 &114328571280933428
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Enemy/Place holder Enemy death
-  guid: 5d1db0e50a8be44380a389f2384329dc
-  Banks:
-  - {fileID: 114310314851755330}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 1122
---- !u!114 &114333771294773040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Tower/Fire
-  guid: 68c8c073d16c684e9f2315a88b3d805e
-  Banks:
-  - {fileID: 114500714959151690}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 737
---- !u!114 &114334547709116906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636578341313192323
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 680
-  Exists: 1
---- !u!114 &114336807898802464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636584320347285597
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 12800
-  Exists: 1
---- !u!114 &114377676707954336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636581950739084113
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 0
---- !u!114 &114385904065296632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636581950739694516
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 12800
-  Exists: 1
---- !u!114 &114468224500071260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636582766672290771
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 1
---- !u!114 &114478141635714376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636584324562449752
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21088
-  Exists: 1
---- !u!114 &114500714959151690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636585376115462076
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21088
-  Exists: 1
---- !u!114 &114557298204339380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636584277590692918
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 1
---- !u!114 &114580147817718284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636583522460804140
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14112
-  Exists: 0
---- !u!114 &114592940000155182
+--- !u!114 &114105657988829468
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -591,7 +110,7 @@ MonoBehaviour:
   Path: event:/Event Sounds/Place4 holder button press
   guid: 789083d65c535143b015b210f067474b
   Banks:
-  - {fileID: 114166845801508312}
+  - {fileID: 114783011740165654}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -599,7 +118,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 305
---- !u!114 &114598258996828576
+--- !u!114 &114224732123382006
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -610,17 +129,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/walk
-  guid: 60cd3a93c20a7c4ea76637da6dd5e269
-  Banks: []
-  IsStream: 0
+  Path: event:/placeholder background
+  guid: 5dd9e9f40e89f5428db95d7fe1c962b6
+  Banks:
+  - {fileID: 114783011740165654}
+  IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 334
---- !u!114 &114604582708020094
+  Length: 11656
+--- !u!114 &114272454416023508
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -631,15 +151,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Master
+  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
     Bank.bank
-  lastModified: 636578692383419488
+  lastModified: 636584320347471091
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 35488
-  Exists: 1
---- !u!114 &114638726085115268
+    Value: 13984
+  Exists: 0
+--- !u!114 &114312123394510928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Fire
+  guid: 68c8c073d16c684e9f2315a88b3d805e
+  Banks:
+  - {fileID: 114852866455538394}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 737
+--- !u!114 &114358166062583970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -650,15 +192,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Player
+  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
     Bank.bank
-  lastModified: 636581950739304147
+  lastModified: 636584518444380508
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 14112
+    Value: 13984
   Exists: 1
---- !u!114 &114639460437536968
+--- !u!114 &114361304260624090
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -666,18 +208,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\tfinnegan\Desktop\Towers Through Time\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636583631132468563
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14112
-  Exists: 1
---- !u!114 &114643952373440704
+  Path: event:/Tower/Power Down
+  guid: 59d843d12867784086306d3706f949f4
+  Banks:
+  - {fileID: 114852866455538394}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 745
+--- !u!114 &114426507566081008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -696,332 +241,7 @@ MonoBehaviour:
   - Name: 
     Value: 81824
   Exists: 1
---- !u!114 &114647282629769300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636581950739509179
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21216
-  Exists: 1
---- !u!114 &114662563852553992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636578426238420474
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 680
-  Exists: 1
---- !u!114 &114674806786590698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636582766672310826
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14112
-  Exists: 1
---- !u!114 &114678418567529374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636582766672300797
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 1376
-  Exists: 1
---- !u!114 &114678552943262790
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636583522460789108
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 0
---- !u!114 &114695046025102966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636581950739304147
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14112
-  Exists: 0
---- !u!114 &114696518248846008
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/walk
-  guid: 60cd3a93c20a7c4ea76637da6dd5e269
-  Banks:
-  - {fileID: 114063152545309700}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 300
---- !u!114 &114719018926890712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/walk
-  guid: 60cd3a93c20a7c4ea76637da6dd5e269
-  Banks:
-  - {fileID: 114743094583239532}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 334
---- !u!114 &114743094583239532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636578361850807853
-  LoadResult: 0
-  FileSizes:
-  - Name: Desktop
-    Value: 14592
-  Exists: 1
---- !u!114 &114777815325682202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636584320347471091
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 13984
-  Exists: 1
---- !u!114 &114836415626961794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636580944404850800
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 35488
-  Exists: 0
---- !u!114 &114838598612640276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636581950739694516
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 12800
-  Exists: 0
---- !u!114 &114840124120225282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: isWalking
-  Min: 0
-  Max: 1
-  Default: 0
---- !u!114 &114840701039897822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636584320347059988
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 81824
-  Exists: 1
---- !u!114 &114854878920970490
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\tfinnegan\Desktop\Towers Through Time\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636583631132478580
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21216
-  Exists: 1
---- !u!114 &114861018980382474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: event:/Tower/Power Up
-  guid: f4564d054f3a2942b08001a5ae11708c
-  Banks:
-  - {fileID: 114500714959151690}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 745
---- !u!114 &114874716141249064
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636584324562435080
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 13984
-  Exists: 1
---- !u!114 &114875161697988336
+--- !u!114 &114447702764576874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1033,13 +253,68 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636583522460774058
+  lastModified: 636584518444350431
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 12800
+  Exists: 1
+--- !u!114 &114467502625129698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMODPROJECT\blockout_audio\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636588827502951389
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1438
+  Exists: 1
+--- !u!114 &114481613872264552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
+  lastModified: 636584320347285597
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 12800
   Exists: 0
---- !u!114 &114883658020919418
+--- !u!114 &114490346814858536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\tfinnegan\Desktop\Towers through time\FMODPROJECT\blockout_audio\Build\Desktop\Tower
+    Bank.bank
+  lastModified: 636584252417117734
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 21088
+  Exists: 1
+--- !u!114 &114563452504053790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1057,46 +332,74 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 21088
-  Exists: 1
---- !u!114 &114900800977063830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\jfaulkner5\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
-    Bank.bank
-  lastModified: 636578426238400424
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 14592
-  Exists: 1
---- !u!114 &114910935809966224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
-    Bank.bank
-  lastModified: 636583522460814167
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 21216
   Exists: 0
---- !u!114 &114919170686609620
+--- !u!114 &114609696539457170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Place Holder lose sound
+  guid: 278b54f559314b489ec5ae956dcea529
+  Banks:
+  - {fileID: 114783011740165654}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4535
+--- !u!114 &114632715569667850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/walk
+  guid: 60cd3a93c20a7c4ea76637da6dd5e269
+  Banks:
+  - {fileID: 114358166062583970}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 334
+--- !u!114 &114662479881153154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Place holder Enemy death
+  guid: 5d1db0e50a8be44380a389f2384329dc
+  Banks:
+  - {fileID: 114687982115915288}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1122
+--- !u!114 &114687982115915288
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1107,14 +410,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\tfinnegan\Desktop\Towers Through Time\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636583631132438472
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
+  lastModified: 636588827503641561
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 12800
   Exists: 1
---- !u!114 &114940413234176652
+--- !u!114 &114732464449507426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/player/Place holder Player death
+  guid: df744edf4a85344cb19d74ef8dd11562
+  Banks:
+  - {fileID: 114877360724427206}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1110
+--- !u!114 &114733404341478920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636584518444365467
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 81824
+  Exists: 1
+--- !u!114 &114783011740165654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636588827502931383
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 237472
+  Exists: 1
+--- !u!114 &114805968258709958
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1133,26 +496,7 @@ MonoBehaviour:
   - Name: 
     Value: 13984
   Exists: 1
---- !u!114 &114946671617279754
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Path: C:\Users\Dylan\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Player
-    Bank.bank
-  lastModified: 636585376115452050
-  LoadResult: 0
-  FileSizes:
-  - Name: 
-    Value: 13984
-  Exists: 1
---- !u!114 &114955056867423150
+--- !u!114 &114810359710662540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1163,18 +507,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: event:/walk
+  Path: event:/player/walk
   guid: 60cd3a93c20a7c4ea76637da6dd5e269
   Banks:
-  - {fileID: 114900800977063830}
+  - {fileID: 114877360724427206}
   IsStream: 0
   Is3D: 0
-  IsOneShot: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 334
---- !u!114 &114978862665393186
+--- !u!114 &114852866455538394
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1187,13 +531,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Tower
     Bank.bank
-  lastModified: 636581950739509179
+  lastModified: 636588827505317012
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 21216
-  Exists: 0
---- !u!114 &114991232288623836
+    Value: 21088
+  Exists: 1
+--- !u!114 &114864979918975198
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1204,10 +548,92 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
-  lastModified: 636584277590682569
+  Path: C:\Users\tfinnegan\Desktop\Towers through time\FMODPROJECT\blockout_audio\Build\Desktop\Enemy.bank
+  lastModified: 636584240860506852
   LoadResult: 0
   FileSizes:
   - Name: 
     Value: 12800
+  Exists: 1
+--- !u!114 &114877360724427206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\blockout_audio\Build\Desktop\Player
+    Bank.bank
+  lastModified: 636588827504401760
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 13984
+  Exists: 1
+--- !u!114 &114970550126756488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Place Holder crappy win sound
+  guid: 0b34c0004eadfa4bb1386658f0eb367a
+  Banks:
+  - {fileID: 114783011740165654}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1225
+--- !u!114 &114974700525021678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Place Holder freeze time
+  guid: 2167dca02cd61341a07816f52552bbdc
+  Banks:
+  - {fileID: 114783011740165654}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1855
+--- !u!114 &114998715211688188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\dthomson3\Documents\Studio1Proj3\FMODPROJECT\blockout_audio\Build\Desktop\Tower
+    Bank.bank
+  lastModified: 636584518444390541
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 21088
   Exists: 1

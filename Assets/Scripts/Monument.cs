@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Monument : MonoBehaviour {
-
+    public ParticleSystem monumentDamage_PS;
     public int monumentHealth;
     public static Monument instance;
-
-
 
     private void Awake()
     {
@@ -24,15 +22,15 @@ public class Monument : MonoBehaviour {
 
     public void TakeDamage(int damage)
     {
+        monumentDamage_PS.Play();
         monumentHealth -= damage;
-        if (monumentHealth <= 0)
-            LoseGame();
+        if(monumentHealth <= 0)
+        {
+            print("YOU LOSE");
+            EventCore.Instance.levelLost.Invoke();
+        }
     }
 
-    public void LoseGame()
-    {
-        var data = new EventCore.LoseData();
-        EventCore.Instance.levelLost.Invoke(data);
-    }
+
 
 }
