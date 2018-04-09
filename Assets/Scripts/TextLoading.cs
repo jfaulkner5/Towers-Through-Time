@@ -28,15 +28,13 @@ public class TextLoading : MonoBehaviour
     public GameObject[] apocalypticBackground;
 
 
-    WaveManager waveManager;
 
     private void Start()
     {
-        waveManager = GameObject.FindGameObjectWithTag("WaveManager").GetComponent<WaveManager>();
         ReadFile();
         LoadLevel();
         LoadNavMesh();
-        waveManager.Initialize();
+        WaveSpawner.instance.Initialize();
         GameManager.instance.visualTheme = visualTheme;
     }
 
