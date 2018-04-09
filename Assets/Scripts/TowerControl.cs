@@ -65,7 +65,10 @@ public class TowerControl : MonoBehaviour
     void PauseTimer(EventCore.FreezeData data)
     {
         if (isActive)
+        {
             timeToBreakCurrent += freezeTime;
+            StartCoroutine(FreezeTimer());
+        }
     }
 
     // Update is called once per frame
@@ -144,9 +147,15 @@ public class TowerControl : MonoBehaviour
 
     public void Repair(out bool isRepairing)
     {
-        if (isActive)
+        if (isPaused)
         {
             isRepairing = false;
+            return;
+        }
+        if (isActive)
+        {
+            timeToBreakCurrent += Time.deltaTime;
+            isRepairing = true;
             return;
         }
         else
@@ -177,5 +186,12 @@ public class TowerControl : MonoBehaviour
             }
         }
         return closestEnemy;
+    }
+
+    IEnumerator FreezeTimer()
+    {
+        isPaused = true;
+        yield return new WaitForSeconds(freezeTime);
+        isPaused = false;
     }
 }
