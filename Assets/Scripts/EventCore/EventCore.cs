@@ -5,20 +5,7 @@ using UnityEngine.Events;
 
 public class EventCore : MonoBehaviour
 {
-    //Singleton of the Main event core
-    private static EventCore _eventCore;
-    public static EventCore Instance
-    {
-        get
-        {
-            _eventCore = FindObjectOfType<EventCore>();
-            if (_eventCore == null)
-            {
-                Debug.LogError("[user defined error thrown] There is no Delegate Event Core ");
-            }
-            return _eventCore;
-        }
-    }
+    public static EventCore Instance;
 
 
     //ADD NEW EVENTS HERE PLEASE
@@ -95,21 +82,22 @@ public class EventCore : MonoBehaviour
 
     private void Awake()
     {
-        //double checking for duplicate singletons of this object
-        if (_eventCore == null)
+        if (Instance != null)
         {
-            _eventCore = this;
+            DestroyImmediate(this);
+            Debug.LogError("MULTIPLE GAMEMANAGERS IN SCENE");
         }
         else
         {
-            DestroyImmediate(gameObject);
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
 
 
 
-    // Use this for initialization
-    void Start()
+        // Use this for initialization
+        void Start()
     {
 
         //[NOTE] is this good practise for events to nullcheck
