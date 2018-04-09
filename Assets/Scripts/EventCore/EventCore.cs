@@ -85,7 +85,7 @@ public class EventCore : MonoBehaviour
         if (Instance != null)
         {
             DestroyImmediate(this);
-            Debug.LogError("MULTIPLE GAMEMANAGERS IN SCENE");
+            Debug.LogError("MULTIPLE EVENT CORES IN SCENE");
         }
         else
         {
