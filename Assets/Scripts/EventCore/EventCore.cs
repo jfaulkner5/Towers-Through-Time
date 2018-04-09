@@ -30,13 +30,6 @@ public class EventCore : MonoBehaviour
 
     public UnityEvent levelLost;
 
-    public class LoseData
-    {
-    }
-    public class UnityEventLevelLost : UnityEvent<LoseData> { }
-    public UnityEventLevelLost levelLost = new UnityEventLevelLost();
-
-
     public class EnemyDiedData
     {
         public GameObject deadEnemy;
@@ -92,7 +85,7 @@ public class EventCore : MonoBehaviour
         if (Instance != null)
         {
             DestroyImmediate(this);
-            Debug.LogError("MULTIPLE GAMEMANAGERS IN SCENE");
+            Debug.LogError("MULTIPLE EVENT CORES IN SCENE");
         }
         else
         {

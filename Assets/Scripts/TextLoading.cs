@@ -63,8 +63,6 @@ public class TextLoading : MonoBehaviour
         StreamReader reader = new StreamReader(path);
         loadedFile = reader.ReadToEnd();
         reader.Close();
-
-        SaveLoadManager.LoadFile("Level" + GameManager.instance.currentLevel + ".json", waveManager);
     }
 
     void LoadLevel()
