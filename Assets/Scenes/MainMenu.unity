@@ -548,6 +548,11 @@ Prefab:
       propertyPath: walkAudio
       value: event:/Player/Footsteps
       objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: freezeRef
+      value: event:/Event Sounds/Freeze time
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6b42f837b18a524fb5dcc39a8f116d6, type: 2}
   m_IsPrefabParent: 0
