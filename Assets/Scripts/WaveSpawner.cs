@@ -6,6 +6,7 @@ public class WaveSpawner : MonoBehaviour {
 
     public int waveSize;
     public float spawnCooldown;
+    [SerializeField]
     int currentEnemiesLeft;
     float currentSpawnTimer;
     float freezeTime;
@@ -26,6 +27,8 @@ public class WaveSpawner : MonoBehaviour {
             DestroyImmediate(this);
         }
         EventCore.Instance.eventFreeze.AddListener(Freeze);
+
+        currentEnemiesLeft = 20;
     }
 
     void Freeze(EventCore.FreezeData data)

@@ -39,12 +39,12 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        EventCore.Instance.levelWon.AddListener(GameWon);
+        //EventCore.Instance.levelWon.AddListener(GameWon);
   
     }
 
     void GameWon(EventCore.WinData winData)
     {
-        SceneManager.LoadScene("Menu");
+        //SceneManager.LoadScene("Menu
     }
 }
