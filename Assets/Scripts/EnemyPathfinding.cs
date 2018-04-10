@@ -18,6 +18,7 @@ public class EnemyPathfinding : MonoBehaviour {
         {
             transform.position = closestHit.position;
             agent = gameObject.AddComponent<NavMeshAgent>();
+            agent.speed = speed;
             //TODO
         }
         agent.SetDestination(target.position);
