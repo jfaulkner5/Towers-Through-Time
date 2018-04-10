@@ -32,6 +32,7 @@ public class FreezeTime : MonoBehaviour {
         if (other.CompareTag("Player") && canFreezeTime)
         {
             freezeTime_PS.Play();
+            canFreezeTime = false;
             StartCoroutine(Freeze());
         }
     }
