@@ -710,7 +710,7 @@ MonoBehaviour:
   - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
   - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
   towerTerainTower:
-  - {fileID: 0}
+  - {fileID: 1733704060679878, guid: 0cd7a51cb15a4d5418ae4529cdeb4b5f, type: 2}
   - {fileID: 1071569835364342, guid: 4062dfb8e09c60a42b81a7f1a9ac7081, type: 2}
   - {fileID: 1455300155226904, guid: 0495d960f9c811f44a0e5c55aee1d4c1, type: 2}
   pathTerrainTile:
