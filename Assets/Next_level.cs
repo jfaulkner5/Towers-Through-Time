@@ -75,8 +75,10 @@ public class Next_level : MonoBehaviour
 
     public void GameWon(EventCore.WinData arg0)
     {
+        print("WIN");
         menuPanel.SetActive(true);
         Time.timeScale = 0;
+
     }
 
 

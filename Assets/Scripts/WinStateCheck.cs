@@ -21,13 +21,18 @@ public class WinStateCheck : MonoBehaviour
     //TODO  move the event functionality to a different, single GO
     void OnEnemyDied(EventCore.EnemyDiedData data)
     {
+        
         enemyList.Remove(data.deadEnemy);
         if (checkForLastEnemy)
         {
+            print("CHECK FOR LAST ENEMY");
             if (enemyList.Count == 0)
             {
-                var winData = new EventCore.WinData();
-                EventCore.Instance.levelWon.Invoke(winData);
+                print("ZERO ENEMIES IN LEVEL");
+                Time.timeScale = 1;
+                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                //var winData = new EventCore.WinData();
+                //EventCore.Instance.levelWon.Invoke(winData);
             }
         }
     }
