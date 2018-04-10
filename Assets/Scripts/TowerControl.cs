@@ -34,10 +34,13 @@ public class TowerControl : MonoBehaviour
     public float towerFireCooldown;
     public float towerRange;
     bool isPaused;
-    bool isActive = false;
+    [HideInInspector]
+    public bool isActive = false;
     float towerBreakTimer;
     float towerBreakCurrent;
     float currentFreezeTime;
+    [HideInInspector]
+    public float repairPercent;
 
     public GameObject[] projectiles;
 
@@ -74,6 +77,7 @@ public class TowerControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        repairPercent =  currentRepairTime / timeToRepair;
         BreakingTimer();
         if (isActive != true)
             return;
