@@ -52,7 +52,6 @@ public class TowerControl : MonoBehaviour
         EventCore.Instance.eventFreeze.AddListener(PauseTimer);
         enemyList = new List<GameObject>();
         isActive = false;
-        //[fix] this is currently throwing an error
         if (GameObject.FindGameObjectWithTag("Freeze") != null)
             freezeTime = GameObject.FindGameObjectWithTag("Freeze").GetComponent<FreezeTime>().freezeTime;
         isPaused = false;

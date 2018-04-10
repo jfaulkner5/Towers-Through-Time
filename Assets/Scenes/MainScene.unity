@@ -338,8 +338,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d22d8cfbab648644bbd7791dcb6455dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveSize: 1
-  spawnCooldown: 1
+  waveSizes: 0500000005000000050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000
+  spawnCooldowns:
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
+  - 1
   enemyPrefab: {fileID: 1714348390777624, guid: 5614d76858e2e2d48a85c28e88cee5f9,
     type: 2}
 --- !u!4 &338386526

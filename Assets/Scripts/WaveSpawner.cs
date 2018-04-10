@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class WaveSpawner : MonoBehaviour {
 
-    public int waveSize;
-    public float spawnCooldown;
-    [SerializeField]
+    public int[] waveSizes;
+    public float[] spawnCooldowns;
+    int waveSize;
+    float spawnCooldown;
     int currentEnemiesLeft;
     float currentSpawnTimer;
     float freezeTime;
@@ -27,8 +28,6 @@ public class WaveSpawner : MonoBehaviour {
             DestroyImmediate(this);
         }
         EventCore.Instance.eventFreeze.AddListener(Freeze);
-
-        currentEnemiesLeft = 20;
     }
 
     void Freeze(EventCore.FreezeData data)
@@ -41,24 +40,30 @@ public class WaveSpawner : MonoBehaviour {
         if (FindObjectOfType<FreezeTime>() != null)
             freezeTime = FindObjectOfType<FreezeTime>().freezeTime;
         spawnPoints = GameObject.FindGameObjectsWithTag("Spawner");
+        waveSize = waveSizes[GameManager.instance.currentLevel - 1];
+        spawnCooldown = spawnCooldowns[GameManager.instance.currentLevel - 1];
     }
 
     void Spawn()
     {
-        foreach (GameObject spawn in spawnPoints)
+        if (waveSize > 0)
         {
-            GameObject spawnedEnemy = Instantiate(enemyPrefab, spawn.transform.position, Quaternion.identity, null);
-            var data = new EventCore.EnemySpawnedData();
-            data.enemySpawned = spawnedEnemy;
-            if (currentEnemiesLeft == 1)
+            foreach (GameObject spawn in spawnPoints)
             {
-                data.isLastEnemy = true;
+                GameObject spawnedEnemy = Instantiate(enemyPrefab, spawn.transform.position, Quaternion.identity, null);
+                var data = new EventCore.EnemySpawnedData();
+                data.enemySpawned = spawnedEnemy;
+                if (waveSize == 1)
+                {
+                    data.isLastEnemy = true;
+                }
+                else
+                {
+                    data.isLastEnemy = false;
+                }
+                EventCore.Instance.enemySpawned.Invoke(data);
             }
-            else
-            {
-                data.isLastEnemy = false;
-            }
-            EventCore.Instance.enemySpawned.Invoke(data);
+            waveSize--;
         }
     }
 
