@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="EncodableAsset" id="{57a1e9e0-b40a-4e18-9688-c11fea0e504f}">
+        <property name="assetPath">
+            <value>Lazer Gun (Single Shot) Sounds/NT5/</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fdbf6cbb-6a79-45a7-93fb-8fe8f7eb2172}</destination>
+        </relationship>
+    </object>
+</objects>

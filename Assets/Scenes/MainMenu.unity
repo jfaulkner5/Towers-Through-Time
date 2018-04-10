@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -329,8 +329,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 410952975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 574.5, y: 317, z: 0}
-  m_LocalScale: {x: 1.43625, y: 1.43625, z: 1.43625}
+  m_LocalPosition: {x: 752.5, y: 376, z: 0}
+  m_LocalScale: {x: 1.88125, y: 1.88125, z: 1.88125}
   m_Children:
   - {fileID: 1076161742}
   - {fileID: 1909720199}
@@ -526,7 +526,27 @@ Prefab:
     - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
         type: 2}
       propertyPath: backgroundMusic
-      value: event:/placeholder background
+      value: event:/Music/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: buttonRef
+      value: event:/Event Sounds/Button Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: lossRef
+      value: event:/Event Sounds/Lose sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: winRef
+      value: event:/Event Sounds/Win sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: walkAudio
+      value: event:/Player/Footsteps
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6b42f837b18a524fb5dcc39a8f116d6, type: 2}
