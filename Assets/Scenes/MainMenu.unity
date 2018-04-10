@@ -329,8 +329,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 410952975}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 706.5, y: 397.5, z: 0}
-  m_LocalScale: {x: 1.76625, y: 1.76625, z: 1.76625}
+  m_LocalPosition: {x: 593, y: 377, z: 0}
+  m_LocalScale: {x: 1.4825, y: 1.4825, z: 1.4825}
   m_Children:
   - {fileID: 1076161742}
   - {fileID: 1909720199}
@@ -526,7 +526,32 @@ Prefab:
     - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
         type: 2}
       propertyPath: backgroundMusic
-      value: event:/placeholder background
+      value: event:/Music/Music
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: buttonRef
+      value: event:/Event Sounds/Button Click
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: lossRef
+      value: event:/Event Sounds/Lose sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: winRef
+      value: event:/Event Sounds/Win sound
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: walkAudio
+      value: event:/Player/Footsteps
+      objectReference: {fileID: 0}
+    - target: {fileID: 114666540263378214, guid: b6b42f837b18a524fb5dcc39a8f116d6,
+        type: 2}
+      propertyPath: freezeRef
+      value: event:/Event Sounds/Freeze time
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6b42f837b18a524fb5dcc39a8f116d6, type: 2}
@@ -707,7 +732,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 51c42e6fb49ba73439cf5deaaab869a1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d7e84b5f0aac8824abb25314ffb1f9e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -996,7 +1021,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2a2a580499fb373498b3d3424f3b3ec8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 58b5984d681ce8843af610364a255447, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1118,7 +1143,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 36632c62d06e2f24cbf164ed17d2d6d6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f8f760d1e9565de45922caeeff6227ac, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1

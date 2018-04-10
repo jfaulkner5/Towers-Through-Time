@@ -14,14 +14,16 @@ public class AudioManager : MonoBehaviour
 
 
     [FMODUnity.EventRef] public string walkAudio;
-    [FMODUnity.EventRef] public string towerPowerUp, towerPowerDown, towerShoot;
+    [FMODUnity.EventRef] public string towerPowerUp, towerPowerDown, towerShoot, freezeRef;
     [FMODUnity.EventRef] public string winRef, lossRef;
     [FMODUnity.EventRef] public string buttonRef;
     [FMODUnity.EventRef] public string backgroundMusic;
 
 
+
+
     public FMOD.Studio.EventInstance walkPlay;
-    public FMOD.Studio.EventInstance towerOneShot, towerFire;
+    public FMOD.Studio.EventInstance towerOneShot, towerFire, freezeSound;
 
     public FMOD.Studio.EventInstance winSound, lossSound;
     public FMOD.Studio.EventInstance buttonPress;
@@ -72,6 +74,8 @@ public class AudioManager : MonoBehaviour
         EventCore.Instance.levelWon.AddListener(OnGameWin);
         EventCore.Instance.levelLost.AddListener(OnGameLoss);
 
+        EventCore.Instance.eventFreeze.AddListener(TowerFreeze);
+
     }
 
 
@@ -104,6 +108,13 @@ public class AudioManager : MonoBehaviour
         walkPlay = FMODUnity.RuntimeManager.CreateInstance(walkAudio);
 
     }
+
+    public void TowerFreeze(EventCore.FreezeData arg0)
+    {
+        freezeSound = FMODUnity.RuntimeManager.CreateInstance(freezeRef);
+        freezeSound.start();
+    }
+
     #endregion
 
     public void OnGameWin(EventCore.WinData arg0)
