@@ -36,13 +36,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1143402312553522}
-  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 50, y: 35, z: 0}
+  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
+  m_LocalPosition: {x: 32, y: 27, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
 --- !u!20 &20162644497206788
 Camera:
   m_ObjectHideFlags: 1
@@ -62,7 +62,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 1
+  orthographic: 0
   orthographic size: 28.9
   m_Depth: -1
   m_CullingMask:
@@ -74,6 +74,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -120,6 +121,7 @@ MonoBehaviour:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
+  clutterGenObjects: []
   prehistoricBackground: []
   futuristicBackground: []
   apocalypticBackground: []
