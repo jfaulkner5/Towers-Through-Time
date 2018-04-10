@@ -193,6 +193,8 @@ public class TowerControl : MonoBehaviour
 
     IEnumerator FreezeTimer()
     {
+        EventCore.FreezeData arg0 = null;
+        EventCore.Instance.eventFreeze.Invoke(arg0);
         isPaused = true;
         yield return new WaitForSeconds(freezeTime);
         isPaused = false;
