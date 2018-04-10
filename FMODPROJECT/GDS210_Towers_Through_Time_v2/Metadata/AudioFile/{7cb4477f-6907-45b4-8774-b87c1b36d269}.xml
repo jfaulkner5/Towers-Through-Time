@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{7cb4477f-6907-45b4-8774-b87c1b36d269}">
+        <property name="assetPath">
+            <value>Lazer Gun (Single Shot) Sounds/NT5/Single Shot_3.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.1946938775510203</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fdbf6cbb-6a79-45a7-93fb-8fe8f7eb2172}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{9ebe2dd6-2fbf-4a87-8a7c-21f3f24669b9}">
+        <property name="assetPath">
+            <value>Lazer Upward/NT5/Lazer (Up)_32.wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>2.3365079365079366</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fdbf6cbb-6a79-45a7-93fb-8fe8f7eb2172}</destination>
+        </relationship>
+    </object>
+</objects>
