@@ -25,8 +25,9 @@ public class EventCore : MonoBehaviour
         public int currentLevel;
     }
 
-    public class UnityEventLevelWon : UnityEvent<WinData> { }
-    public UnityEventLevelWon levelWon = new UnityEventLevelWon();
+    //public class UnityEventLevelWon : UnityEvent<WinData> { }
+    //public UnityEventLevelWon levelWon = new UnityEventLevelWon();
+    public UnityEvent levelWon;
 
     public UnityEvent levelLost;
 
