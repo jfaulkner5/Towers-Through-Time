@@ -117,7 +117,7 @@ public class AudioManager : MonoBehaviour
 
     #endregion
 
-    public void OnGameWin(EventCore.WinData arg0)
+    public void OnGameWin()
     {
         winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
         winSound.start();

@@ -9,6 +9,8 @@ public class WinStateCheck : MonoBehaviour
     bool checkForLastEnemy;
     List<GameObject> enemyList = new List<GameObject>();
 
+    Next_level next_Level;
+
     // Use this for initialization
     void Start()
     {
@@ -16,6 +18,15 @@ public class WinStateCheck : MonoBehaviour
         EventCore.Instance.enemyDied.AddListener(OnEnemyDied);
 
         EventCore.Instance.levelLost.AddListener(OnLossInvoke);
+
+        //test stuff
+
+        next_Level = GetComponentInParent<Next_level>();
+        if (next_Level == null)
+        {
+            print("Next level cannot be found");
+        }
+
     }
 
     //TODO  move the event functionality to a different, single GO
@@ -30,9 +41,11 @@ public class WinStateCheck : MonoBehaviour
             {
                 print("ZERO ENEMIES IN LEVEL");
                 Time.timeScale = 1;
-                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+
+                
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(0);
                 //var winData = new EventCore.WinData();
-                //EventCore.Instance.levelWon.Invoke(winData);
+                EventCore.Instance.levelWon.Invoke();
             }
         }
     }
@@ -50,7 +63,8 @@ public class WinStateCheck : MonoBehaviour
     {
         // Lose function 
         print("LOSE");
-        SceneManager.LoadScene("Menu");
+        //SceneManager.LoadScene("Menu");
+        EventCore.Instance.levelLost.Invoke();
 
     }
 }
