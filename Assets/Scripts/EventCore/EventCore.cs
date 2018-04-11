@@ -60,6 +60,7 @@ public class EventCore : MonoBehaviour
 
     #endregion
 
+    //Hack lol
     //Enemy Spawner stuff
     #region
 
@@ -67,8 +68,8 @@ public class EventCore : MonoBehaviour
 
     #endregion
 
-    //Tower stuff
-    #region
+    
+    #region Tower stuff
 
     public class UnityEventGameObject : UnityEvent<GameObject> { }
     public UnityEventGameObject enemyToKill = new UnityEventGameObject();

@@ -10,10 +10,6 @@ public class GameManager : MonoBehaviour
     public float totalLevels;
     public int visualTheme;
 
-
-    public Dictionary<float, bool> levelsBeat = new Dictionary<float, bool>();
-
-
     public static GameManager instance;
 
     EventCore.WinData winData = new EventCore.WinData();
@@ -29,11 +25,6 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-        }
-
-        for (int index = 1; index < totalLevels + 1; index++)
-        {
-            instance.levelsBeat.Add(index, false);
         }
     }
 

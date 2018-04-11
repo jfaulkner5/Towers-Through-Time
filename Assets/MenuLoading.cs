@@ -14,11 +14,13 @@ public class MenuLoading : MonoBehaviour {
 
     public void LoadLevel()
     {
+        //Hack why
         print("LOOP");
         if (levelInput > 0 && levelInput <= 80)
         {
             print(levelInput);
             GameManager.instance.currentLevel = levelInput;
+            // HACK VVVVVV
             SceneManager.LoadScene("MainScene");
         }
     }
