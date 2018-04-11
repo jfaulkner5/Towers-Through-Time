@@ -9,8 +9,6 @@ public class WinStateCheck : MonoBehaviour
     bool checkForLastEnemy;
     List<GameObject> enemyList = new List<GameObject>();
 
-    Next_level next_Level;
-
     // Use this for initialization
     void Start()
     {
@@ -18,15 +16,6 @@ public class WinStateCheck : MonoBehaviour
         EventCore.Instance.enemyDied.AddListener(OnEnemyDied);
 
         EventCore.Instance.levelLost.AddListener(OnLossInvoke);
-
-        //test stuff
-
-        next_Level = GetComponentInParent<Next_level>();
-        if (next_Level == null)
-        {
-            print("Next level cannot be found");
-        }
-
     }
 
     //TODO  move the event functionality to a different, single GO
