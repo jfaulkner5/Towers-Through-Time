@@ -13,6 +13,7 @@ public class TextLoading : MonoBehaviour
     public Vector3 camStartPos;
     public float sideLength;
     Vector3 newPos = Vector3.zero;
+    public Vector3 baseMapPos = new Vector3(31.42f, -2f, 14.625f);
 
     [HideInInspector]
     public int visualTheme;
@@ -26,6 +27,8 @@ public class TextLoading : MonoBehaviour
     public GameObject[] freezeObjectTerrainTile;
     public GameObject[] clutterGenObjects;
 
+    public GameObject[] baseMaps;
+        
     public GameObject[] prehistoricBackground;
     public GameObject[] futuristicBackground;
     public GameObject[] apocalypticBackground;
@@ -122,7 +125,7 @@ public class TextLoading : MonoBehaviour
             }
 
             //[todo] background loading stuff 
-
+            Instantiate(baseMaps[visualTheme], baseMapPos, Quaternion.identity);
         }
     }
 }
