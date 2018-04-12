@@ -69,7 +69,7 @@ public class Next_level : MonoBehaviour
 
     public void GameLoss()
     {
-        SceneManager.LoadScene("Menu");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
         print("LEVEL LOST | end level start");
         //Time.timeScale = 0;
     }
