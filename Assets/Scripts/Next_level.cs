@@ -18,8 +18,6 @@ public class Next_level : MonoBehaviour
         EventCore.Instance.levelWon.AddListener(GameWon);
         EventCore.Instance.levelLost.AddListener(GameLoss);
 
-        menuLoading = GetComponent<MenuLoading>();
-        gameManager = GetComponent<GameManager>();
 
         if (menuLoading == null)
         {
@@ -56,7 +54,6 @@ public class Next_level : MonoBehaviour
         //restart level code
         levelLoading = currentLevel;
         Time.timeScale = 1;
-        menuLoading.LoadLevel(levelLoading);
 
     }
 
@@ -65,7 +62,6 @@ public class Next_level : MonoBehaviour
         Time.timeScale = 1;
         levelLoading = currentLevel;
         levelLoading++;
-        menuLoading.LoadLevel(levelLoading);
     }
 
     private void MenuLoad()
@@ -77,7 +73,6 @@ public class Next_level : MonoBehaviour
     public void GameWon()
     {
         print("LEVEL WON | end level trigger");
-        menuPanel.SetActive(true);
         //Time.timeScale = 0;
 
     }
@@ -86,7 +81,6 @@ public class Next_level : MonoBehaviour
     {
         print("LEVEL LOST | end level start");
         //Time.timeScale = 0;
-        menuPanel.SetActive(true);
     }
 
 
