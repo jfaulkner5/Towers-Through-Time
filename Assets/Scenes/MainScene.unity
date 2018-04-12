@@ -88,7 +88,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
-    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -556,7 +555,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 692344642}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -81, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 357624702}
@@ -698,6 +697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camStartPos: {x: 37.5, y: 40, z: 17.5}
   sideLength: 3
+  baseMapPos: {x: 31.42, y: -2, z: 14.625}
   visualTheme: 0
   blankTerrainTile:
   - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
@@ -729,6 +729,10 @@ MonoBehaviour:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   clutterGenObjects:
   - {fileID: 1070830047011288, guid: 741d38e4a1a055f489c2f488c8891b6e, type: 2}
+  baseMaps:
+  - {fileID: 100002, guid: f203fb6e3f9f75243be7d563b6277d8e, type: 3}
+  - {fileID: 100002, guid: ce050c45377f05a48ae0914a797c9043, type: 3}
+  - {fileID: 100000, guid: 90840491d0bd77244b6ccf5de8644a2c, type: 3}
   prehistoricBackground: []
   futuristicBackground: []
   apocalypticBackground: []
@@ -771,7 +775,6 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -813,7 +816,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuLoading: {fileID: 0}
-  gameManager: {fileID: 0}
   currentLevel: 0
   levelLoading: 0
   menuPanel: {fileID: 2075634165}
@@ -842,7 +844,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1239954767}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -35.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 257350994}
@@ -1181,7 +1183,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuLoading: {fileID: 0}
-  gameManager: {fileID: 0}
   currentLevel: 0
   levelLoading: 0
   menuPanel: {fileID: 0}
