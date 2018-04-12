@@ -5,7 +5,6 @@ using UnityEngine;
 public class Next_level : MonoBehaviour
 {
     public MenuLoading menuLoading;
-    public GameManager gameManager;
 
     public int currentLevel;
     public int levelLoading;
@@ -24,12 +23,7 @@ public class Next_level : MonoBehaviour
             print("menuloading wasn't found");
         }
 
-        if (gameManager == null)
-        {
-            print("game manager wasn't found");
-        }
-
-        currentLevel = gameManager.currentLevel;
+        currentLevel = GameManager.instance.currentLevel;
     }
 
     public void OnClickRestart()

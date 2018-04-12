@@ -186,9 +186,10 @@ public class TowerControl : MonoBehaviour
             if (Vector3.Distance(towerCalling.transform.position, enemyList[i].transform.position) <= towerRange)
             {
                 closestEnemy = enemyList[i];
+                return closestEnemy;
             }
         }
-        return closestEnemy;
+        return null;
     }
 
     IEnumerator FreezeTimer()
