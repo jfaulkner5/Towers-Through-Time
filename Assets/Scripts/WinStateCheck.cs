@@ -52,7 +52,7 @@ public class WinStateCheck : MonoBehaviour
     {
         // Lose function 
         print("LOSE");
-        //SceneManager.LoadScene("Menu");
+        //UnityEngine.SceneManagement.SceneManager.LoadScene("Menu");
         EventCore.Instance.levelLost.Invoke();
 
     }

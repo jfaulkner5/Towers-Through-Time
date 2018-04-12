@@ -64,11 +64,12 @@ public class Next_level : MonoBehaviour
     {
         print("LEVEL WON | end level trigger");
         //Time.timeScale = 0;
-
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
     public void GameLoss()
     {
+        SceneManager.LoadScene("Menu");
         print("LEVEL LOST | end level start");
         //Time.timeScale = 0;
     }
