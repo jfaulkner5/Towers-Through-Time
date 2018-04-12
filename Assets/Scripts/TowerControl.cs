@@ -53,7 +53,7 @@ public class TowerControl : MonoBehaviour
         enemyList = new List<GameObject>();
         isActive = false;
         if (GameObject.FindGameObjectWithTag("Freeze") != null)
-            freezeTime = GameObject.FindGameObjectWithTag("Freeze").GetComponent<FreezeTime>().freezeTime;
+            freezeTime = FreezeManager.instance.freezeTime;
         isPaused = false;
         timeToBreakCurrent = timeToBreak;
     }

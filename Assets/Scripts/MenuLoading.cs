@@ -7,9 +7,9 @@ public class MenuLoading : MonoBehaviour {
 
     public int levelInput = 0;
 
-    public void TakeInput(string input)
+    public void TakeInput(int input)
     {
-        levelInput = int.Parse(input);
+        levelInput = input;
     }
 
     public void LoadLevel()
@@ -35,10 +35,6 @@ public class MenuLoading : MonoBehaviour {
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.KeypadEnter))
-        {
-            LoadLevel();
-        }
     }
 
     public void LoadMenu(string sceneName)
