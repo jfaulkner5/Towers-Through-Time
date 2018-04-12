@@ -33,6 +33,16 @@ public class MenuLoading : MonoBehaviour {
 
     }
 
+    /// <summary>
+    /// Hacky fix for menu issue
+    /// </summary>
+    public void LoadLevelFix()
+    {
+        levelInput++;
+        LoadLevel();
+    }
+
+
     private void Update()
     {
     }
