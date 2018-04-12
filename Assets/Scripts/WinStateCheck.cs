@@ -32,9 +32,9 @@ public class WinStateCheck : MonoBehaviour
                 Time.timeScale = 1;
 
                 
-                UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(0);
                 //var winData = new EventCore.WinData();
-                //EventCore.Instance.levelWon.Invoke();
+                EventCore.Instance.levelWon.Invoke();
             }
         }
     }
@@ -52,8 +52,8 @@ public class WinStateCheck : MonoBehaviour
     {
         // Lose function 
         print("LOSE");
-        SceneManager.LoadScene("Menu");
-        //EventCore.Instance.levelLost.Invoke();
+        //SceneManager.LoadScene("Menu");
+        EventCore.Instance.levelLost.Invoke();
 
     }
 }
