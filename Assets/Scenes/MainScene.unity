@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -759,9 +759,9 @@ MonoBehaviour:
   - {fileID: 1193729722087948, guid: a86674620567a94449d9c975e05587a7, type: 2}
   - {fileID: 1639539939234566, guid: df6045ad797f11140a24f2cbb63e1146, type: 2}
   pathTerrainTile:
-  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
-  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
-  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
+  - {fileID: 1939490308819040, guid: 89c384f4c802e4f4cb5c05f372d2e74b, type: 2}
+  - {fileID: 1199693112040950, guid: 4c9f4cd75a1db4c4892122306685cda3, type: 2}
+  - {fileID: 1879366614737166, guid: 0d59b0b32b14c434d877c1f392b89688, type: 2}
   enemySpawnTerrainTile:
   - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
   - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
