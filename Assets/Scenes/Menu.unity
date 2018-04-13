@@ -514,8 +514,6 @@ MonoBehaviour:
       m_Image: {fileID: 0}
     - m_Text: 20
       m_Image: {fileID: 0}
-    - m_Text: 26
-      m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
