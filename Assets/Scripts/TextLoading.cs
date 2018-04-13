@@ -25,7 +25,13 @@ public class TextLoading : MonoBehaviour
     public GameObject[] pathTerrainTile;
     public GameObject[] enemySpawnTerrainTile;
     public GameObject[] freezeObjectTerrainTile;
-    public GameObject[] clutterGenObjects;
+
+
+
+
+    public GameObject[] prehistoricClutterGenObjects;
+    public GameObject[] futuristicClutterGenObjects;
+    public GameObject[] apocalupticClutterGenObjects;
 
     public GameObject[] baseMaps;
         
@@ -116,7 +122,19 @@ public class TextLoading : MonoBehaviour
                         Instantiate(pathTerrainTile[visualTheme], newPos, Quaternion.identity);
                         break;
                     case 'S':
-                        Instantiate(clutterGenObjects[Random.Range(0,clutterGenObjects.Length)], newPos, Quaternion.identity);
+                        switch (visualTheme)
+                        {
+                            case 0:
+                                Instantiate(prehistoricClutterGenObjects[Random.Range(0, prehistoricClutterGenObjects.Length)], newPos, Quaternion.identity);
+                                break;
+                            case 1:
+                                Instantiate(futuristicClutterGenObjects[Random.Range(0, futuristicClutterGenObjects.Length)], newPos, Quaternion.identity);
+                                break;
+                            case 2:
+                                Instantiate(apocalupticClutterGenObjects[Random.Range(0, apocalupticClutterGenObjects.Length)], newPos, Quaternion.identity);
+                                break;
+
+                        }
                         break;
                     case ' ':
                         break;

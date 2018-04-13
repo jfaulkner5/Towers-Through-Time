@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -747,13 +747,13 @@ MonoBehaviour:
   - {fileID: 1899155093780330, guid: 7e0e65400fb4fb74184d36ba628b403f, type: 2}
   - {fileID: 1877388731122618, guid: 5d846fdf41917bb4fbaae7abae400907, type: 2}
   MonumentTerrainTile:
-  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
-  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
-  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
+  - {fileID: 1310687079588310, guid: 7916f57237895a74aa36c93386377fc8, type: 2}
+  - {fileID: 1669462820799936, guid: 916e89eb42d064a4b8b6a5c6a8683fe2, type: 2}
+  - {fileID: 1836654438673058, guid: 26624e9d063ed454e96649e1b04b9e96, type: 2}
   playerTerrainTile:
-  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
-  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
-  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
+  - {fileID: 1746783210717604, guid: 359e7f1b12520814bbe14ad500251905, type: 2}
+  - {fileID: 1659943664813956, guid: 6a8f528a69736b74e995fbaad07f9167, type: 2}
+  - {fileID: 1076484686022530, guid: 3bea10e6759e8ab4ca170cac9404b54e, type: 2}
   towerTerainTower:
   - {fileID: 1133438968871624, guid: 101f4be992360874fbb9e04d928738ec, type: 2}
   - {fileID: 1193729722087948, guid: a86674620567a94449d9c975e05587a7, type: 2}
@@ -770,8 +770,20 @@ MonoBehaviour:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
-  clutterGenObjects:
-  - {fileID: 1070830047011288, guid: 741d38e4a1a055f489c2f488c8891b6e, type: 2}
+  prehistoricClutterGenObjects:
+  - {fileID: 1745750693424396, guid: eb09db88eb4761142acd88c03df77284, type: 2}
+  - {fileID: 1500698169812178, guid: 27dd4168fe687bf459c803830241d517, type: 2}
+  - {fileID: 1586852646914026, guid: 850a6fea429ee5044a4274c2c9e15a4a, type: 2}
+  futuristicClutterGenObjects:
+  - {fileID: 1917040192470162, guid: 422154151be790b4ba911ae04555a2a9, type: 2}
+  - {fileID: 1225755859013912, guid: 7ea297801ea548b47be5008848aaedce, type: 2}
+  apocalupticClutterGenObjects:
+  - {fileID: 1660092176013208, guid: 4209fad087a8c2544a213144b87623f6, type: 2}
+  - {fileID: 1326287542159454, guid: d309f45a3d9b23f44b1f94751d10fece, type: 2}
+  - {fileID: 1241123755377550, guid: 69f2ba18f6b08da4c8c057117aed9a9c, type: 2}
+  - {fileID: 1325259981967062, guid: 26e1302278463e04d98005d920a5ea65, type: 2}
+  - {fileID: 1844569868873798, guid: aedcd288242158142810c5681a005d0b, type: 2}
+  - {fileID: 1545742014262532, guid: e8dd1ecf6bbbef44f90e18379a6ed77b, type: 2}
   baseMaps:
   - {fileID: 100002, guid: f203fb6e3f9f75243be7d563b6277d8e, type: 3}
   - {fileID: 100002, guid: ce050c45377f05a48ae0914a797c9043, type: 3}
