@@ -740,7 +740,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camStartPos: {x: 37.5, y: 40, z: 17.5}
   sideLength: 3
-  baseMapPos: {x: 31.42, y: -2, z: 14.625}
+  baseMapPos: {x: 31.42, y: -3.3, z: 21.7}
   visualTheme: 0
   blankTerrainTile:
   - {fileID: 1977213584946374, guid: abf52929448d87c4b8be1df4c12bc410, type: 2}
@@ -785,9 +785,9 @@ MonoBehaviour:
   - {fileID: 1844569868873798, guid: aedcd288242158142810c5681a005d0b, type: 2}
   - {fileID: 1545742014262532, guid: e8dd1ecf6bbbef44f90e18379a6ed77b, type: 2}
   baseMaps:
-  - {fileID: 100002, guid: f203fb6e3f9f75243be7d563b6277d8e, type: 3}
-  - {fileID: 100002, guid: ce050c45377f05a48ae0914a797c9043, type: 3}
-  - {fileID: 100000, guid: 90840491d0bd77244b6ccf5de8644a2c, type: 3}
+  - {fileID: 100002, guid: 55b2f2ede3ccc1a418b1524c7eb45e42, type: 3}
+  - {fileID: 100002, guid: 35997d8c592d984439d2f24826113e20, type: 3}
+  - {fileID: 100000, guid: 90f5167b134cb7544bfb229154ab7019, type: 3}
   prehistoricBackground: []
   futuristicBackground: []
   apocalypticBackground: []
