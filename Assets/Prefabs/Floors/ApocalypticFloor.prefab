@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 33924903629143514}
   - component: {fileID: 65664365237152706}
   - component: {fileID: 23663629616066316}
+  - component: {fileID: 65397440933926240}
   m_Layer: 9
   m_Name: ApocalypticFloor
   m_TagString: Untagged
@@ -36,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877388731122618}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.720579, y: 7.3818684, z: -28.940243}
+  m_LocalPosition: {x: 26.058504, y: 73.99599, z: -22.32715}
   m_LocalScale: {x: 3, y: 0.2, z: 3}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,6 +84,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1877388731122618}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65397440933926240
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1877388731122618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 40, z: 1}
+  m_Center: {x: 0, y: -19.5, z: 0}
 --- !u!65 &65664365237152706
 BoxCollider:
   m_ObjectHideFlags: 1
