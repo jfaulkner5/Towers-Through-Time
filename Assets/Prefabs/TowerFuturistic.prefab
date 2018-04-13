@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 114146295368101958}
   m_Layer: 0
   m_Name: TowerFuturistic
-  m_TagString: Untagged
+  m_TagString: Tower
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
