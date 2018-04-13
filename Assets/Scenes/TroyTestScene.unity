@@ -139,6 +139,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 040db64b5059a9f4397c0f58491dfcfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  levelWon:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  healthPickup:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
   levelLost:
     m_PersistentCalls:
       m_Calls: []
@@ -278,7 +288,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &1018042635
@@ -326,21 +336,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   camStartPos: {x: 37.5, y: 40, z: 17.5}
   sideLength: 5
+  baseMapPos: {x: 31.42, y: -2, z: 14.625}
   visualTheme: 0
   blankTerrainTile:
   - {fileID: 1862142429673686, guid: d61dcdeba12a1a54988b8db9c4de3ae5, type: 2}
   MonumentTerrainTile:
-  - {fileID: 1944471889919000, guid: 46c357bff8a2a2d4b9d22ccf9dd065fb, type: 2}
+  - {fileID: 0}
   playerTerrainTile:
-  - {fileID: 1984933153599974, guid: efa613b86addee74d8a9cbfab01dfcf5, type: 2}
+  - {fileID: 0}
   towerTerainTower:
-  - {fileID: 1733704060679878, guid: a332b7275bf62bf449efda0e5195475e, type: 2}
+  - {fileID: 0}
   pathTerrainTile:
-  - {fileID: 1862142429673686, guid: 7f3b46b3086e42248b4f6dcfa020b363, type: 2}
+  - {fileID: 0}
   enemySpawnTerrainTile:
   - {fileID: 1494491926193744, guid: c2e4a5f187e4ea54cbb76e5e67e7609e, type: 2}
   freezeObjectTerrainTile:
   - {fileID: 1971905393147604, guid: 09d8df633153baf4b937285a3053089a, type: 2}
+  prehistoricClutterGenObjects: []
+  futuristicClutterGenObjects: []
+  apocalupticClutterGenObjects: []
+  baseMaps: []
   prehistoricBackground: []
   futuristicBackground: []
   apocalypticBackground: []
