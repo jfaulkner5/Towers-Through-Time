@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monumentDamage_PS: {fileID: 198140008995013598}
-  monumentHealth: 5
+  maxMonumentHealth: 5
 --- !u!198 &198140008995013598
 ParticleSystem:
   m_ObjectHideFlags: 1

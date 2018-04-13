@@ -15,6 +15,10 @@ public class Enemy : MonoBehaviour
     float distToMonument;
     [Tooltip("How far away the enemy must be before they hit the tower")]
     public float distToMonumentToDie;
+    //TODO change
+    [Tooltip("On death, a number between this and 0 will be chosen to determine whether to drop a health pack. The higher the number, the less of a chance")]
+    public float randomChanceToDrop;
+    public GameObject healthDrop;
 
     private void Start()
     {
@@ -38,6 +42,11 @@ public class Enemy : MonoBehaviour
         data.deadEnemy = gameObject;
         EventCore.Instance.enemyDied.Invoke(data);
 
+        float rand = Random.Range(0, randomChanceToDrop);
+        if (rand <= 1)
+        {
+            GameObject drop = Instantiate(healthDrop, transform.position, Quaternion.identity, null);
+        }
         //DO ALL DEATH EFFECTS, ETC HERE
         GameObject death = Instantiate(death_PS, transform.position, transform.rotation) as GameObject;
         Destroy(gameObject);

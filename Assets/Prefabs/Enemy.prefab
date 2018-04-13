@@ -127,3 +127,5 @@ MonoBehaviour:
   death_PS: {fileID: 1563729990459434, guid: 0082069dc0ceb0f49874cd6b1bf134eb, type: 2}
   enemyDamage: 1
   distToMonumentToDie: 1
+  randomChanceToDrop: 100
+  healthDrop: {fileID: 1795858113295768, guid: b5a258f02234b0641ae0401a755a50e9, type: 2}

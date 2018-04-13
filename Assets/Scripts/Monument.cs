@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Monument : MonoBehaviour {
     public ParticleSystem monumentDamage_PS;
-    public int monumentHealth;
+    public int maxMonumentHealth;
+    int currentMonumentHealth;
     public static Monument instance;
 
     private void Awake()
@@ -20,17 +21,31 @@ public class Monument : MonoBehaviour {
         }
     }
 
+    private void Start()
+    {
+        EventCore.Instance.healthPickup.AddListener(ReturnHealth);
+        currentMonumentHealth = maxMonumentHealth;
+    }
+
     public void TakeDamage(int damage)
     {
         monumentDamage_PS.Play();
-        monumentHealth -= damage;
-        if(monumentHealth <= 0)
+        currentMonumentHealth -= damage;
+        if(currentMonumentHealth <= 0)
         {
             print("YOU LOSE");
             EventCore.Instance.levelLost.Invoke();
         }
     }
 
+    void ReturnHealth()
+    {
+        if (currentMonumentHealth <= maxMonumentHealth)
+        {
+            currentMonumentHealth++;
+            //play particle effect or do visual gain for monument health
+        }
 
+    }
 
 }
