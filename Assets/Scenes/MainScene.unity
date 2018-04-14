@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -154,7 +154,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.05
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!4 &7180865
@@ -773,7 +773,6 @@ MonoBehaviour:
   prehistoricClutterGenObjects:
   - {fileID: 1745750693424396, guid: eb09db88eb4761142acd88c03df77284, type: 2}
   - {fileID: 1500698169812178, guid: 27dd4168fe687bf459c803830241d517, type: 2}
-  - {fileID: 1586852646914026, guid: 850a6fea429ee5044a4274c2c9e15a4a, type: 2}
   futuristicClutterGenObjects:
   - {fileID: 1917040192470162, guid: 422154151be790b4ba911ae04555a2a9, type: 2}
   - {fileID: 1225755859013912, guid: 7ea297801ea548b47be5008848aaedce, type: 2}
@@ -807,7 +806,7 @@ Camera:
   m_GameObject: {fileID: 1216156066}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -841,13 +840,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1216156066}
-  m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 32, y: 27, z: -5}
+  m_LocalRotation: {x: 0.3987491, y: 0, z: 0, w: 0.91706014}
+  m_LocalPosition: {x: 32, y: 24, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 47, y: 0, z: 0}
 --- !u!114 &1216156072
 MonoBehaviour:
   m_ObjectHideFlags: 0
