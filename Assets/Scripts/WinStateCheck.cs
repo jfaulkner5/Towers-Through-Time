@@ -7,7 +7,7 @@ public class WinStateCheck : MonoBehaviour
 {
 
     bool checkForLastEnemy;
-    List<GameObject> enemyList = new List<GameObject>();
+   public static List<GameObject> enemyList = new List<GameObject>();
 
     // Use this for initialization
     void Start()
