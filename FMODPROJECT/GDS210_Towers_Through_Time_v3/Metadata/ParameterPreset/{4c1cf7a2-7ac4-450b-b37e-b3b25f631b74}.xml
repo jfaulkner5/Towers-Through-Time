@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="ParameterPreset" id="{4c1cf7a2-7ac4-450b-b37e-b3b25f631b74}">
+        <property name="name">
+            <value>Enemy Count</value>
+        </property>
+        <relationship name="folder">
+            <destination>{7ca59a92-9c1f-03a5-35ba-68d79f93c2a3}</destination>
+        </relationship>
+        <relationship name="parameter">
+            <destination>{340851f6-e7d4-4221-bdee-e14b9922c213}</destination>
+        </relationship>
+    </object>
+    <object class="GameParameter" id="{340851f6-e7d4-4221-bdee-e14b9922c213}">
+        <property name="maximum">
+            <value>25</value>
+        </property>
+        <property name="initialValue">
+            <value>0</value>
+        </property>
+    </object>
+</objects>

@@ -55,9 +55,5 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBank: Master Bank
-  Banks:
-  - Music
-  - Tower Bank
-  - Player Bank
-  - Enemy
+  MasterBank: 
+  Banks: []
