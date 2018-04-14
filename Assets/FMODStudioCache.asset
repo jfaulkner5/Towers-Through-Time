@@ -11,11 +11,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks: []
-  EditorEvents: []
-  MasterBankRef: {fileID: 0}
-  StringsBankRef: {fileID: 0}
-  stringsBankWriteTime: 0
+  EditorBanks:
+  - {fileID: 114736854677498392}
+  - {fileID: 114705843370730398}
+  - {fileID: 114636761691167370}
+  - {fileID: 114686968828766492}
+  - {fileID: 114048362439131494}
+  - {fileID: 114748618112173330}
+  EditorEvents:
+  - {fileID: 114538850143781048}
+  - {fileID: 114314511233502836}
+  - {fileID: 114647889563227256}
+  - {fileID: 114434749901064692}
+  - {fileID: 114882512369597240}
+  - {fileID: 114850764062697844}
+  - {fileID: 114012532388817144}
+  - {fileID: 114968962524092690}
+  - {fileID: 114961299626601676}
+  - {fileID: 114802056861791246}
+  - {fileID: 114954530499460890}
+  MasterBankRef: {fileID: 114636761691167370}
+  StringsBankRef: {fileID: 114736854677498392}
+  stringsBankWriteTime: 636593470206239617
   cacheVersion: 2
 --- !u!114 &114002701765439244
 MonoBehaviour:
@@ -96,6 +113,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 80096
   Exists: 0
+--- !u!114 &114012532388817144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Fire
+  guid: 68c8c073d16c684e9f2315a88b3d805e
+  Banks:
+  - {fileID: 114686968828766492}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &114020331675941524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,6 +171,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 1402
   Exists: 1
+--- !u!114 &114039884477218402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Lose sound
+  guid: 278b54f559314b489ec5ae956dcea529
+  Banks:
+  - {fileID: 114515748024906092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5517
 --- !u!114 &114043340425441972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +245,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 80096
   Exists: 0
+--- !u!114 &114048362439131494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Player
+    Bank.bank
+  lastModified: 636593470218009628
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 58592
+  Exists: 1
 --- !u!114 &114049609254070040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +300,31 @@ MonoBehaviour:
   - Name: Desktop
     Value: 39264
   Exists: 1
+--- !u!114 &114056111501481678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: c3e51f65cabfeb4598a0b7c480005c87
+  Banks:
+  - {fileID: 114977340094309162}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114580469140678694}
+  - {fileID: 114576202030222354}
+  - {fileID: 114412680182100426}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 144827
 --- !u!114 &114057809071866246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -587,6 +692,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 243072
   Exists: 1
+--- !u!114 &114196987757091260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Fire
+  guid: 68c8c073d16c684e9f2315a88b3d805e
+  Banks:
+  - {fileID: 114429115621848578}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1000
 --- !u!114 &114212102485584470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,6 +798,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 0
+--- !u!114 &114251128065511842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Freeze time
+  guid: 2167dca02cd61341a07816f52552bbdc
+  Banks:
+  - {fileID: 114515748024906092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7546
 --- !u!114 &114256401858350276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +835,28 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+--- !u!114 &114257719387594804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Power Down
+  guid: 59d843d12867784086306d3706f949f4
+  Banks:
+  - {fileID: 114429115621848578}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1368
 --- !u!114 &114279243810835542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,6 +916,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 39264
   Exists: 0
+--- !u!114 &114293790802660244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Player
+    Bank.bank
+  lastModified: 636593470218009628
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 58592
+  Exists: 1
 --- !u!114 &114304329063140106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -781,6 +971,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 0
+--- !u!114 &114314511233502836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Win sound
+  guid: 0b34c0004eadfa4bb1386658f0eb367a
+  Banks:
+  - {fileID: 114636761691167370}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5517
 --- !u!114 &114320483977819924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,6 +1155,43 @@ MonoBehaviour:
   - Name: Desktop
     Value: 243072
   Exists: 1
+--- !u!114 &114407664219826644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Button Click
+  guid: 789083d65c535143b015b210f067474b
+  Banks:
+  - {fileID: 114515748024906092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 689
+--- !u!114 &114412680182100426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Win/Lose
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114412693343174918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,6 +1232,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 0
+--- !u!114 &114419024624593802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Win/Lose
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114423380447547884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,6 +1284,25 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+--- !u!114 &114429115621848578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Tower
+    Bank.bank
+  lastModified: 636593470220630577
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 80096
+  Exists: 1
 --- !u!114 &114432888270503344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1035,6 +1318,28 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+--- !u!114 &114434749901064692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Lose sound
+  guid: 278b54f559314b489ec5ae956dcea529
+  Banks:
+  - {fileID: 114636761691167370}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5517
 --- !u!114 &114435968436169356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1248,6 +1553,25 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+--- !u!114 &114515748024906092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636593470206214610
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 243072
+  Exists: 1
 --- !u!114 &114526276530901654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1304,6 +1628,31 @@ MonoBehaviour:
   - Name: Desktop
     Value: 243072
   Exists: 1
+--- !u!114 &114538850143781048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music
+  guid: c3e51f65cabfeb4598a0b7c480005c87
+  Banks:
+  - {fileID: 114705843370730398}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 114579147662458814}
+  - {fileID: 114932555237511384}
+  - {fileID: 114419024624593802}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 144827
 --- !u!114 &114539834884282442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1375,6 +1724,39 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+--- !u!114 &114573831350399382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Enemy.bank
+  lastModified: 636593470208255352
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 39264
+  Exists: 1
+--- !u!114 &114576202030222354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Enemy Count
+  Min: 0
+  Max: 25
+  Default: 0
 --- !u!114 &114576888690470750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1405,6 +1787,43 @@ MonoBehaviour:
   Min: 0
   Max: 4
   Default: 0
+--- !u!114 &114579147662458814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 4
+  Default: 0
+--- !u!114 &114579504169930958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Power Up
+  guid: f4564d054f3a2942b08001a5ae11708c
+  Banks:
+  - {fileID: 114429115621848578}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1343
 --- !u!114 &114580222824316142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1423,6 +1842,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 0
+--- !u!114 &114580469140678694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 4
+  Default: 0
 --- !u!114 &114580775577100604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1520,6 +1954,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 1
+--- !u!114 &114602084610896866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Footsteps
+  guid: 60cd3a93c20a7c4ea76637da6dd5e269
+  Banks:
+  - {fileID: 114293790802660244}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 567
 --- !u!114 &114608250169651694
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,6 +2051,25 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 0
+--- !u!114 &114636761691167370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Master
+    Bank.bank
+  lastModified: 636593470206214610
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 243072
+  Exists: 1
 --- !u!114 &114640312552182282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1653,6 +2128,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 58592
   Exists: 1
+--- !u!114 &114647889563227256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Freeze time
+  guid: 2167dca02cd61341a07816f52552bbdc
+  Banks:
+  - {fileID: 114636761691167370}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 7546
 --- !u!114 &114656011285274592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1709,6 +2206,25 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1343
+--- !u!114 &114686968828766492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Tower
+    Bank.bank
+  lastModified: 636593470220630577
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 80096
+  Exists: 1
 --- !u!114 &114689135632036878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1724,6 +2240,28 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+--- !u!114 &114691095579287054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Win sound
+  guid: 0b34c0004eadfa4bb1386658f0eb367a
+  Banks:
+  - {fileID: 114515748024906092}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 5517
 --- !u!114 &114693841410559934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1776,6 +2314,24 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 58592
+  Exists: 1
+--- !u!114 &114705843370730398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Music.bank
+  lastModified: 636593470216534103
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 761472
   Exists: 1
 --- !u!114 &114711944885422186
 MonoBehaviour:
@@ -1866,6 +2422,24 @@ MonoBehaviour:
   - Name: Desktop
     Value: 58592
   Exists: 0
+--- !u!114 &114736854677498392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636593470206239617
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1402
+  Exists: 1
 --- !u!114 &114737190131564184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1921,6 +2495,46 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 243072
+  Exists: 1
+--- !u!114 &114747765122079208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Enemy death
+  guid: 5d1db0e50a8be44380a389f2384329dc
+  Banks:
+  - {fileID: 114573831350399382}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1379
+--- !u!114 &114748618112173330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Enemy.bank
+  lastModified: 636593470208255352
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 39264
   Exists: 1
 --- !u!114 &114759025424072662
 MonoBehaviour:
@@ -2049,6 +2663,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 243072
   Exists: 1
+--- !u!114 &114802056861791246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player death
+  guid: df744edf4a85344cb19d74ef8dd11562
+  Banks:
+  - {fileID: 114048362439131494}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
 --- !u!114 &114818945666422190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2163,6 +2799,46 @@ MonoBehaviour:
   - Name: Desktop
     Value: 39264
   Exists: 0
+--- !u!114 &114850764062697844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Power Down
+  guid: 59d843d12867784086306d3706f949f4
+  Banks:
+  - {fileID: 114686968828766492}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1368
+--- !u!114 &114880367177224884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Master Bank.strings.bank
+  lastModified: 636593470206239617
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1402
+  Exists: 1
 --- !u!114 &114881019768569634
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2182,6 +2858,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 80096
   Exists: 0
+--- !u!114 &114882512369597240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Event Sounds/Button Click
+  guid: 789083d65c535143b015b210f067474b
+  Banks:
+  - {fileID: 114636761691167370}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 689
 --- !u!114 &114886869221827838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2201,6 +2899,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 58592
   Exists: 0
+--- !u!114 &114906081374914252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Player death
+  guid: df744edf4a85344cb19d74ef8dd11562
+  Banks:
+  - {fileID: 114293790802660244}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1500
 --- !u!114 &114908189354150898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2312,6 +3032,21 @@ MonoBehaviour:
   - Name: Desktop
     Value: 294208
   Exists: 0
+--- !u!114 &114932555237511384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Enemy Count
+  Min: 0
+  Max: 25
+  Default: 0
 --- !u!114 &114938082013989664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2427,6 +3162,28 @@ MonoBehaviour:
   - Name: Desktop
     Value: 80096
   Exists: 1
+--- !u!114 &114954530499460890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Enemy/Enemy death
+  guid: 5d1db0e50a8be44380a389f2384329dc
+  Banks:
+  - {fileID: 114748618112173330}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1379
 --- !u!114 &114959195293143020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2463,6 +3220,68 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 39264
+  Exists: 1
+--- !u!114 &114961299626601676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Player/Footsteps
+  guid: 60cd3a93c20a7c4ea76637da6dd5e269
+  Banks:
+  - {fileID: 114048362439131494}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 567
+--- !u!114 &114968962524092690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: event:/Tower/Power Up
+  guid: f4564d054f3a2942b08001a5ae11708c
+  Banks:
+  - {fileID: 114686968828766492}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1343
+--- !u!114 &114977340094309162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Path: C:\Users\joker\Documents\GITKRAKEN_repos\TowersThroughTime\FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop\Music.bank
+  lastModified: 636593470216534103
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 761472
   Exists: 1
 --- !u!114 &114985225306423170
 MonoBehaviour:
