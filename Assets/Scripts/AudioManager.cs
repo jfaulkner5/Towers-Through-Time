@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 //[HELP] are other scripts dependant on the events system if EVENT CORE is an instance.
 //It would appear not.
@@ -19,7 +20,9 @@ public class AudioManager : MonoBehaviour
     [FMODUnity.EventRef] public string buttonRef;
     [FMODUnity.EventRef] public string backgroundMusic;
 
-
+    public FMOD.Studio.ParameterInstance level;
+    public FMOD.Studio.ParameterInstance winState;
+    public FMOD.Studio.ParameterInstance enemyCount;
 
 
     public FMOD.Studio.EventInstance walkPlay;
@@ -43,7 +46,18 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+
     }
+
+
+    /// <summary>
+    /// The different levels are set up to trigger on 
+    //Menu: 0-0.95
+    //Pre-His: 1-1.95
+    //Apoco: 2-2.95
+    //Future: 3-4 
+    /// </summary>
 
     // Use this for initialization
     void Start()
@@ -52,16 +66,37 @@ public class AudioManager : MonoBehaviour
 
         //[FIX] placeholder bgm
         bgm = FMODUnity.RuntimeManager.CreateInstance(backgroundMusic);
-        bgm.setVolume(0.2f);
+        bgm.setVolume(0.3f);
         bgm.start();
+        level.setValue(0.5f);
 
 
+        if (bgm.getParameter("Win/Lose", out winState) != FMOD.RESULT.OK)
+        {
+            Debug.LogError("parameter not found on music event");
+            return;
+        }
+
+        if (bgm.getParameter("Level", out level) != FMOD.RESULT.OK)
+        {
+            Debug.LogError("parameter not found on music event");
+            return;
+        }
+
+        if (bgm.getParameter("Enemy Count", out enemyCount) != FMOD.RESULT.OK)
+        {
+            Debug.LogError("parameter not found on music event");
+            return;
+        }
+
+        
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        ThematicAudioChanger();
     }
 
     private void AddEvents()
@@ -78,8 +113,41 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    private void ThematicAudioChanger()
+    {
+        Scene currentScene = SceneManager.GetActiveScene();
+        string sceneName = currentScene.name;
 
+        if (sceneName == "MainMenu")
+        {
+            level.setValue(0.5f);
+        }
 
+        if (GameManager.instance.visualTheme == 1)
+            level.setValue(1f);
+        if (GameManager.instance.visualTheme == 2)
+            level.setValue(2f);
+        if (GameManager.instance.visualTheme == 3)
+            level.setValue(3f);
+
+        print("current level theme is " + GameManager.instance.visualTheme);
+
+    }
+
+    private void IntensityChanger()
+    {
+
+        int totalEnemies = WinStateCheck.enemyList.Count;
+        if (totalEnemies >= 25)
+        {
+            totalEnemies = 25;
+        }
+        else if (totalEnemies <= 0)
+        {
+            totalEnemies = 1;
+        }
+        enemyCount.setValue(totalEnemies);
+    }
 
     //tower related audio
     #region
@@ -134,7 +202,7 @@ public class AudioManager : MonoBehaviour
 
     public void OnButtonClick()
     {
-        
+
         buttonPress = FMODUnity.RuntimeManager.CreateInstance(buttonRef);
         buttonPress.start();
     }
