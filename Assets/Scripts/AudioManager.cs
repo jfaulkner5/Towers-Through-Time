@@ -24,6 +24,8 @@ public class AudioManager : MonoBehaviour
     public FMOD.Studio.ParameterInstance winState;
     public FMOD.Studio.ParameterInstance enemyCount;
 
+    public FMOD.Studio.ParameterInstance indexChecker;
+
 
     public FMOD.Studio.EventInstance walkPlay;
     public FMOD.Studio.EventInstance towerOneShot, towerFire, freezeSound;
@@ -53,10 +55,19 @@ public class AudioManager : MonoBehaviour
 
     /// <summary>
     /// The different levels are set up to trigger on 
-    //Menu: 0-0.95
-    //Pre-His: 1-1.95
-    //Apoco: 2-2.95
-    //Future: 3-4 
+    ///Menu: 0-0.95
+    ///Pre-His: 1-1.95
+    ///Apoco: 2-2.95
+    ///Future: 3-4 
+    ///
+    /// INDEX VALUES FOR PARAMTERS
+    /// 
+    /// Level:      0
+    /// EnemyCount: 1
+    ///     should be 0-25
+    /// Win/loss:   2
+    ///     if 0.1-1 = loss
+    ///         1.1 - 2.0 = win
     /// </summary>
 
     // Use this for initialization
@@ -70,6 +81,10 @@ public class AudioManager : MonoBehaviour
         bgm.start();
         level.setValue(0.5f);
 
+
+        bgm.getParameterByIndex(0, out level);
+        bgm.getParameterByIndex(1, out enemyCount);
+        bgm.getParameterByIndex(2, out winState);
 
         if (bgm.getParameter("Win/Lose", out winState) != FMOD.RESULT.OK)
         {
@@ -89,9 +104,8 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        
-        
     }
+
 
     // Update is called once per frame
     void Update()
