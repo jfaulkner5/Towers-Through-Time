@@ -82,27 +82,7 @@ public class AudioManager : MonoBehaviour
         bgm.start();
         level.setValue(0.5f);
 
-        //bgm.getParameterByIndex(0, out level);
-        //bgm.getParameterByIndex(1, out enemyCount);
-        //bgm.getParameterByIndex(2, out winState);
 
-        //if (bgm.getParameterByIndex(2, out winState) != FMOD.RESULT.OK)
-        //{
-        //    Debug.LogError("parameter not found on music event");
-        //    return;
-        //}
-
-        //if (bgm.getParameterByIndex(0, out level) != FMOD.RESULT.OK)
-        //{
-        //    Debug.LogError("parameter not found on music event");
-        //    return;
-        //}
-
-        //if (bgm.getParameterByIndex(1, out enemyCount) != FMOD.RESULT.OK)
-        //{
-        //    Debug.LogError("parameter not found on music event");
-        //    return;
-        //}
 
     }
 
