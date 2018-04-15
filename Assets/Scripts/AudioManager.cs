@@ -110,8 +110,26 @@ public class AudioManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ThematicAudioChanger();
         IntensityChanger();
+        
+        if(Input.GetKey(KeyCode.Alpha1))
+        {
+            bgm.setParameterValueByIndex(0, 0.5f)
+        }
+        if (Input.GetKey(KeyCode.Alpha2))
+        {
+            bgm.setParameterValueByIndex(0, 1.5f)
+        }
+        if (Input.GetKey(KeyCode.Alpha3))
+        {
+            bgm.setParameterValueByIndex(0, 2.5f)
+        }
+        if (Input.GetKey(KeyCode.Alpha4))
+        {
+            bgm.setParameterValueByIndex(0, 3.5f)
+        }
+
+
     }
 
     private void AddEvents()
