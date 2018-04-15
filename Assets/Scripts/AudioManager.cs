@@ -91,8 +91,11 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         IntensityChanger();
-        
-        if(Input.GetKey(KeyCode.Alpha1))
+
+
+        //Debug stuff
+        #region
+        if (Input.GetKey(KeyCode.Alpha1))
         {
             bgm.setParameterValueByIndex(0, 0.5f);
         }
@@ -109,6 +112,15 @@ public class AudioManager : MonoBehaviour
             bgm.setParameterValueByIndex(0, 3.5f);
         }
 
+        if(Input.GetKey(KeyCode.BackQuote))
+        {
+            FMOD.Studio.ParameterInstance testparam;
+            float testValue;
+            bgm.getParameterByIndex(0, out testparam);
+            testparam.getValue(out testValue);
+            Debug.Log(testValue);
+        }
+        #endregion
 
     }
 
@@ -128,27 +140,32 @@ public class AudioManager : MonoBehaviour
 
     public void SetAudioTheme(int arg0)
     {
+        Debug.Log("theme should have changed");
         audioTheme = arg0;
         ThematicAudioChanger();
     }
 
     private void ThematicAudioChanger()
     {
-
-
-        switch (audioTheme)
+        Debug.Log(audioTheme);
+        if (audioTheme == 0)
         {
-            case 1:
-                bgm.setParameterValueByIndex(0, 1.5f);
-                break;
-            case 2:
-                bgm.setParameterValueByIndex(0, 2.5f);
-                break;
-
-            case 3:
-                bgm.setParameterValueByIndex(0, 3.5f);
-                break;
+            bgm.setParameterValueByIndex(0, 1.5f);
         }
+        else if (audioTheme == 1)
+        {
+            bgm.setParameterValueByIndex(0, 2.5f);
+        }
+
+        else if (audioTheme == 2)
+        {
+            bgm.setParameterValueByIndex(0, 3.5f);
+        }
+        else
+        {
+            bgm.setParameterValueByIndex(0, 0.5f);
+        }
+
 
 
         //print("current level theme is " + GameManager.instance.visualTheme);
