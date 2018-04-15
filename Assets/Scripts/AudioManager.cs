@@ -149,12 +149,13 @@ public class AudioManager : MonoBehaviour
     public void SetAudioTheme(int arg0)
     {
         audioTheme = arg0;
+        ThematicAudioChanger();
     }
 
     private void ThematicAudioChanger()
     {
 
-        
+
         switch (audioTheme)
         {
             case 1:
@@ -168,6 +169,7 @@ public class AudioManager : MonoBehaviour
                 bgm.setParameterValueByIndex(0, 3.5f);
                 break;
         }
+
 
         //print("current level theme is " + GameManager.instance.visualTheme);
 
