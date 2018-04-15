@@ -28,4 +28,12 @@ public class PlayerMovement : MonoBehaviour {
         //    EventCore.Instance.playerWalk.Invoke();
         //}
     }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("health"))
+        {
+            Monument.instance.ReturnHealth();
+        }
+    }
 }
