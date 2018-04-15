@@ -36,6 +36,7 @@ public class AudioManager : MonoBehaviour
     public FMOD.Studio.EventInstance bgm;
 
     private string tempstring;
+    private int audioTheme;
 
     private void Awake()
     {
@@ -81,28 +82,27 @@ public class AudioManager : MonoBehaviour
         bgm.start();
         level.setValue(0.5f);
 
+        //bgm.getParameterByIndex(0, out level);
+        //bgm.getParameterByIndex(1, out enemyCount);
+        //bgm.getParameterByIndex(2, out winState);
 
-        bgm.getParameterByIndex(0, out level);
-        bgm.getParameterByIndex(1, out enemyCount);
-        bgm.getParameterByIndex(2, out winState);
+        //if (bgm.getParameterByIndex(2, out winState) != FMOD.RESULT.OK)
+        //{
+        //    Debug.LogError("parameter not found on music event");
+        //    return;
+        //}
 
-        if (bgm.getParameter("Win/Lose", out winState) != FMOD.RESULT.OK)
-        {
-            Debug.LogError("parameter not found on music event");
-            return;
-        }
+        //if (bgm.getParameterByIndex(0, out level) != FMOD.RESULT.OK)
+        //{
+        //    Debug.LogError("parameter not found on music event");
+        //    return;
+        //}
 
-        if (bgm.getParameter("Level", out level) != FMOD.RESULT.OK)
-        {
-            Debug.LogError("parameter not found on music event");
-            return;
-        }
-
-        if (bgm.getParameter("Enemy Count", out enemyCount) != FMOD.RESULT.OK)
-        {
-            Debug.LogError("parameter not found on music event");
-            return;
-        }
+        //if (bgm.getParameterByIndex(1, out enemyCount) != FMOD.RESULT.OK)
+        //{
+        //    Debug.LogError("parameter not found on music event");
+        //    return;
+        //}
 
     }
 
@@ -111,6 +111,7 @@ public class AudioManager : MonoBehaviour
     void Update()
     {
         ThematicAudioChanger();
+        IntensityChanger();
     }
 
     private void AddEvents()
@@ -127,53 +128,45 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    public void SetAudioTheme(int arg0)
+    {
+        audioTheme = arg0;
+    }
+
     private void ThematicAudioChanger()
     {
-        //Scene currentScene = SceneManager.GetActiveScene();
-        //string sceneName = currentScene.name;
 
-        //if (sceneName == "MainMenu")
-        //{
-        //    level.setValue(0.5f);
-        //}
-
-        switch (GameManager.instance.visualTheme)
+        
+        switch (audioTheme)
         {
-            default:
-                level.setValue(0.5f);
-                break;
-
             case 1:
-                level.setValue(1.3f);
+                bgm.setParameterValueByIndex(0, 1.5f);
                 break;
             case 2:
-                level.setValue(2.3f);
+                bgm.setParameterValueByIndex(0, 2.5f);
                 break;
 
             case 3:
-                level.setValue(3.3f);
+                bgm.setParameterValueByIndex(0, 3.5f);
                 break;
-
-
         }
 
-        print("current level theme is " + GameManager.instance.visualTheme);
+        //print("current level theme is " + GameManager.instance.visualTheme);
 
     }
 
     private void IntensityChanger()
     {
-
-        int totalEnemies = WinStateCheck.enemyList.Count;
-        if (totalEnemies >= 25)
+        float totalEnemies = WinStateCheck.enemyList.Count;
+        if (totalEnemies >= 25f)
         {
-            totalEnemies = 25;
+            totalEnemies = 25f;
         }
-        else if (totalEnemies <= 0)
+        else if (totalEnemies <= 0f)
         {
-            totalEnemies = 1;
+            totalEnemies = 1f;
         }
-        enemyCount.setValue(totalEnemies);
+        bgm.setParameterValueByIndex(1, totalEnemies);
     }
 
     //tower related audio
@@ -214,8 +207,10 @@ public class AudioManager : MonoBehaviour
 
     public void OnGameWin()
     {
-        winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
-        winSound.start();
+        bgm.setParameterValueByIndex(3, 1.1f);
+        bgm.setParameterValueByIndex(3, 0.0f);
+        //winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
+        //winSound.start();
 
     }
 
@@ -223,8 +218,10 @@ public class AudioManager : MonoBehaviour
 
     public void OnGameLoss()
     {
-        lossSound = FMODUnity.RuntimeManager.CreateInstance(lossRef);
-        lossSound.start();
+        bgm.setParameterValueByIndex(3, 0.5f);
+        bgm.setParameterValueByIndex(3, 0f);
+        //lossSound = FMODUnity.RuntimeManager.CreateInstance(lossRef);
+        //lossSound.start();
     }
 
     public void OnButtonClick()

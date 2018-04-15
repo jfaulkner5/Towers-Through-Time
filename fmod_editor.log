@@ -2,75 +2,54 @@
 [LOG] Manager::init                            : maxchannels = 256 studioflags = 00000006 flags 00000000 extradriverdata 0000000000000000.
 [LOG] SystemI::init                            : Initialize version=11004 (93853), maxchannels=256, flags=0x00020000
 [LOG] SystemI::setOutputInternal               : Setting output to 'FMOD WASAPI Output'
-[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=48000, nAvgBytesPerSec=384000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
+[LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEX): wFormatTag=0xFFFE, nChannels=2, nSamplesPerSec=96000, nAvgBytesPerSec=768000, nBlockAlign=8, wBitsPerSample=32, cbSize=22.
 [LOG] OutputWASAPI::init                       : Mix Format (WAVEFORMATEXTENSIBLE): wValidBitsPerSample=32, dwChannelMask=0x00000003, SubFormat=00000003-0000-0010-8000-00AA00389B71.
-[LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[LOG] OutputWASAPI::init                       : Output buffer size: 8192 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
+[WRN] SystemI::init                            : Output requires a sample rate of 96000Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0000000002787928 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0000000055519D78 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] PlaybackSystem::init                     : done
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000013921F08
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000013921F08
+[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
+[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
 [LOG] SystemI::createSound                     : filename = FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop/Music.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000000013922268 : node = 00000000493A8B50
-[LOG] SystemI::createSound                     : add node to async list : head = 000000003B4A6C68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000013922268
+[LOG] SystemI::createSound                     : setdata soundi = 0000000046E47478 : node = 000000001206FCB0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000030C27388.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000046E47478
 [LOG] SystemI::createSoundInternal             :     Create name='FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop/Music.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 738592
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22880
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000493A8C68
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000000001206FDC8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum Bus  (Menu) [2018-04-12 234622]', format=2, channels=2, frequency=48000, lengthbytes=154048, lengthpcm=529655, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999900.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000013922268
-[LOG] SoundI::getSubSound                      : sound 0000000013922268.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (00000000139225C8)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (000000003B4A7B58)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000013921F08)
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[ERR] assert                                   : assertion: 'listener >= 0 && listener < numlisteners' failed
-[LOG] SystemI::createSound                     : filename = FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop/Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 00000000139225C8 : node = 00000000493A8CA0
-[LOG] SystemI::createSound                     : add node to async list : head = 000000003B4A6C68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000000139225C8
-[LOG] SystemI::createSoundInternal             :     Create name='FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop/Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 738592
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22880
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000493A8DB8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum Bus  (Menu) [2018-04-12 234622]', format=2, channels=2, frequency=48000, lengthbytes=154048, lengthpcm=529655, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999900.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000000139225C8
-[LOG] SoundI::getSubSound                      : sound 00000000139225C8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (0000000013922268)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (000000003B2AD268)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (00000000139220B8)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000046E47478
+[LOG] SoundI::getSubSound                      : sound 0000000046E47478.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (0000000046E472C8)
+[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000030C273D8)
+[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000046E46A58)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 75904
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4192
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000006851F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000006706F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF90816E310
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF90816E2E0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF90816E3E0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF90816E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000493126C8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBF93FE310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBF93FE2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBF93FE3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBF93FE490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046DE5F58
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Single Shot_8', format=2, channels=2, frequency=48000, lengthbytes=13504, lengthpcm=55605, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.944061.
@@ -79,83 +58,82 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 75904
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4192
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000006851F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000006706F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF90816E310
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF90816E2E0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF90816E3E0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF90816E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 00000000493126C8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBF93FE310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBF93FE2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBF93FE3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBF93FE490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046DE5F58
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Lazer (Up)_11', format=2, channels=2, frequency=48000, lengthbytes=45056, lengthpcm=161211, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.944061.
-[WRN] EventInstance::update                    : Event {054d56f4-3a4f-4229-b080-01a5ae11708c} waited 59 milliseconds for sample data to load.  Preload sample data to avoid this delay.
 [LOG] SystemI::createSound                     : filename = FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop/Music.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 0000000013922928 : node = 00000000493A91E0
-[LOG] SystemI::createSound                     : add node to async list : head = 000000003B4A6C68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000013922928
+[LOG] SystemI::createSound                     : setdata soundi = 0000000046E45CD8 : node = 00000000120701F0
+[LOG] SystemI::createSound                     : add node to async list : head = 0000000030C27388.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000000046E45CD8
 [LOG] SystemI::createSoundInternal             :     Create name='FMODPROJECT\GDS210_Towers_Through_Time_v3\Build\Desktop/Music.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 738592
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 22880
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 00000000493A92F8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0000000012070308
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Drum Bus  (Menu) [2018-04-12 234622]', format=2, channels=2, frequency=48000, lengthbytes=154048, lengthpcm=529655, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999900.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000013922928
-[LOG] SoundI::getSubSound                      : sound 0000000013922928.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (00000000139225C8)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (000000003B2AC708)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000013922418)
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000000046E45CD8
+[LOG] SoundI::getSubSound                      : sound 0000000046E45CD8.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (0000000046E47478)
+[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (00000000558282A8)
+[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000046E466F8)
 [LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
 [LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 75904
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 4192
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000006851F5FC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000006706F5FC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FF90816E310
-[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FF90816E2E0
-[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FF90816E3E0
-[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FF90816E490
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000000001DF2FFF8
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFBF93FE310
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFBF93FE2E0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFBF93FE3E0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFBF93FE490
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000000046A55C28
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Power Down [2018-04-11 012647]', format=2, channels=2, frequency=48000, lengthbytes=17088, lengthpcm=65690, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.999900.
-[LOG] SoundI::release                          :  (00000000139497E8)
-[LOG] SoundI::release                          :     Drum Breaks (2 - 2) [2018-04-13 000342] (000000003B4A5E18)
-[LOG] SoundI::release                          :  (000000001394AD78)
-[LOG] SoundI::release                          :     Drum Breaks (1 - 2) [2018-04-13 000330] (000000003B4A7818)
-[LOG] SoundI::release                          :  (000000001394B058)
-[LOG] SoundI::release                          :     Drum Breaks (1_2 - 2) [2018-04-13 000326] (000000003B4A7678)
-[LOG] SoundI::release                          :  (000000001394AC08)
-[LOG] SoundI::release                          :     Drum Breaks (1_2 - 1) [2018-04-13 000323] (000000003B4A6FF8)
-[LOG] SoundI::release                          :  (0000000013949678)
-[LOG] SoundI::release                          :     Drum Breaks (1 - 3) [2018-04-13 000332] (000000003B4A62F8)
-[LOG] SoundI::release                          :  (0000000013949508)
-[LOG] SoundI::release                          :     Win Sound [2018-04-11 010504] (000000003B4A79B8)
-[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (0000000013922928)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (000000003B2ACF28)
-[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000013922AD8)
-[LOG] SoundI::release                          :  (000000001394B338)
-[LOG] SoundI::release                          :     Lose Sound  [2018-04-11 010632] (000000003B4A7198)
-[LOG] SoundI::release                          :  (000000001394AEE8)
-[LOG] SoundI::release                          :     Drum Breaks (1 - 4) [2018-04-13 000335] (000000003B4A6158)
-[LOG] SoundI::release                          :  (0000000013949AC8)
-[LOG] SoundI::release                          :     Drum Breaks (2 - 1) [2018-04-13 000338] (000000003B4A6E58)
-[LOG] SoundI::release                          :  (000000001394A368)
-[LOG] SoundI::release                          :     Drum Breaks (1 - 1) [2018-04-13 000328] (000000003B4A74D8)
-[LOG] SoundI::release                          :  (000000003B77DB28)
-[LOG] SoundI::release                          :     Lazer (Up)_11 (000000003B2ACD88)
-[LOG] SoundI::release                          :  (000000003B77F7E8)
-[LOG] SoundI::release                          :     Single Shot_8 (000000003B2ACBE8)
-[LOG] SoundI::release                          :  (000000003B77E538)
-[LOG] SoundI::release                          :     Power Down [2018-04-11 012647] (000000003B2ABD48)
+[LOG] SoundI::release                          :  (000000001216DFA8)
+[LOG] SoundI::release                          :     Drum Breaks (2 - 2) [2018-04-13 000342] (0000000046CFD0C8)
+[LOG] SoundI::release                          :  (000000001216E118)
+[LOG] SoundI::release                          :     Drum Breaks (1 - 2) [2018-04-13 000330] (0000000046CFBBA8)
+[LOG] SoundI::release                          :  (000000001216F538)
+[LOG] SoundI::release                          :     Drum Breaks (1_2 - 2) [2018-04-13 000326] (00000000027D1548)
+[LOG] SoundI::release                          :  (0000000046D10198)
+[LOG] SoundI::release                          :     Drum Breaks (1_2 - 1) [2018-04-13 000323] (0000000046CFBA08)
+[LOG] SoundI::release                          :  (000000001216FDD8)
+[LOG] SoundI::release                          :     Drum Breaks (1 - 3) [2018-04-13 000332] (00000000027D1068)
+[LOG] SoundI::release                          :  (0000000046D0EA98)
+[LOG] SoundI::release                          :     Win Sound [2018-04-11 010504] (0000000046CFC3C8)
+[LOG] SoundI::release                          : Drum Bus  (Menu) [2018-04-12 234622] (0000000046E45CD8)
+[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (00000000558278E8)
+[LOG] SoundI::release                          :     Drum Bus  (Menu) [2018-04-12 234622] (0000000046E46A58)
+[LOG] SoundI::release                          :  (0000000046D0E648)
+[LOG] SoundI::release                          :     Lose Sound  [2018-04-11 010632] (0000000046CFD408)
+[LOG] SoundI::release                          :  (0000000046D0FEB8)
+[LOG] SoundI::release                          :     Drum Breaks (1 - 4) [2018-04-13 000335] (0000000046CFD268)
+[LOG] SoundI::release                          :  (0000000046D0EC08)
+[LOG] SoundI::release                          :     Drum Breaks (2 - 1) [2018-04-13 000338] (0000000046CFCD88)
+[LOG] SoundI::release                          :  (000000001216EE08)
+[LOG] SoundI::release                          :     Drum Breaks (1 - 1) [2018-04-13 000328] (00000000027D0EC8)
+[LOG] SoundI::release                          :  (0000000046D0FA68)
+[LOG] SoundI::release                          :     Lazer (Up)_11 (0000000055829148)
+[LOG] SoundI::release                          :  (0000000046D0F338)
+[LOG] SoundI::release                          :     Single Shot_8 (0000000055828FA8)
+[LOG] SoundI::release                          :  (0000000046D0F058)
+[LOG] SoundI::release                          :     Power Down [2018-04-11 012647] (0000000055827C28)
 [LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Profile::disconnectAll                   : Profiler disconnecting all clients

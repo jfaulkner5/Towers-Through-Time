@@ -46,6 +46,7 @@ public class TextLoading : MonoBehaviour
         LoadNavMesh();
         WaveSpawner.instance.Initialize();
         GameManager.instance.visualTheme = visualTheme;
+        AudioManager.Instance.SetAudioTheme(visualTheme);
     }
 
     public NavMeshSurface surface;
