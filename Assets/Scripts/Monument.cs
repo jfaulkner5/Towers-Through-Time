@@ -38,7 +38,7 @@ public class Monument : MonoBehaviour {
         }
     }
 
-    void ReturnHealth()
+   public void ReturnHealth()
     {
         if (currentMonumentHealth <= maxMonumentHealth)
         {
