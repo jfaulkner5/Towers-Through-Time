@@ -23,16 +23,19 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         monument = Monument.instance.transform;
+        
         monumentPos = new Vector3(monument.transform.position.x, monument.transform.position.y + enemyHeight, monument.transform.position.z);
     }
 
     private void Update()
     {
         distToMonument = Vector3.Distance(transform.position, monumentPos);
+        //Debug.Log("distance to monument " + distToMonument, this.gameObject);
         if (distToMonument <= distToMonumentToDie)
         {
             Monument.instance.TakeDamage(enemyDamage);
             Die();
+            Debug.Log("die function should be called");
         }
     }
 

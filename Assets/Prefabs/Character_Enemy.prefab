@@ -23,8 +23,8 @@ GameObject:
   - component: {fileID: 114272585423697510}
   - component: {fileID: 65634367835604210}
   m_Layer: 0
-  m_Name: Character_Enemy
-  m_TagString: Untagged
+  m_Name: Enemy
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,6 +155,6 @@ MonoBehaviour:
   enemyHeight: 1.15
   death_PS: {fileID: 1563729990459434, guid: 0082069dc0ceb0f49874cd6b1bf134eb, type: 2}
   enemyDamage: 1
-  distToMonumentToDie: 1
+  distToMonumentToDie: 2
   randomChanceToDrop: 80
   healthDrop: {fileID: 1795858113295768, guid: b5a258f02234b0641ae0401a755a50e9, type: 2}
