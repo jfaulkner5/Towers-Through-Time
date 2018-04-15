@@ -129,20 +129,33 @@ public class AudioManager : MonoBehaviour
 
     private void ThematicAudioChanger()
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        string sceneName = currentScene.name;
+        //Scene currentScene = SceneManager.GetActiveScene();
+        //string sceneName = currentScene.name;
 
-        if (sceneName == "MainMenu")
+        //if (sceneName == "MainMenu")
+        //{
+        //    level.setValue(0.5f);
+        //}
+
+        switch (GameManager.instance.visualTheme)
         {
-            level.setValue(0.5f);
-        }
+            default:
+                level.setValue(0.5f);
+                break;
 
-        if (GameManager.instance.visualTheme == 1)
-            level.setValue(1f);
-        if (GameManager.instance.visualTheme == 2)
-            level.setValue(2f);
-        if (GameManager.instance.visualTheme == 3)
-            level.setValue(3f);
+            case 1:
+                level.setValue(1.3f);
+                break;
+            case 2:
+                level.setValue(2.3f);
+                break;
+
+            case 3:
+                level.setValue(3.3f);
+                break;
+
+
+        }
 
         print("current level theme is " + GameManager.instance.visualTheme);
 
