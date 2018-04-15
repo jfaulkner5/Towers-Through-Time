@@ -56,6 +56,7 @@ GameObject:
   - component: {fileID: 114470556534165032}
   - component: {fileID: 114531024748745100}
   - component: {fileID: 143238055272277954}
+  - component: {fileID: 65922333970730606}
   m_Layer: 0
   m_Name: PlaceholderMechanic
   m_TagString: Player
@@ -224,6 +225,18 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1709672180043000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65922333970730606
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1815092791523620}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4623844405615786}
   - component: {fileID: 33211717422484376}
   - component: {fileID: 23835222349407434}
+  - component: {fileID: 65104191346802206}
   m_Layer: 0
   m_Name: Post_apoc_tower2
   m_TagString: Untagged
@@ -184,6 +185,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1466340516357666}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &65104191346802206
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1093169074992962}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 20, y: 30, z: 20}
+  m_Center: {x: 0, y: 15, z: 0}
 --- !u!65 &65529108875301360
 BoxCollider:
   m_ObjectHideFlags: 1

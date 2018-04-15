@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4814577000639222}
   - component: {fileID: 33313972910379028}
   - component: {fileID: 23863012394543688}
+  - component: {fileID: 65926296543145692}
   m_Layer: 0
   m_Name: Prehistoric_tree_green
   m_TagString: Untagged
@@ -111,3 +112,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1066434833204406}
   m_Mesh: {fileID: 4300000, guid: fedda3e85f9b8434682e6797da81d190, type: 3}
+--- !u!65 &65926296543145692
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1066434833204406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24, y: 44, z: 22}
+  m_Center: {x: -2, y: 22, z: -3}

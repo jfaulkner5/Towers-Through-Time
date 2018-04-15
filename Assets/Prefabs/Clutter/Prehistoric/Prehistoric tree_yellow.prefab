@@ -36,6 +36,7 @@ GameObject:
   - component: {fileID: 4105118242924570}
   - component: {fileID: 33484837440128730}
   - component: {fileID: 23198445958854348}
+  - component: {fileID: 65593092759553484}
   m_Layer: 0
   m_Name: Prehistoric_tree_yellow
   m_TagString: Untagged
@@ -111,3 +112,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1504952877211092}
   m_Mesh: {fileID: 4300000, guid: 3a2bf5e32291f93469de76fe6a8933ca, type: 3}
+--- !u!65 &65593092759553484
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1504952877211092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 35, y: 53, z: 29}
+  m_Center: {x: 3.5, y: 26.5, z: 0.5}
