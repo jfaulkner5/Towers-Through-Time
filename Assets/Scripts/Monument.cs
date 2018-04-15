@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Monument : MonoBehaviour {
+    public ParticleSystem monumentHealthPickup_PS;
     public ParticleSystem monumentDamage_PS;
     public int maxMonumentHealth;
     int currentMonumentHealth;
     public static Monument instance;
+    
 
     private void Awake()
     {
@@ -42,6 +44,7 @@ public class Monument : MonoBehaviour {
     {
         if (currentMonumentHealth <= maxMonumentHealth)
         {
+            monumentHealthPickup_PS.Play();    
             currentMonumentHealth++;
             //play particle effect or do visual gain for monument health
         }
