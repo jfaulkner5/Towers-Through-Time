@@ -42,12 +42,12 @@ public class Monument : MonoBehaviour {
 
    public void ReturnHealth()
     {
-        if (currentMonumentHealth <= maxMonumentHealth)
-        {
+
+        
             monumentHealthPickup_PS.Play();    
             currentMonumentHealth++;
-            //play particle effect or do visual gain for monument health
-        }
+        //play particle effect or do visual gain for monument health
+        Debug.Log("health has been picked up. new health is: " + currentMonumentHealth);
 
     }
 
