@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -743,9 +743,9 @@ MonoBehaviour:
   baseMapPos: {x: 31.42, y: -3.3, z: 21.7}
   visualTheme: 0
   blankTerrainTile:
-  - {fileID: 1977213584946374, guid: abf52929448d87c4b8be1df4c12bc410, type: 2}
-  - {fileID: 1899155093780330, guid: 7e0e65400fb4fb74184d36ba628b403f, type: 2}
-  - {fileID: 1877388731122618, guid: 5d846fdf41917bb4fbaae7abae400907, type: 2}
+  - {fileID: 1762639799316106, guid: d3e0c3dfa6d299c4cba7a786b10687a1, type: 2}
+  - {fileID: 1443356300341938, guid: 7f4ec26920bdedf429bd456962c91b81, type: 2}
+  - {fileID: 1601193766975400, guid: 7424ad9b2ddd84e48b1a90598b709aae, type: 2}
   MonumentTerrainTile:
   - {fileID: 1310687079588310, guid: 7916f57237895a74aa36c93386377fc8, type: 2}
   - {fileID: 1669462820799936, guid: 916e89eb42d064a4b8b6a5c6a8683fe2, type: 2}
