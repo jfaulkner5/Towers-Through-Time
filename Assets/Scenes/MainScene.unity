@@ -380,7 +380,7 @@ MonoBehaviour:
   - 3
   - 3
   - 3
-  enemyPrefab: {fileID: 1714348390777624, guid: 5614d76858e2e2d48a85c28e88cee5f9,
+  enemyPrefab: {fileID: 1741220902732978, guid: 071f99747b129eb4ebb662f05a571fa7,
     type: 2}
 --- !u!4 &338386526
 Transform:
