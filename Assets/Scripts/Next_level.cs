@@ -62,9 +62,9 @@ public class Next_level : MonoBehaviour
 
     public void GameWon()
     {
-        print("LEVEL WON | end level trigger");
-        //Time.timeScale = 0;
-        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+        //print("LEVEL WON | end level trigger");
+        ////Time.timeScale = 0;
+        //UnityEngine.SceneManagement.SceneManager.LoadScene(0);
     }
 
     public void GameLoss()
