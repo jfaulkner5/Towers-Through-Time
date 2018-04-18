@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{2edb16c2-1c95-492f-ac63-90ddf8adeb2f}">
+        <property name="volume">
+            <value>-5</value>
+        </property>
+        <property name="name">
+            <value>Tower-Enemy</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{6e291396-a342-421f-b62e-2471a489dfaf}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{b5760117-5f07-4c16-a108-a92a689a63e0}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{59e23aeb-90cb-4dbf-9f87-d3ca801c4f1d}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{6e291396-a342-421f-b62e-2471a489dfaf}">
+        <relationship name="effects">
+            <destination>{1254b959-af2f-4486-8500-6e5e3368cb84}</destination>
+            <destination>{5dc7aa85-40d5-4a24-a7de-efbaebe7c4cf}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{b5760117-5f07-4c16-a108-a92a689a63e0}"/>
+    <object class="MixerBusFader" id="{1254b959-af2f-4486-8500-6e5e3368cb84}"/>
+    <object class="Sidechain" id="{5dc7aa85-40d5-4a24-a7de-efbaebe7c4cf}">
+        <relationship name="targets">
+            <destination>{2f803e61-ccf9-4ce1-8dc8-0793ae9a8745}</destination>
+        </relationship>
+    </object>
+</objects>

@@ -25,6 +25,7 @@
     <object class="Sidechain" id="{86306d1f-e42b-49f5-ae68-004c70fb836f}">
         <relationship name="targets">
             <destination>{8668afb8-8be8-4457-a4fe-8734dd8d366a}</destination>
+            <destination>{7952e316-b5f1-4d1d-a599-3a867cbd79e8}</destination>
         </relationship>
     </object>
 </objects>

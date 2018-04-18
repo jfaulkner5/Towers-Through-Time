@@ -32,7 +32,7 @@ MonoBehaviour:
   - {fileID: 114242671307148378}
   MasterBankRef: {fileID: 114378029481363464}
   StringsBankRef: {fileID: 114111489457414644}
-  stringsBankWriteTime: 636596424060509691
+  stringsBankWriteTime: 636596467941532639
   cacheVersion: 2
 --- !u!114 &114011143472038416
 MonoBehaviour:
@@ -78,6 +78,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1379
+--- !u!114 &114016574043859352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Win/Lose
+  Min: 0
+  Max: 2
+  Default: 0
 --- !u!114 &114069434753102374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,11 +167,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: FMODPROJECT\GDS210_Towers_Through_Time_Final\Build\Desktop\Master Bank.strings.bank
-  lastModified: 636596424060509691
+  lastModified: 636596467941532639
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1578
+    Value: 1620
   Exists: 1
 --- !u!114 &114119251711545488
 MonoBehaviour:
@@ -336,9 +351,9 @@ MonoBehaviour:
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: 114859369215968180}
-  - {fileID: 114653386237553280}
-  - {fileID: 114578936446090356}
+  - {fileID: 114774734645560784}
+  - {fileID: 114512125309244372}
+  - {fileID: 114016574043859352}
   MinDistance: 0
   MaxDistance: 0
   Length: 144827
@@ -374,11 +389,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\llyttle2\Documents\Studio1Proj3\FMODPROJECT\GDS210_Towers_Through_Time_Final\Build\Desktop\Master
     Bank.bank
-  lastModified: 636596424060479593
+  lastModified: 636596467941507568
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 244256
+    Value: 244768
   Exists: 1
 --- !u!114 &114421379268385098
 MonoBehaviour:
@@ -408,7 +423,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\llyttle2\Documents\Studio1Proj3\FMODPROJECT\GDS210_Towers_Through_Time_Final\Build\Desktop\Tower
     Bank.bank
-  lastModified: 636596424086697606
+  lastModified: 636596467971947451
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -436,6 +451,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 5517
+--- !u!114 &114512125309244372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Enemy Count
+  Min: 0
+  Max: 25
+  Default: 0
 --- !u!114 &114548192360158316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -700,7 +730,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\llyttle2\Documents\Studio1Proj3\FMODPROJECT\GDS210_Towers_Through_Time_Final\Build\Desktop\Enemy.bank
-  lastModified: 636596424061513169
+  lastModified: 636596467941727854
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -718,7 +748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Path: C:\Users\llyttle2\Documents\Studio1Proj3\FMODPROJECT\GDS210_Towers_Through_Time_Final\Build\Desktop\Music.bank
-  lastModified: 636596424084745301
+  lastModified: 636596466901478685
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -780,7 +810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: C:\Users\llyttle2\Documents\Studio1Proj3\FMODPROJECT\GDS210_Towers_Through_Time_Final\Build\Desktop\Player
     Bank.bank
-  lastModified: 636596424085491960
+  lastModified: 636596467971748036
   LoadResult: 0
   FileSizes:
   - Name: Desktop
@@ -808,6 +838,21 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1000
+--- !u!114 &114774734645560784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: Level
+  Min: 0
+  Max: 4
+  Default: 0
 --- !u!114 &114792829452871682
 MonoBehaviour:
   m_ObjectHideFlags: 0
