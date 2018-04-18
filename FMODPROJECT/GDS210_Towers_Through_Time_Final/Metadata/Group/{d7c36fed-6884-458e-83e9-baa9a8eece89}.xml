@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="MixerGroup" id="{d7c36fed-6884-458e-83e9-baa9a8eece89}">
+        <property name="name">
+            <value>Essential Sounds</value>
+        </property>
+        <relationship name="effectChain">
+            <destination>{b3981e1c-2941-4e46-bad0-58f9da2036cb}</destination>
+        </relationship>
+        <relationship name="panner">
+            <destination>{52aaf0ae-c1d7-48ef-8dc6-7023a1b84f4e}</destination>
+        </relationship>
+        <relationship name="output">
+            <destination>{59e23aeb-90cb-4dbf-9f87-d3ca801c4f1d}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusEffectChain" id="{b3981e1c-2941-4e46-bad0-58f9da2036cb}">
+        <relationship name="effects">
+            <destination>{e8900060-dd6a-43cf-8677-0ba977e5a3a6}</destination>
+            <destination>{86306d1f-e42b-49f5-ae68-004c70fb836f}</destination>
+        </relationship>
+    </object>
+    <object class="MixerBusPanner" id="{52aaf0ae-c1d7-48ef-8dc6-7023a1b84f4e}"/>
+    <object class="MixerBusFader" id="{e8900060-dd6a-43cf-8677-0ba977e5a3a6}"/>
+    <object class="Sidechain" id="{86306d1f-e42b-49f5-ae68-004c70fb836f}">
+        <relationship name="targets">
+            <destination>{8668afb8-8be8-4457-a4fe-8734dd8d366a}</destination>
+        </relationship>
+    </object>
+</objects>

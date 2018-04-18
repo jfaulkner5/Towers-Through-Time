@@ -13,9 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: FMODPROJECT\GDS210_Towers_Through_Time_v3\GDS210_Towers_Through_Time_v3.fspro
-  SourceProjectPathUnformatted: FMODPROJECT\GDS210_Towers_Through_Time_v3\GDS210_Towers_Through_Time_v3.fspro
-  SourceBankPathUnformatted: FMODPROJECT\GDS210_Towers_Through_Time_v3\Build
+  sourceProjectPath: FMODPROJECT\GDS210_Towers_Through_Time_Final\GDS210_Towers_Through_Time_Final.fspro
+  SourceProjectPathUnformatted: FMODPROJECT\GDS210_Towers_Through_Time_Final\GDS210_Towers_Through_Time_Final.fspro
+  SourceBankPathUnformatted: FMODPROJECT\GDS210_Towers_Through_Time_Final\Build
   AutomaticEventLoading: 1
   AutomaticSampleLoading: 0
   ImportType: 0
@@ -57,7 +57,7 @@ MonoBehaviour:
   Plugins: []
   MasterBank: Master Bank
   Banks:
-  - Music
   - Tower Bank
   - Player Bank
   - Enemy
+  - Music

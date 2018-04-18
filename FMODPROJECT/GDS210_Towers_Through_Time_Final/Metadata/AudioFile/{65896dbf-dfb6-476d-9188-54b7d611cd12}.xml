@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{65896dbf-dfb6-476d-9188-54b7d611cd12}">
+        <property name="assetPath">
+            <value>Consolidate/Consolidate/Drum Bus - Breaks (1 - 2) [2018-04-12 223816].wav</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>1.3793197278911564</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fdbf6cbb-6a79-45a7-93fb-8fe8f7eb2172}</destination>
+        </relationship>
+    </object>
+</objects>

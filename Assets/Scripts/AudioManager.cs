@@ -224,10 +224,10 @@ public class AudioManager : MonoBehaviour
 
     public void OnGameWin()
     {
-        bgm.setParameterValueByIndex(3, 1.1f);
-        bgm.setParameterValueByIndex(3, 0.0f);
-        //winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
-        //winSound.start();
+        //bgm.setParameterValueByIndex(3, 1.1f);
+        //bgm.setParameterValueByIndex(3, 0.0f);
+        winSound = FMODUnity.RuntimeManager.CreateInstance(winRef);
+        winSound.start();
 
     }
 
@@ -235,10 +235,10 @@ public class AudioManager : MonoBehaviour
 
     public void OnGameLoss()
     {
-        bgm.setParameterValueByIndex(3, 0.5f);
-        bgm.setParameterValueByIndex(3, 0f);
-        //lossSound = FMODUnity.RuntimeManager.CreateInstance(lossRef);
-        //lossSound.start();
+        //bgm.setParameterValueByIndex(3, 0.5f);
+        //bgm.setParameterValueByIndex(3, 0f);
+        lossSound = FMODUnity.RuntimeManager.CreateInstance(lossRef);
+        lossSound.start();
     }
 
     public void OnButtonClick()

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{a50eea30-624c-4d58-ba06-a5af02fd9dd5}">
+        <property name="assetPath">
+            <value>Consolidate/Consolidate/PHBS(1) [2018-04-17 180336].wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>11.034489795918367</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{fdbf6cbb-6a79-45a7-93fb-8fe8f7eb2172}</destination>
+        </relationship>
+    </object>
+</objects>
